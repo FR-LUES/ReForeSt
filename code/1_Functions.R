@@ -4,7 +4,7 @@
 # library(terra)
 # library(lidaRtRee)
 # 
-# shapes <- st_read("data/test_data/Shapefiles/testShapes.gpkg")
+# shapes <- st_read("data/test_data/Shapes/testShapes.gpkg")
 # lid <- readLAScatalog("data/test_data/point_clouds")
 # lid <- clip_roi(lid, shapes)
 # This script is to define functions needed to extract Structural metrics from the clipped and normalised NLP data.
@@ -12,9 +12,12 @@
 # Read in constants----#!
 
 # Functions ----#!
-# Gap fraction function
+# Gap fraction function ----#
 # This function takes a point cloud and turns it into a shapefile denoting forest gaps
 # The function returns an sf object
+
+# LiDAR is the point cloud
+# Shape is the corresponsing SF object for the point cloud
 gapsToDF <- function(LiDAR, Shape){
   
   # Gap detection algorithm based on max height within gaps and a minimal surface area
@@ -37,5 +40,36 @@ gapsToDF <- function(LiDAR, Shape){
   gaps <- filter(gapMaskShape, gap_id %in% validGaps)
   
   return(gaps)
+}
+
+
+
+
+# Effective canopy layer function----#!
+# This function takes a vector of height values and bins them into user defined height bins
+# It then calculates Shannon's diversity index as if each bin was a species
+# The frequency within each bin is a species richness
+
+# Height vector is a vector of height values
+# Strata is user defined heigh bins
+effCanopyLayer <- function(heightVector, strata){
+  #heightVector <- lid[[1]]@data$Z
+  #strata <- c(0, 2, 10, 15, 30, 50)
+  # Remove erroneous negative values
+  heights <- heightVector[heightVector >= 0]
+  print(paste0(length(heightVector) - length(heights), " Negative values removed"))
+  
+  # Bin Heights into stratas
+  bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
+  # find frequency of values in each bin
+  freqs <- table(factor(bins, levels = 1:length(strata)-1))
+  
+  # Calculate effective canopy layers
+  total_values <- sum(freqs)
+  proportions <- freqs/total_values |> round(3)
+  shannon_index <- sum(proportions * log(proportions), na.rm = TRUE)
+  effectiveCanopyLayers <- exp(shannon_index)
+  return(effectiveCanopyLayers)
+  
 }
 
