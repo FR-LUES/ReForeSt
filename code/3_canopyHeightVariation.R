@@ -9,8 +9,17 @@ lid <- readLAScatalog(paste0(path_test_data_las))
 # Clip las catalog to the shape files so everything is in the same order
 lidClip <- clip_roi(lid, shapes)
 
+
+
+
 # ---- !# Extract site level Top height diversity metric
 siteTHD <- map(1:nrow(shapes), .f = function(x) effCanopyLayer(lidClip[[x]]@data$Z, strata = strata))
+
+
+
+
+
+
 
 
 # ---- !# Extract gridded THD metrics
@@ -20,6 +29,8 @@ pixEff <- function(lidar, resolution)
                               func = effCanopyLayer(Z, strata = strata),
                               res = resolution)
 return(thdRaster)}
+
+
 
 # Create thd rasters
 # 30 m 
@@ -33,11 +44,11 @@ map(1:length(thd30M), .f = function(x) writeRaster(thd30M[[x]],
                                                  filetype = "Gtiff",
                                                  paste0(path_outputs,
                                                         "thd30mRasters/",
-                                                        shapes[x,]$ID)))
+                                                        shapes[x,]$ID,".tif")))
 # 10 m
 map(1:length(thd10M), .f = function(x) writeRaster(thd10M[[x]],
                                                    filetype = "Gtiff",
                                                    paste0(path_outputs,
                                                           "thd10mRasters/",
-                                                          shapes[x,]$ID)))
+                                                          shapes[x,]$ID, ".tif")))
 

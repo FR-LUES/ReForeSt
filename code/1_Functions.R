@@ -39,6 +39,21 @@ gapsToDF <- function(LiDAR, Shape){
 
 
 
+# CHM function ---- !#
+# A function to create chms at a chosen resolution
+chmFunction <- function(pointCloud, resolution){
+  #pointCloud <- lidClip[[1]]
+  #resolution <- 2
+  # Reclassify minus values as 0
+  pointCloud@data$Z[pointCloud@data$Z < 0] <- 0
+  # Create chm
+  chm <- rasterize_canopy(pointCloud, algorithm = p2r(1), res = resolution)
+  
+  return(chm)
+}
+
+
+
 
 # Effective canopy layer function----#!
 # This function takes a vector of height values and bins them into user defined height bins
@@ -48,8 +63,8 @@ gapsToDF <- function(LiDAR, Shape){
 # Height vector is a vector of height values
 # Strata is user defined heigh bins
 effCanopyLayer <- function(heightVector, strata){
-  #heightVector <- lid[[1]]@data$Z
-  #strata <- c(0, 2, 10, 15, 30, 50)
+  # heightVector <- lidClip[[1]]@data$Z
+  # strata <- c(0, 2, 10, 15, 30, 50)
   # Remove erroneous negative values
   heightVector[heightVector < 0] <- 0
   heights <- heightVector
@@ -62,9 +77,9 @@ effCanopyLayer <- function(heightVector, strata){
   
   # Calculate effective canopy layers
   total_values <- sum(freqs)
-  proportions <- freqs/total_values |> round(3)
-  shannon_index <- sum(proportions * log(proportions), na.rm = TRUE)
-  effectiveCanopyLayers <- exp(shannon_index)
+  proportions <- freqs/total_values
+  shannon_index <- -1*sum(proportions * log(proportions), na.rm = TRUE)
+  effectiveCanopyLayers <- exp(shannon_index) |> round(2)
   return(effectiveCanopyLayers)
   
 }
