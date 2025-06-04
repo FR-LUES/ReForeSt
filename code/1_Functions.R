@@ -1,6 +1,6 @@
- shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
- lid <- readLAScatalog(path_test_data_las)
- lid <- clip_roi(lid, shapes)
+ # shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
+ # lid <- readLAScatalog(path_test_data_las)
+ # lid <- clip_roi(lid, shapes)
 
 # This script is to define functions needed to extract Structural metrics from the clipped and normalised NLP data.
 
@@ -51,8 +51,9 @@ effCanopyLayer <- function(heightVector, strata){
   #heightVector <- lid[[1]]@data$Z
   #strata <- c(0, 2, 10, 15, 30, 50)
   # Remove erroneous negative values
-  heights <- heightVector[heightVector >= 0]
-  print(paste0(length(heightVector) - length(heights), " Negative values removed"))
+  heightVector[heightVector < 0] <- 0
+  heights <- heightVector
+  #print(paste0(length(heightVector) - length(heights), " Negative values removed"))
   
   # Bin Heights into stratas
   bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)

@@ -28,7 +28,8 @@ path_outputs = "outputs/"
 ##### constants
 
 # gap function
-gapHeight
-gapSize
+gapHeight <- 1
+gapSize <- 5
+strata <- c(0, 1, 2, 10, 20, 50)
 
 
