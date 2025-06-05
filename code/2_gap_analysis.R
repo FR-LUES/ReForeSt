@@ -19,11 +19,16 @@ if(nrow(shapes) != length(lid))
 
 p_metrics = c("lsm_p_area",
               "lsm_p_perim",
-              "lsm_p_para")
+              "lsm_p_para",
+              "lsm_p_enn")
 
 l_metrics = c("lsm_l_np",
+              "lsm_l_pd",
               "lsm_l_area_mn",
-              "lsm_l_area_sd")
+              "lsm_l_area_sd",
+              "lsm_l_enn_mn",
+              "lsm_l_enn_sd",
+              "lsm_l_cohesion")
 
 ### functions (move to 1_ script?)
 
@@ -76,7 +81,6 @@ calculate_l_metrics = function(gap_raster) {
 
 datalist_p_metrics = list()
 datalist_l_metrics = list()
-i = 1
 
 for (n in 1:nrow(shapes)) {
   
@@ -93,7 +97,7 @@ for (n in 1:nrow(shapes)) {
   
   r_template = rast(ext(gaps_v),
                     resolution = 0.1,
-                    crs = crs(gaps_v))
+                    crs = terra::crs(gaps_v))
   
   gaps_r = rasterize(gaps_v,
                      r_template,
@@ -116,10 +120,16 @@ for (n in 1:nrow(shapes)) {
 
 df_p_metrics_all = dplyr::bind_rows(datalist_p_metrics)
 df_l_metrics_all = dplyr::bind_rows(datalist_l_metrics)
+rm(datalist_l_metrics, datalist_p_metrics)
 
 ### write out 
+# gap height and area constants included in filename. Inclusion of fullstop not ideal.
 
-write.csv(df_p_metrics_all, file = paste0(path_outputs_csv, "df_p_metrics_all.csv"))
-write.csv(df_l_metrics_all, file = paste0(path_outputs_csv, "df_l_metrics_all.csv"))
+path_out_p = paste0(path_outputs_gap, "gap_metrics_gaps_height_", gapHeight, "_area_", gapSize, ".csv")
+path_out_l = paste0(path_outputs_gap, "gap_metrics_sites_height_", gapHeight, "_area_", gapSize, ".csv")
+
+write.csv(df_p_metrics_all, file = path_out_p)
+write.csv(df_l_metrics_all, file = path_out_l)
+
 
 # we could also join metrics to sf objects (of gaps / site boundary) and write shapefiles

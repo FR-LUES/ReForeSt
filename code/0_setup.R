@@ -7,12 +7,11 @@
 
 library(tidyverse)
 library(hablar) # convert() function
-library(lidR)
 library(sf)
 library(terra)
+library(lidR)
 library(lidaRtRee)
 library(landscapemetrics)
-library(vectormetrics) # developmental
 
 
 ##### paths
@@ -26,7 +25,7 @@ path_test_data_shp = paste0(path_test_data, "shapes/")
 path_DASH_las = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised"
 
 path_outputs = "outputs/"
-path_outputs_csv = paste0(path_outputs, "csv/")
+path_outputs_gap = paste0(path_outputs, "gap_analysis/")
 
 
 ##### constants
