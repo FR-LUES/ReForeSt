@@ -1,10 +1,4 @@
- shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
- lid <- readLAScatalog(path_test_data_las)
- lid <- clip_roi(lid, shapes)
-
 # This script is to define functions needed to extract Structural metrics from the clipped and normalised NLP data.
-
-# Read in constants----#!
 
 # Functions ----#!
 # Gap fraction function ----#
