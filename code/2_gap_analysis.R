@@ -11,9 +11,9 @@ lid <- clip_roi(lid, shapes)
 
 # check
 
-if(nrow(shapes) != length(lid))
+if(nrow(shapes) != length(lid)){
   break()
-
+}
 
 ### define metrics (move to 0_ script?)
 
@@ -32,55 +32,30 @@ l_metrics = c("lsm_l_np",
 
 ### functions (move to 1_ script?)
 
-calculate_p_metrics = function(gap_raster) {
+calculate_gap_metrics = function(gap_raster) {
   
   df =
     calculate_lsm(landscape = gaps_r,
-                  level = c("patch"),
-                  what = p_metrics) %>% 
+                  level = c("patch", "landscape"),
+                  what = c(p_metrics, l_metrics)) %>% 
     
-    # pivot wider to give one row per gap
+    # pivot wider to give one row per gap/site
     pivot_wider(names_from = metric,
                 values_from = value) %>%
     
     # add site ID
-    mutate("Site_ID" = site_ID,
-           .before = id) %>% 
+    mutate("site_id" = site_ID,
+           .before = id) %>%
     
     # tidy
-    rename(gap_id = id) %>% 
-    convert(int(gap_id)) %>%
-    select(-c(layer, level, class))
+    select(-c(layer, class, id))
   
   return(df)
 }
 
+### loop over sites
 
-calculate_l_metrics = function(gap_raster) {
-  df =
-    calculate_lsm(landscape = gaps_r,
-                  level = c("landscape"),
-                  what = l_metrics) %>% 
-    
-    # pivot wider to give one row per gap
-    pivot_wider(names_from = metric,
-                values_from = value) %>%
-    
-    # tidy
-    rename(ID = id) %>% 
-    convert(int(ID)) %>% 
-    select(-c(layer, level, class))
-  
-  df$ID = site_ID
-  
-  return(df)
-}
-
-
-### loop
-
-datalist_p_metrics = list()
-datalist_l_metrics = list()
+datalist_metrics = list()
 
 for (n in 1:nrow(shapes)) {
   
@@ -91,36 +66,42 @@ for (n in 1:nrow(shapes)) {
   # extract gaps
   gaps = gapsToDF(site_lidar, site_boundary)
   
-  # rasterize (this could be improved)
-  gaps_v = vect(gaps)
-  gaps_v$presence <- 1
+  # rasterize
+  gaps$presence = 1
   
-  r_template = rast(ext(gaps_v),
+  template_r = rast(ext(gaps),
                     resolution = 0.1,
-                    crs = terra::crs(gaps_v))
+                    crs = terra::crs(vect(gaps)))
   
-  gaps_r = rasterize(gaps_v,
-                     r_template,
+  gaps_r = rasterize(vect(gaps),
+                     template_r,
                      field = 'presence')
   
   # calculate metrics
-  df_p_metrics = calculate_p_metrics(gaps_r)
-  df_l_metrics = calculate_l_metrics(gaps_r)
+  df_metrics = calculate_gap_metrics(gaps_r)
   
   # add to datalist
-  datalist_p_metrics[[n]] = df_p_metrics
-  datalist_l_metrics[[n]] = df_l_metrics
+  datalist_metrics[[n]] = df_metrics
   print(n)
   
   # tidy
-  rm(site_boundary, site_lidar, site_ID, gaps, gaps_v, gaps_r, r_template, df_p_metrics, df_l_metrics)
+  rm(site_boundary, site_lidar, site_ID, gaps, gaps_r, template_r, df_metrics)
 } 
 
-### compile
+### compile and produce gap and site specific dfs
 
-df_p_metrics_all = dplyr::bind_rows(datalist_p_metrics)
-df_l_metrics_all = dplyr::bind_rows(datalist_l_metrics)
-rm(datalist_l_metrics, datalist_p_metrics)
+df_metrics_all = dplyr::bind_rows(datalist_metrics)
+rm(datalist_metrics)
+
+df_p_metrics_all =
+  df_metrics_all %>% 
+  filter(level == "patch") %>% 
+  discard(~all(is.na(.)))
+  
+df_l_metrics_all =
+  df_metrics_all %>% 
+  filter(level == "landscape") %>% 
+  discard(~all(is.na(.)))
 
 ### write out 
 # gap height and area constants included in filename. Inclusion of fullstop not ideal.
