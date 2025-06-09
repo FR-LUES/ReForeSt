@@ -19,6 +19,7 @@ path_data = "data/"
 path_test_data = paste0(path_data, "test_data/")
 path_test_data_las = paste0(path_test_data, "point_clouds/")
 path_test_data_shp = paste0(path_test_data, "shapes/")
+path_test_data_chm = paste0(path_test_data, "chms/")
 
 path_DASH_las = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised"
 

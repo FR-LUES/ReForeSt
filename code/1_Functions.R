@@ -1,22 +1,46 @@
- # shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
- # lid <- readLAScatalog(path_test_data_las)
- # lid <- clip_roi(lid, shapes)
+# # This section is only for testing functions ---- !#
+# 
+# 
+# # Read in constants
+# source("code/0_setup.R")
+# 
+# # Read in test data and reorder shapefiles
+# shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
+# shapes <- chmMatch(path_test_data_chm, shapes)
+# chms <- map(dir(path_test_data_chm), function(x) rast(paste0(path_test_data_chm, x)))
+# 
 
-# This script is to define functions needed to extract Structural metrics from the clipped and normalised NLP data.
 
-# Read in constants----#!
 
-# Functions ----#!
-# Gap fraction function ----#
+
+
+
+
+# This script is to define functions needed to extract
+# structural metrics from the clipped and normalised NLP data.
+
+# Functions ---- #!
+# Function to match the order of polygons and chms
+chmMatch <- function(chmDir, Shapes){
+  Files <- dir(chmDir) # Find files in the folder
+  chmIds <- as.numeric(gsub("\\.tif$", "", Files)) # Remove file name extensions and turn numeric
+  shapes_reordered <- Shapes[match(chmIds, Shapes$ID),]
+  return(shapes_reordered)
+}
+
+# Gap fraction function
 # This function takes a point cloud and turns it into a shapefile denoting forest gaps
 # The function returns an sf object
 
 # LiDAR is the point cloud
-# Shape is the corresponsing SF object for the point cloud
-gapsToDF <- function(LiDAR, Shape){
-  
+# Shape is the corresponding SF object for the point cloud
+gapsToDF <- function(chm, Shape){
+  # Shape <- shapes[2,]
+  # chm <- chms[[1]]
+  # gapHeight <- gapHeight
+  # gapSize <- 5
   # Gap detection algorithm based on max height within gaps and a minimal surface area
-  gapSF <- gap_detection(LiDAR,
+  gapSF <- gap_detection(chm,
                          res = 1,
                          gap_max_height = gapHeight,
                          min_gap_surface = gapSize)
@@ -37,43 +61,16 @@ gapsToDF <- function(LiDAR, Shape){
   return(gaps)
 }
 
-
-
-# CHM function ---- !#
-# A function to create chms at a chosen resolution
-chmFunction <- function(pointCloud, resolution){
-  #pointCloud <- lidClip[[1]]
-  #resolution <- 2
-  # Reclassify minus values as 0
-  pointCloud@data$Z[pointCloud@data$Z < 0] <- 0
-  # Create chm
-  chm <- rasterize_canopy(pointCloud, algorithm = p2r(1), res = resolution)
-  
-  return(chm)
-}
-
-
-
-
 # Effective canopy layer function----#!
-# This function takes a vector of height values and bins them into user defined height bins
-# It then calculates Shannon's diversity index as if each bin was a species
-# The frequency within each bin is a species richness
-
-# Height vector is a vector of height values
-# Strata is user defined heigh bins
-effCanopyLayer <- function(heightVector, strata){
-  # heightVector <- lidClip[[1]]@data$Z
-  # strata <- c(0, 2, 10, 15, 30, 50)
-  # Remove erroneous negative values
-  heightVector[heightVector < 0] <- 0
-  heights <- heightVector
-  #print(paste0(length(heightVector) - length(heights), " Negative values removed"))
-  
+# Entropy function to operate at varying resolutions
+canopyEntropy <- function(heights, strata){
+  # Tidy some ground heights
+  heights[heights < 0] <- 0
+  heights <- heights[!is.na(heights)]
   # Bin Heights into stratas
   bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
   # find frequency of values in each bin
-  freqs <- table(factor(bins, levels = 1:length(strata)-1))
+  freqs <- table(factor(bins, levels = 1:(length(strata)-1)))
   
   # Calculate effective canopy layers
   total_values <- sum(freqs)
@@ -81,5 +78,29 @@ effCanopyLayer <- function(heightVector, strata){
   shannon_index <- -1*sum(proportions * log(proportions), na.rm = TRUE)
   effectiveCanopyLayers <- exp(shannon_index) |> round(2)
   return(effectiveCanopyLayers)
+}
+
+# This function takes a CHM and masks it by a corresponding shapefile to remove edge effects
+# It then calculates Shannon's diversity index using chm values based on user defined canopy height bins
+# Strata is user defined height bins
+effCanopyLayer <- function(chm, shape, strata){
+  
+  chmMask <- mask(chm, st_buffer(shape,-5))
+  canopyLayers <- canopyEntropy(values(chm), strata = strata)
+  
+}
+
+
+# Zonal eff Canopy layer function ---- !#
+# This function is for computing effective canopy layers zonally at varying cell resolutions
+zonal_effCanopyLayer <- function(chm, shape, res, strata){
+  # Remove edge effects
+  chm <- mask(chm, st_buffer(shape, 10))
+  effCanopyRaster <- raster_metrics(chm,
+                                    fun = function(x)
+                                    data.frame(effCanopy = canopyEntropy(x, strata = strata)),
+                                    res = res
+                                    )
+  return(effCanopyRaster)
   
 }
