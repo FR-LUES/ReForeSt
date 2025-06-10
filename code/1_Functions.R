@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 # This script is to define functions needed to extract
 # structural metrics from the clipped and normalised NLP data.
 
@@ -35,10 +31,6 @@ chmMatch <- function(chmDir, Shapes){
 # chm is the canopy height model
 # Shape is the corresponding SF object for the chm
 gapsToRast <- function(chm, Shape){
-  # Shape <- shapes[2,]
-  # chm <- chms[[1]]
-  # gapHeight <- gapHeight
-  # gapSize <- 5
   # Gap detection algorithm based on max height within gaps and a minimal surface area
   gapSF <- gap_detection(chm,
                          res = 1,
@@ -88,6 +80,7 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
   return(df)
 }
 
+
 # Effective canopy layer function----#!
 # Entropy function to operate at varying resolutions
 canopyEntropy <- function(heights, strata){
@@ -107,6 +100,7 @@ canopyEntropy <- function(heights, strata){
   return(effectiveCanopyLayers)
 }
 
+
 # This function takes a CHM and masks it by a corresponding shapefile to remove edge effects
 # It then calculates Shannon's diversity index using chm values based on user defined canopy height bins
 # Strata is user defined height bins
@@ -114,7 +108,6 @@ effCanopyLayer <- function(chm, shape, strata){
   
   chmMask <- mask(chm, st_buffer(shape,-5))
   canopyLayers <- canopyEntropy(values(chm), strata = strata)
-  
 }
 
 
@@ -128,6 +121,5 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
                                       data.frame(effCanopy = canopyEntropy(x, strata = strata)),
                                     res = res
   )
-  return(effCanopyRaster)
-  
+  return(effCanopyRaster)  
 }

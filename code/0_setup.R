@@ -14,7 +14,6 @@ library(lidR)
 library(lidaRtRee)
 library(landscapemetrics)
 
-
 ##### paths
 
 path_data = "data/"
@@ -49,6 +48,10 @@ l_metrics = c("lsm_l_np",
               "lsm_l_enn_mn",
               "lsm_l_enn_sd",
               "lsm_l_cohesion")
+
+# canopy height variation
+
+strata <- c(0, 1, 2, 10, 20, 50)
 
 
 
