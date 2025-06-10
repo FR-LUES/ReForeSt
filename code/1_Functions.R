@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 # This script is to define functions needed to extract
 # structural metrics from the clipped and normalised NLP data.
 
@@ -29,16 +25,12 @@ chmMatch <- function(chmDir, Shapes){
 }
 
 # Gap fraction function
-# This function takes a point cloud and turns it into a shapefile denoting forest gaps
-# The function returns an sf object
+# This function takes a canopy height model and turns it into a raster denoting forest gaps
+# The function returns an SpatRaster object
 
-# LiDAR is the point cloud
-# Shape is the corresponding SF object for the point cloud
-gapsToDF <- function(chm, Shape){
-  # Shape <- shapes[2,]
-  # chm <- chms[[1]]
-  # gapHeight <- gapHeight
-  # gapSize <- 5
+# chm is the canopy height model
+# Shape is the corresponding SF object for the chm
+gapsToRast <- function(chm, Shape){
   # Gap detection algorithm based on max height within gaps and a minimal surface area
   gapSF <- gap_detection(chm,
                          res = 1,
@@ -47,19 +39,47 @@ gapsToDF <- function(chm, Shape){
   
   # Areas external to the woodland are considered gaps to fill out raster
   # These areas are removed below
-  gapMask <- mask(gapSF, buffer(vect(Shape), -1.5))# remove external area by masking by nc site
+  gapMask <- mask(gapSF, buffer(vect(Shape), -1.5))# remove external area by masking by site
   # Identify where this area protruded to count gaps smaller than our minimum surface
   freqs <- freq(gapMask[[1]])
   freqsSubset <- freqs[freqs$count >= gapSize, ]
   validGaps <- unique(freqsSubset$value)
   
-  # Convert gaps to a shapefile for further analysis
-  gapMaskShape <- as.polygons(gapMask[[1]]) |> st_as_sf()
   # Remove small gaps using the earlier freqs subset
-  gaps <- filter(gapMaskShape, gap_id %in% validGaps)
+  gaps <- tidyterra::filter(gapMask, gap_id %in% validGaps)
   
   return(gaps)
 }
+
+
+# Calculate gap metrics function
+# This function takes a gaps raster (produced by gapsToRast function) and calculates metrics defined in 0_setup script
+# Uses landscapemetrics package
+# The function returns a df
+
+# gap_raster is the gaps object
+# site_ID is the ID of the site on which metrics are being calculated
+calculate_gap_metrics = function(gap_raster, site_ID) {
+  
+  df =
+    calculate_lsm(landscape = gap_raster,
+                  level = c("patch", "landscape"),
+                  what = c(p_metrics, l_metrics)) %>% 
+    
+    # pivot wider to give one row per gap/site
+    pivot_wider(names_from = metric,
+                values_from = value) %>%
+    
+    # add site ID
+    mutate("site_id" = site_ID,
+           .before = id) %>%
+    
+    # tidy
+    select(-c(layer, class, id))
+  
+  return(df)
+}
+
 
 # Effective canopy layer function----#!
 # Entropy function to operate at varying resolutions
@@ -80,6 +100,7 @@ canopyEntropy <- function(heights, strata){
   return(effectiveCanopyLayers)
 }
 
+
 # This function takes a CHM and masks it by a corresponding shapefile to remove edge effects
 # It then calculates Shannon's diversity index using chm values based on user defined canopy height bins
 # Strata is user defined height bins
@@ -87,7 +108,6 @@ effCanopyLayer <- function(chm, shape, strata){
   
   chmMask <- mask(chm, st_buffer(shape,-5))
   canopyLayers <- canopyEntropy(values(chm), strata = strata)
-  
 }
 
 
@@ -98,9 +118,8 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
   chm <- mask(chm, st_buffer(shape, 10))
   effCanopyRaster <- raster_metrics(chm,
                                     fun = function(x)
-                                    data.frame(effCanopy = canopyEntropy(x, strata = strata)),
+                                      data.frame(effCanopy = canopyEntropy(x, strata = strata)),
                                     res = res
-                                    )
-  return(effCanopyRaster)
-  
+  )
+  return(effCanopyRaster)  
 }
