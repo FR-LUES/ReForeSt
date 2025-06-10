@@ -6,6 +6,7 @@
 # need a line to install?
 
 library(tidyverse)
+library(tidyterra)
 library(hablar) # convert() function
 library(sf)
 library(terra)
@@ -21,6 +22,7 @@ path_data = "data/"
 path_test_data = paste0(path_data, "test_data/")
 path_test_data_las = paste0(path_test_data, "point_clouds/")
 path_test_data_shp = paste0(path_test_data, "shapes/")
+path_test_data_chm = paste0(path_test_data, "chms/")
 
 path_DASH_las = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised"
 
@@ -32,7 +34,21 @@ path_outputs_gap = paste0(path_outputs, "gap_analysis/")
 
 # gap analysis
 
-gapHeight = 1 # units, m?
-gapSize = 0.2 # units, ha?
+gapHeight = 1 # m
+gapSize = 5 # m2
+
+p_metrics = c("lsm_p_area",
+              "lsm_p_perim",
+              "lsm_p_para",
+              "lsm_p_enn")
+
+l_metrics = c("lsm_l_np",
+              "lsm_l_pd",
+              "lsm_l_area_mn",
+              "lsm_l_area_sd",
+              "lsm_l_enn_mn",
+              "lsm_l_enn_sd",
+              "lsm_l_cohesion")
+
 
 
