@@ -13,6 +13,7 @@ library(terra)
 library(lidR)
 library(lidaRtRee)
 library(landscapemetrics)
+library(GLCMTextures)
 
 ##### paths
 
@@ -28,7 +29,7 @@ path_DASH_las = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_
 path_outputs = "outputs/"
 path_outputs_gap = paste0(path_outputs, "gap_analysis/")
 path_outputs_effCan = paste0(path_outputs, "effective_canopy_layers/")
-
+path_outputs_texture = paste0(path_outputs, "textureMetrics/")
 
 ##### constants
 

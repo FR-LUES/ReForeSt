@@ -1,10 +1,10 @@
 # # This section is only for testing functions ---- !#
 # 
 # 
-# # Read in constants
+# # # Read in constants
 # source("code/0_setup.R")
-# 
-# # Read in test data and reorder shapefiles
+# # 
+# # # Read in test data and reorder shapefiles
 # shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
 # shapes <- chmMatch(path_test_data_chm, shapes)
 # chms <- map(dir(path_test_data_chm), function(x) rast(paste0(path_test_data_chm, x)))
@@ -123,3 +123,40 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
   )
   return(effCanopyRaster)  
 }
+
+
+
+
+
+# Texture analysis ---- !#
+# This function converts a raster to a GLCM texture matrix
+# The function returns descriptive metrics relating to its contrast and entropy
+# These are returned as a list
+
+chmTexture <- function(chm, shape){
+  # Coerce chm values into discrete height bins
+  levels <- chm |> values() |> na.omit() |> max() |> ceiling()
+  rasterDiscrete <- quantize_raster(chm, n_levels = levels, quant_method = "range")
+  
+  # mask raster by the shape to remove edge effects
+  rasterMask <- mask(rasterDiscrete, st_buffer(shape, -10))
+  
+  # Calculate texture rasters
+  glcmRasters <- glcm_textures(rasterMask, quant_method = "none", w = 5, n_levels = levels, shift = c(1, 1))
+  
+  # entropy values
+  glcmEntropy_mean <- glcmRasters$glcm_entropy |> values() |> na.omit() |> mean()
+  glcmEntropy_sd <- glcmRasters$glcm_entropy |> values() |> na.omit() |> sd()
+  
+  # contrast values
+  glcmContrast_mean <- glcmRasters$glcm_contrast |> values() |> na.omit() |> mean()
+  glcmContrast_sd <- glcmRasters$glcm_contrast |> values() |> na.omit() |> sd()
+  
+  # correlation values
+  glcmCorrelation_mean <- glcmRasters$glcm_correlation |> values() |> na.omit() |> mean()
+  glcmCorrelation_sd <- glcmRasters$glcm_correlation |> values() |> na.omit() |> sd()
+  
+  return(data.frame(glcmCorrelation_mean, glcmCorrelation_sd, glcmContrast_mean,
+                    glcmContrast_sd, glcmEntropy_mean, glcmEntropy_sd))
+}
+  
