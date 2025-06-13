@@ -1,5 +1,9 @@
+# Preamble ---- !#
 source("code/0_setup.R")
 source("code/1_Functions.R")
+
+
+
 
 # Clean and tidy data ---- !# 
 # Read in shapefiles 
@@ -14,8 +18,8 @@ chmRange <- seq(1:length(chms))
 
 
 
-# ---- !# Extract site level Top height diversity metric
-siteTHD <- map(chmRange, .f = function(x) effCanopyLayer(chms[[x]],
+# Extract site level Top height diversity metric ---- !# 
+siteEffCan <- map(chmRange, .f = function(x) effCanopyLayer(chms[[x]],
                                                          shapes[x,],
                                                          strata = strata))
 
@@ -48,3 +52,18 @@ map(chmRange, .f = function(x) writeRaster(thd10M[[x]],
                                                           "effectiveCanopyRasters_10mRes/",
                                                           shapes[x,]$ID, ".tif")))
 
+
+# Extract and save numerical data ---- !#
+# Site IDs
+siteID <- shapes$ID
+# mean and sd 10 m res gridded effective number of canopy layers
+mean10mEffCan <- map(chmRange, function(x) mean(values(effCan10M[[x]]), na.rm = TRUE))
+sd10mEffCan <- map(chmRange, function(x) sd(values(effCan10M[[x]]), na.rm = TRUE))
+# mean and sd 30 m res gridded effective number of canopy layers
+mean30mEffCan <- map(chmRange, function(x) mean(values(effCan30M[[x]]), na.rm = TRUE))
+sd30mEffCan <- map(chmRange, function(x) sd(values(effCan30M[[x]]), na.rm = TRUE))
+# Join as dataframe and save
+metricsDF <- data.frame(ID = siteID, siteEffCan = siteEffCan,
+                        mean10mEffCan = mean10mEffCan, sd10mEffCan = sd10mEffCan,
+                        mean30mEffCan = mean30mEffCan, sd30mEffCan = sd30mEffCan)
+write.csv(metricsDF, paste0(path_outputs_effCan, "effectiveCanopy_layers.csv"))
