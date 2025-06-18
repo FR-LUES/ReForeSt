@@ -19,7 +19,8 @@
 # Function to match the order of polygons and chms
 chmMatch <- function(chmDir, Shapes){
   Files <- dir(chmDir) # Find files in the folder
-  chmIds <- as.numeric(gsub("\\.tif$", "", Files)) # Remove file name extensions and turn numeric
+  #chmIds <- as.numeric(gsub("\\.tif$", "", Files)) # Remove file name extensions and turn numeric
+  chmIds <- gsub("\\.tif$", "", Files) # Remove file name extensions
   shapes_reordered <- Shapes[match(chmIds, Shapes$ID),]
   return(shapes_reordered)
 }

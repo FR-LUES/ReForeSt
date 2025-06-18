@@ -17,12 +17,6 @@ if(nrow(shapes) != length(chms)){
   break()
 }
 
-
-
-### functions (move to 1_ script?)
-
-
-
 ### loop over sites
 
 datalist_metrics = list()
