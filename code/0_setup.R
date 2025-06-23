@@ -19,11 +19,15 @@ library(GLCMTextures)
 
 path_data = "data/"
 
+
 path_data_shp = paste0(path_data, "shapefiles/")
 path_data_chm = paste0(path_data, "chms/")
 
+
 path_test_data = paste0(path_data, "test_data/")
-path_test_data_las = paste0(path_test_data, "point_clouds/")
+path_test_lasClipped = paste0(path_test_data, "clipped_pointClouds/")
+path_test_data_lasNormalised = paste0(path_test_data, "normalised_pointClouds/")
+
 path_test_data_shp = paste0(path_test_data, "shapes/")
 path_test_data_chm = paste0(path_test_data, "chms/")
 
@@ -37,6 +41,7 @@ path_outputs_texture = paste0(path_outputs, "textureMetrics/")
 ##### constants
 
 # gap analysis
+
 
 gapHeight = 2 # maximum height from ground in m
 gapSize = 5 # minimum area in m2

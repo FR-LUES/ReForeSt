@@ -16,6 +16,16 @@
 # structural metrics from the clipped and normalised NLP data.
 
 # Functions ---- #!
+# A fill NA function for remove pits in chms
+fill.na <- function(x, i=5)
+{ if (is.na(x)[i])
+{ return(mean(x, na.rm = TRUE)) } else 
+      { return(x[i]) }}
+
+
+
+
+
 # Function to match the order of polygons and chms
 chmMatch <- function(chmDir, Shapes){
   Files <- dir(chmDir) # Find files in the folder
