@@ -38,6 +38,7 @@ path_outputs_gap = paste0(path_outputs, "gap_analysis/")
 path_outputs_effCan = paste0(path_outputs, "effective_canopy_layers/")
 path_outputs_texture = paste0(path_outputs, "textureMetrics/")
 
+
 ##### constants
 
 # gap analysis
