@@ -19,50 +19,53 @@ if(nrow(shapes) != length(chms)){
 
 ### loop over sites
 
-datalist_metrics = list()
+datalist_metrics <- list()
 
 for (n in 1:nrow(shapes)) {
   
-  site_boundary = shapes[n, ]
-  site_chm = chms[[n]]
+  site_boundary <- shapes[n, ]
+  site_chm <- chms[[n]]
   
   # extract gaps
-  gaps = gapsToRast(site_chm, site_boundary)
+  gaps <- gapsToRast(site_chm, site_boundary)
   
   # calculate metrics
-  df_metrics = calculate_gap_metrics(gaps[[1]], site_boundary$ID)
+  df_metrics <- calculate_gap_metrics(gaps[[1]], site_boundary$ID)
+ 
+  # add site area and gap proportion
+  df_metrics <-
+    df_metrics %>% 
+    dplyr::mutate(site_area = st_area(site_boundary) / 10000, # convert m2 to ha
+                  gap_prop = ta / site_area)
   
   # add to datalist
-  datalist_metrics[[n]] = df_metrics
+  datalist_metrics[[n]] <- df_metrics
   print(n)
   
   # tidy
   rm(site_boundary, gaps, df_metrics)
 } 
 
-### compile and produce gap and site specific dfs
+### compile and produce gap- and site-specific dataframes
 
-df_metrics_all = dplyr::bind_rows(datalist_metrics)
+df_metrics_all <- dplyr::bind_rows(datalist_metrics)
 rm(datalist_metrics)
 
-df_p_metrics_all =
+df_p_metrics_all <-
   df_metrics_all %>% 
   filter(level == "patch") %>% 
-  select(c("level", "site_id", str_remove(p_metrics, "lsm_p_")))
+  select(c("level", "site_id", "gap_id", str_remove(p_metrics, "lsm_p_")))
   
-df_l_metrics_all =
+df_l_metrics_all <-
   df_metrics_all %>% 
   filter(level == "landscape") %>% 
-  select(c("level", "site_id", str_remove(l_metrics, "lsm_l_")))
+  select(c("level", "site_id", "site_area", "gap_prop", str_remove(l_metrics, "lsm_l_")))
 
 ### write out 
-# gap height and area constants included in filename. Inclusion of fullstop not ideal.
+# gap height and area constants included in filename
 
-path_out_p = paste0(path_outputs_gap, "gap_metrics_gaps_height_", gapHeight, "_area_", gapSize, ".csv")
-path_out_l = paste0(path_outputs_gap, "gap_metrics_sites_height_", gapHeight, "_area_", gapSize, ".csv")
+path_out_p <- paste0(path_outputs_gap, "gap_metrics_gaps_height_", gapHeight, "_area_", gapSize, ".csv")
+path_out_l <- paste0(path_outputs_gap, "gap_metrics_sites_height_", gapHeight, "_area_", gapSize, ".csv")
 
 write.csv(df_p_metrics_all, file = path_out_p)
 write.csv(df_l_metrics_all, file = path_out_l)
-
-
-# we could also join metrics to sf objects (of gaps / site boundary) and write shapefiles
