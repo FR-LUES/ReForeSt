@@ -82,7 +82,8 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
                 values_from = value) %>%
     
     # add site ID
-    mutate("site_id" = site_ID,
+    mutate("gap_id" = id,
+           "site_id" = site_ID,
            .before = id) %>%
     
     # tidy
