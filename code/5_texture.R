@@ -1,18 +1,18 @@
-# Preamble ---- !#
-source("code/0_setup.R")
-source("code/1_Functions.R")
+# Now run in execution script ---- !#
 
+# # Preamble ---- !#
+# source("code/0_setup.R")
+# source("code/1_Functions.R")
 
+# # Clean and tidy data ---- !# 
+# # Read in shapefiles 
+# shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
+# # Read in chms
+# chms <- map(dir(path_test_data_chm), function(x)
+#   rast(paste0(path_test_data_chm, x)))
+# # Order shapes to match chms
+# shapes <- chmMatch(path_test_data_chm, shapes)
 
-
-# Clean and tidy data ---- !# 
-# Read in shapefiles 
-shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
-# Read in chms
-chms <- map(dir(path_test_data_chm), function(x)
-  rast(paste0(path_test_data_chm, x)))
-# Order shapes to match chms
-shapes <- chmMatch(path_test_data_chm, shapes)
 # Define range list for map functions
 chmRange <- seq(1:length(chms))
 
