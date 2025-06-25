@@ -36,7 +36,7 @@ dsms <- map(1:length(clipped),
 pointsNormalized <- map(1:length(clipped), 
                         function(x)
                           clipped[[x]] - dtms[[x]])
-map(1:length(pointsNormalized), function(x) writeLAS(pointsNormalized[[x]], paste0(path_test_data_lasNormalised, names[[x]], ".laz")))
+map(1:length(pointsNormalized), function(x) writeLAS(pointsNormalized[[x]], paste0(path_DASH_lasNormalised, names[[x]], ".laz")))
 
 
 # Create chms ---- !#
@@ -52,6 +52,6 @@ chmsSmooth <- map(chmsCleaned, function(x)
   focal(x, w = 3, fun =  mean))
 
 #save chms
-map(1:length(chmsSmooth), .f = function(x) writeRaster(chmsSmooth[[x]], paste0(path_test_data_chm, names[[x]],".tif"), overwrite = TRUE))
+map(1:length(chmsSmooth), .f = function(x) writeRaster(chmsSmooth[[x]], paste0(path_data_chm, names[[x]],".tif"), overwrite = TRUE))
 
 

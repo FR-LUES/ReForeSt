@@ -61,7 +61,7 @@ df_p_metrics_all =
 df_l_metrics_all =
   df_metrics_all %>% 
   filter(level == "landscape") %>% 
-  select(c("level", "site_id", str_remove(l_metrics, "lsm_l_")))
+  select(c("level", "site_id", "site_area", "gap_prop", str_remove(l_metrics, "lsm_l_")))
 
 ### write out 
 # gap height and area constants included in filename. Inclusion of fullstop not ideal.

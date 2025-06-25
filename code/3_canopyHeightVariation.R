@@ -31,7 +31,7 @@ siteEffCan <- map(chmRange, .f = function(x) effCanopyLayer(chms[[x]],
 
 
 # Gridded effective canopy layer rasters
-# Create thd rasters
+# Create the rasters
 # 30 m 
 effCan30M <- map(chmRange, .f = function(x) zonal_effCanopyLayer(chms[[x]],
                                                                  shapes[x,],
@@ -46,16 +46,18 @@ effCan10M <- map(chmRange, .f = function(x) zonal_effCanopyLayer(chms[[x]],
 # Save rasters in outputs
 # 30 m
 map(chmRange, .f = function(x) writeRaster(effCan30M[[x]],
-                                                 filetype = "Gtiff",
-                                                 paste0(path_outputs,
-                                                        "effectiveCanopyRasters_30mRes/",
-                                                        shapes[x,]$ID,".tif")))
+                                          filetype = "Gtiff",
+                                          paste0(path_outputs,
+                                                 "effectiveCanopyRasters_30mRes/",
+                                                 shapes[x,]$ID,".tif"),
+                                          overwrite = TRUE))
 # 10 m
 map(chmRange, .f = function(x) writeRaster(effCan10M[[x]],
-                                                   filetype = "Gtiff",
-                                                   paste0(path_outputs,
-                                                          "effectiveCanopyRasters_10mRes/",
-                                                          shapes[x,]$ID, ".tif")))
+                                          filetype = "Gtiff",
+                                          paste0(path_outputs,
+                                                 "effectiveCanopyRasters_10mRes/",
+                                                 shapes[x,]$ID, ".tif"),
+                                          overwrite = TRUE))
 
 
 # Extract and save numerical data ---- !#
