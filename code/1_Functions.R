@@ -81,7 +81,7 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
     pivot_wider(names_from = metric,
                 values_from = value) %>%
     
-    # add site ID
+    # add IDs
     mutate("gap_id" = id,
            "site_id" = site_ID,
            .before = id) %>%

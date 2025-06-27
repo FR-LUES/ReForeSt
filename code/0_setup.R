@@ -22,18 +22,19 @@ path_data = "data/"
 path_data_shp = paste0(path_data, "shapefiles/")
 path_data_chm = paste0(path_data, "chms/")
 
-#path_test_data = paste0(path_data, "test_data/")
-#path_test_lasClipped = paste0(path_test_data, "clipped_pointClouds/")
-#path_test_data_lasNormalised = paste0(path_test_data, "normalised_pointClouds/")
+path_test_data = paste0(path_data, "test_data/")
+path_test_lasClipped = paste0(path_test_data, "clipped_pointClouds/")
+path_test_data_lasNormalised = paste0(path_test_data, "normalised_pointClouds/")
 
-#path_test_data_shp = paste0(path_test_data, "shapes/")
-#path_test_data_chm = paste0(path_test_data, "chms/")
+path_test_data_shp = paste0(path_test_data, "shapes/")
+path_test_data_chm = paste0(path_test_data, "chms/")
 
 path_DASH_lasClipped = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/clipped"
 path_DASH_lasNormalised = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised"
 
 path_outputs = "outputs/"
 path_outputs_gap = paste0(path_outputs, "gap_analysis/")
+path_outputs_gap_sensitivity = paste0(path_outputs, "gap_sensitivity_analysis/")
 path_outputs_effCan = paste0(path_outputs, "effective_canopy_layers/")
 path_outputs_texture = paste0(path_outputs, "textureMetrics/")
 

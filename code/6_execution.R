@@ -25,6 +25,11 @@ source("code/4_gap_analysis.R")
 source("code/5_texture.R")
 
 # Combine dataframe ---- !#
-master_metrics_df <- effCanDF |> left_join(df_l_metrics_all, by = c("ID" = "site_id")) |>
-  left_join(textureMetrics_df, by = "ID")
+master_metrics_df <-
+  effCanDF |>
+  left_join(df_l_metrics_all %>% select(-level),
+            by = c("ID" = "site_id")) |>
+  left_join(textureMetrics_df,
+            by = "ID")
+
 write_csv(master_metrics_df, paste0(path_outputs, "masterMetrics_df.csv"))
