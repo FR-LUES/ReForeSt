@@ -44,7 +44,7 @@ path_outputs_texture = paste0(path_outputs, "textureMetrics/")
 # gap analysis
 
 
-gapHeight = 2 # maximum height from ground in m
+gapHeight = 2 # minimum height from ground in m
 gapSize = 5 # minimum area in m2
 
 p_metrics = c("lsm_p_area",
