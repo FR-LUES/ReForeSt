@@ -15,17 +15,11 @@
 # This script is to define functions needed to extract
 # structural metrics from the clipped and normalised NLP data.
 
-# Functions ---- #!
-# A fill NA function for remove pits in chms
-fill.na <- function(x, i=5)
-{ if (is.na(x)[i])
-{ return(mean(x, na.rm = TRUE)) } else 
-      { return(x[i]) }}
 
 
 
 
-
+# Utility functions ---- !#
 # Function to match the order of polygons and chms
 chmMatch <- function(chmDir, Shapes){
   Files <- dir(chmDir) # Find files in the folder
@@ -35,7 +29,11 @@ chmMatch <- function(chmDir, Shapes){
   return(shapes_reordered)
 }
 
-# Gap fraction function
+
+
+
+
+# Gap fraction ---- !# 
 # This function takes a canopy height model and turns it into a raster denoting forest gaps
 # The function returns an SpatRaster object
 
@@ -93,7 +91,11 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
 }
 
 
-# Effective canopy layer function----#!
+
+
+
+
+# Top canopy heights----#!
 # Entropy function to operate at varying resolutions
 canopyEntropy <- function(heights, strata){
   # Tidy some ground heights
@@ -140,6 +142,9 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
 
 
 
+
+
+
 # Texture analysis ---- !#
 # This function converts a raster to a GLCM texture matrix
 # The function returns descriptive metrics relating to its contrast and entropy
@@ -147,7 +152,8 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
 
 chmTexture <- function(chm, shape){
   # Coerce chm values into discrete height bins
-  levels <- chm |> values() |> na.omit() |> max() |> ceiling()
+  levels <- chm |> values() |> na.omit() |>
+    max() |> ceiling()
   rasterDiscrete <- quantize_raster(chm, n_levels = levels, quant_method = "range")
   
   # mask raster by the shape to remove edge effects
@@ -157,18 +163,56 @@ chmTexture <- function(chm, shape){
   glcmRasters <- glcm_textures(rasterMask, quant_method = "none", w = 5, n_levels = levels, shift = c(1, 1))
   
   # entropy values
-  glcmEntropy_mean <- glcmRasters$glcm_entropy |> values() |> na.omit() |> mean()
-  glcmEntropy_sd <- glcmRasters$glcm_entropy |> values() |> na.omit() |> sd()
+  glcmEntropy_mean <- glcmRasters$glcm_entropy |> values() |>
+    na.omit() |> mean()
+  glcmEntropy_sd <- glcmRasters$glcm_entropy |> values() |>
+    na.omit() |> sd()
   
   # contrast values
-  glcmContrast_mean <- glcmRasters$glcm_contrast |> values() |> na.omit() |> mean()
-  glcmContrast_sd <- glcmRasters$glcm_contrast |> values() |> na.omit() |> sd()
+  glcmContrast_mean <- glcmRasters$glcm_contrast |> values() |>
+    na.omit() |> mean()
+  glcmContrast_sd <- glcmRasters$glcm_contrast |> values() |>
+    na.omit() |> sd()
   
   # correlation values
-  glcmCorrelation_mean <- glcmRasters$glcm_correlation |> values() |> na.omit() |> mean()
-  glcmCorrelation_sd <- glcmRasters$glcm_correlation |> values() |> na.omit() |> sd()
+  glcmCorrelation_mean <- glcmRasters$glcm_correlation |> values() |>
+    na.omit() |> mean()
+  glcmCorrelation_sd <- glcmRasters$glcm_correlation |> values() |>
+    na.omit() |> sd()
   
   return(data.frame(glcmCorrelation_mean, glcmCorrelation_sd, glcmContrast_mean,
                     glcmContrast_sd, glcmEntropy_mean, glcmEntropy_sd))
 }
   
+
+
+
+
+# Foliage Height Diversity ---- !#
+# This function is to calculate the eveness of foliage spread through the vertical canopy
+# It can be caculated at the site level or at the cell level
+# To correct for occlusion from higher canopy levels we calculate foliage density
+# only including points that actually reached each canopy layer
+las <- readLAS(paste0(path_test_data_lasNormalised, "1105206.laz"))
+cloud <- las@data$Z
+FHD <- function(cloud, maxHeight){# Cloud is a vector of heights
+  # Calculate the LAD profile of the height vector
+  ladDF <- LAD(cloud, dz = 2, z0 = 1, k = 0.3)
+  
+  # Filter out any NA or zero LAD values to avoid log(0)
+  ladDF <- ladDF[ladDF$lad > 0, ]
+  
+  # Proportional LAD in each layer
+  ladDF$prop <- (ladDF$lad / sum(ladDF$lad)) |> round(6)
+
+  # Shannon entropy
+  H <- -sum(ladDF$prop * log(ladDF$prop))
+  
+  # Maximum possible entropy (uniform distribution)
+  Hmax <- log(length(seq(2, max(cloud), by = 2)))
+  
+  # Shannon's eveness
+  E <- H / Hmax
+  
+  return(E)
+}
