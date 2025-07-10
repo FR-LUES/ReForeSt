@@ -1,21 +1,30 @@
 source("code/Analysis/0_setup.R")
+# This script explores correlations between structural variables to identify redundancies
 
-# read in data
+# Read in the structural data ---- !#
 structure <- read.csv(structure_path)
-plant <- read.csv(plant_path)
 
 
-# Merge data
-df <- left_join(plant, structure, by = "ID")
+# Plot a correlation matrix ---- !#
+structure |>
+  select(siteEffCan, mean30mEffCan, gap_prop,
+         patch_den, cohesion, area_mn,
+         glcmContrast_mean, glcmEntropy_mean) |>
+  ggpairs(structure[, -c(1)])
+
+
+
 
 # View relationships
-sppVar <- df$sppWoodland
+
 df  |> select(spp, stemDensityHA, dbhMean, dbhSD,
               area_ha, siteEffCan, mean10mEffCan, 
               sd10mEffCan, mean30mEffCan, sd30mEffCan,
               gap_prop, patch_den, , area_mn,
               area_sd, cohesion, glcmEntropy_mean, glcmEntropy_sd,
-              glcmContrast_mean, glcmContrast_sd) |>
+             glcmContrast_mean, glcmContrast_sd) |> pairs()
+  
+  
   pivot_longer(-c(spp), names_to = "Variable", values_to = "Value") |>
   ggplot(aes(x = Value, y = spp))+
   geom_point()+

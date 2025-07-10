@@ -1,5 +1,7 @@
 # Packages
 library(tidyverse)
+library(GGally)
+library(lavaan)
 
 # Paths
 # Data path
