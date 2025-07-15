@@ -3,8 +3,7 @@ source("code/Analysis/0_setup.R")
 
 # Plot a correlation matrix ---- !#
 structure |>
-  select(siteEffCan, mean30mEffCan, gap_prop,
-         patch_den, cohesion, area_mn,
-         glcmContrast_mean, glcmEntropy_mean) |>
-  ggpairs(structure[, -c(1)])
+  inner_join(plants, by = "ID") |>
+  select(siteEffCan, mean30mEffCan, gap_prop, dbhSD, spp) |>
+  ggpairs()
 

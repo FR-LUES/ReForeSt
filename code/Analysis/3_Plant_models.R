@@ -1,5 +1,5 @@
 source("code/Analysis/0_setup.R")
-View(plantData)
+
 # Merge data ---- !#
 plantData <- structure |>
   inner_join(plants, by = "ID") |>
@@ -7,13 +7,14 @@ plantData <- structure |>
 
 # Build model paths ---- !#
 # Total species richness response
-sppResponse <- bf(spp ~ mean30mEffCan + gap_prop + area_ha + Age + Type + Source)
+sppResponse <- bf(spp ~ medVar1 + medVar2 + medVar3 + area_ha + Age + Type + Source)
 
 
 
+plot(plantData$Type, plantData$spp)
 
 
-
+View(plantData)
 
 
 
