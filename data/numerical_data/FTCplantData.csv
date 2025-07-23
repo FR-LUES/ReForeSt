@@ -1,0 +1,1685 @@
+Source,Type,Site,ID,plotID,treeNumber,Species,Latin.name,h.Code,Tree
+FTC,Mature,BF,BF_M1,BFMature1110,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature11210,,Cowslip,Primula veris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature11210,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature11210,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature1210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature12210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature13125,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13125,,Garlic mustard,Alliaria petiolata,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13125,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13125,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature13235,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,BF,BF_M1,BFMature13235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature13235,,Spurge laurel,Daphne laureola,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature13235,,Garlic mustard,Alliaria petiolata,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature14125,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature14125,,Cowslip,Primula veris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature14125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature14235,,Cowslip,Primula veris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature14235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15150,,Cowslip,Primula veris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15150,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15150,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15150,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15260,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15260,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature15260,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature15260,,Unknown seedling,,Non-woodland,1
+FTC,Mature,BF,BF_M1,BFMature16150,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,BF,BF_M1,BFMature16260,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature2110,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature21210,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature2210,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature22210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature23125,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature23235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature24125,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,BF,BF_M1,BFMature24125,,Privet seedling,Ligustrum vulgare,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature24125,,Elder,Sambucus nigra,Non-woodland,1
+FTC,Mature,BF,BF_M1,BFMature24235,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature25150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,BF,BF_M1,BFMature25260,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature26150,,N/A,NA,Non-woodland,0
+FTC,Mature,BF,BF_M1,BFMature26260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,BF,BF_P1,BFPL1110,,Red clover,Trifolium pratense,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL1110,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL1110,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL1110,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL11210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL11210,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,BF,BF_P1,BFPL12210,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,BF,BF_P1,BFPL12210,,Dog violet,Viola riviniana,Specialist,0
+FTC,PL,BF,BF_P1,BFPL1210,,N/A,NA,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL13125,,Blackthorn,Prunus spinosa,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL13125,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL13125,,Wild morning glory,Calystegia macrostegia,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL13235,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL13235,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,BF,BF_P1,BFPL13235,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL13235,,Ivy,Hedera helix,Generalist,0
+FTC,PL,BF,BF_P1,BFPL13235,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL13235,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL14125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,BF,BF_P1,BFPL14235,,Wood millet,Milium effusum,Specialist,0
+FTC,PL,BF,BF_P1,BFPL14235,,Blackthorn,Prunus spinosa,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL15125,,Golden ragwort,Senecio sp.,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL15125,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL15125,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,PL,BF,BF_P1,BFPL15235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL15235,,Forget-me-not sp.,Myosotis sp.,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL16260,,Wood millet,Milium effusum,Specialist,0
+FTC,PL,BF,BF_P1,BFPL16260,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL16150,,N/A,NA,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL2110,,Hoary plantain,Plantago media,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL2110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,BF,BF_P1,BFPL2110,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,BF,BF_P1,BFPL2110,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,PL,BF,BF_P1,BFPL2110,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,PL,BF,BF_P1,BFPL21210,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL22210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,BF,BF_P1,BFPL22210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,BF,BF_P1,BFPL22210,,Privet,Ligustrum vulgare,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL2210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23235,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23235,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,BF,BF_P1,BFPL23235,,Bare ground,,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL24125,,N/A,NA,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL24235,,Oak,Quercus sp.,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL25260,,Leaf litter,,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL25260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,BF,BF_P1,BFPL25260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL25260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,BF,BF_P1,BFPL25150,,Leaf litter,,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL25150,,Bare ground,,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL25150,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,PL,BF,BF_P1,BFPL25150,,Sycamore,Acer pseudoplatanus,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL25150,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,BF,BF_P1,BFPL25150,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,PL,BF,BF_P1,BFPL26260,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL26260,,Cut-leaved cranes-bill,Geranium dissectum,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL26260,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,BF,BF_P1,BFPL26260,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,BF,BF_P1,BFPL26260,,Wild morning glory,Calystegia macrostegia,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL26260,,Red clover,Trifolium pratense,Non-woodland,0
+FTC,PL,BF,BF_P1,BFPL26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,BF,BF_P1,BFPL26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,BF,BF_P1,BFPL26150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature1110,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature1110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature11210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature11210,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature11210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature11210,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature11210,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature1210,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature1210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature12210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature13125,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature13125,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature13125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature13235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature13235,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature13235,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature13235,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature14125,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature14125,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature14125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature14235,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature14235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature15150,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature15150,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature15150,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature15150,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature15260,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature15260,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,CS,CS_M1,CSMature16150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature16150,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature16150,,Ivy-leaved speedwell,Veronica hederifolia,Generalist,0
+FTC,Mature,CS,CS_M1,CSMature16150,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature16150,,Hazel seedling,Corylus avellana,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature16150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature16260,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,CS,CS_M1,CSMature16260,,Ramsons,Allium ursinum,Specialist,0
+FTC,Mature,CS,CS_M1,CSMature16260,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Bracken,Pteridium aquilinum,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature2110,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature21210,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature21210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature21210,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature2210,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature2210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature2210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature2210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature22210,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature22210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature22210,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature22210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature22210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature22210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature23125,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature23125,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature23125,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature23125,,Water,,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature23235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature23235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature23235,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature23235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature23235,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24125,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature24125,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24125,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Garlic mustard,Alliaria petiolata,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature24235,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature25150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature25150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature25150,,Water,,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature25150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature25260,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature25260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature25260,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Wych elm seedling,Ulmus glabra,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature26150,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature26150,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature26150,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature26260,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M2,CSMature26260,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature3110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature31210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature31210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature31210,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature3210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature3210,,Common chickweed,Stellaria media,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature3210,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature3210,,Water,,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature32210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature32210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature32210,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature33125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature33125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature33235,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,CS,CS_M2,CSMature34125,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,Mature,CS,CS_M2,CSMature34125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,CS,CS_M2,CSMature34235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature4110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature4110,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature4110,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature4110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,CS,CS_M4,CSMature4110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature41210,,N/A,NA,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature4210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature42210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature42210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature42210,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature42210,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature43125,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature43235,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature43235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature43235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature44125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature44125,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,CS,CS_M4,CSMature44235,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature44235,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature44235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature45125,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,Mature,CS,CS_M4,CSMature45235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature45235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature45235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature46150,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,Mature,CS,CS_M4,CSMature46150,,N/A,NA,Non-woodland,0
+FTC,Mature,CS,CS_M4,CSMature46260,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,PL,CS,CS_P1,CSPL2110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,CS,CS_P1,CSPL2110,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL2110,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL2110,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL21210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,CS,CS_P1,CSPL21210,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL21210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL21210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,CS,CS_P1,CSPL21210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL21210,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL21210,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,PL,CS,CS_P1,CSPL21210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,CS,CS_P1,CSPL2210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,CS,CS_P1,CSPL2210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL2210,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,PL,CS,CS_P1,CSPL2210,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL2210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL2210,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL22210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL22210,,N/A,NA,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL23125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL23235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL23235,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL23235,,Ivy,Hedera helix,Generalist,0
+FTC,PL,CS,CS_P1,CSPL24125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,CS,CS_P1,CSPL24125,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,PL,CS,CS_P1,CSPL24125,,White clover,Trifolium repens,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL24125,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,CS,CS_P1,CSPL24125,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL24125,,Spindle,Euonymus europaeus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL24125,,Sycamore seedling,Acer pseudoplatanus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL24235,,Ivy,Hedera helix,Generalist,0
+FTC,PL,CS,CS_P1,CSPL24235,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL24235,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,CS,CS_P1,CSPL24235,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,CS,CS_P1,CSPL25150,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,PL,CS,CS_P1,CSPL25150,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL25260,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL25260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,CS,CS_P1,CSPL25260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL26150,,Tutsan (Hypericium sp),Hypericum androsaemum,Specialist,0
+FTC,PL,CS,CS_P1,CSPL26150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,CS,CS_P1,CSPL26260,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL26260,,Selfheal,Prunella vulgaris,Generalist,0
+FTC,PL,CS,CS_P1,CSPL26260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,CS,CS_P1,CSPL26260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL1110,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,CS,CS_P1,CSPL1110,,Unknown seedling,,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL1110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL11210,,Ivy,Hedera helix,Generalist,0
+FTC,PL,CS,CS_P1,CSPL11210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL11210,,N/A,NA,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL1210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL12210,,Unknown seedling,,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL12210,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,PL,CS,CS_P1,CSPL12210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,PL,CS,CS_P1,CSPL13125,,Golden ragwort,Senecio sp.,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL13125,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL13125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,CS,CS_P1,CSPL13125,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,CS,CS_P1,CSPL13235,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL13235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,CS,CS_P1,CSPL13235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,CS,CS_P1,CSPL13235,,N/A,NA,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL14125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL14235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,CS,CS_P1,CSPL14235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,PL,CS,CS_P1,CSPL14235,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL14235,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL15150,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,CS,CS_P1,CSPL15150,,Moss,Bryophyta ,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL15150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,CS,CS_P1,CSPL15150,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,PL,CS,CS_P1,CSPL15150,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,PL,CS,CS_P1,CSPL15260,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,CS,CS_P1,CSPL15260,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL15260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,CS,CS_P1,CSPL15260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL15260,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,CS,CS_P1,CSPL16150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,CS,CS_P1,CSPL16260,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature1110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature1110,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature1110,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature11210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M1,DPMature11210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature1210,,Wood spurge,Euphorbia amygdaloides,Specialist,0
+FTC,Mature,DP,DP_M1,DPMature1210,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,DP,DP_M1,DPMature1210,,Creeping cinquefoil,Potentilla reptans,Generalist,0
+FTC,Mature,DP,DP_M1,DPMature1210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature1210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M1,DPMature12210,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature13125,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M1,DPMature13235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature13235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature14125,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M1,DPMature14235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M1,DPMature14235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M1,DPMature14235,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature15150,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature15260,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature16150,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M1,DPMature16260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature2110,,Wood spurge,Euphorbia amygdaloides,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature2110,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature2110,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature21210,,Hazel,Corylus avellana,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature21210,,Sycamore,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature21210,,Sycamore,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature2210,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature2210,,Hazel,Corylus avellana,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature2210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature2210,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature2210,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature22210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature22210,,Sycamore,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature22210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature23125,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature23235,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature23235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature23235,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature24125,,Unknown seedling,,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature24125,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature24125,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature24125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature24125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature24235,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature24235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature25145,,Sycamore seedling,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature25145,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature25255,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature25255,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature25255,,Hedge bedstraw,Galium album,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature25255,,Greater birds foot trefoil,Lotus pedunculatus,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature25255,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature26150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26150,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,DP,DP_M2,DPMature26260,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DP,DP_M2,DPMature26260,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,DP,DP_M3,DPMature3110,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature31210,,Birch,Betula sp.,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature3210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature3210,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature32210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M3,DPMature33125,,Hazel seedling,Corylus avellana,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature33125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature33125,,Hazel seedling,Corylus avellana,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature33235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature34125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature34125,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature34125,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M3,DPMature34235,,Male fern,Dryopteris filix-mas,Generalist,0
+FTC,Mature,DP,DP_M3,DPMature34235,,Hazel,Corylus avellana,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature34235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature35150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature35150,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DP,DP_M3,DPMature35260,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature35260,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature35260,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DP,DP_M3,DPMature35260,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,DP,DP_M3,DPMature35260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M3,DPMature36150,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M3,DPMature36150,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,DP,DP_M3,DPMature36260,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,DP,DP_M3,DPMature36260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature4110,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature4110,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature4110,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,DP,DP_M4,DPMature4110,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature41210,,Fescue sp.,Festuca sp.,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature41210,,Moschatel,Adoxa moschatellina,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature41210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature41210,,Common chickweed,Stellaria media,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature4210,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature4210,,Lemon balm,Melissa officinalis,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature42210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature43125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature43125,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature43235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature43235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature43235,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature43235,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M4,DPMature43235,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature44125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature44125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature44235,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DP,DP_M4,DPMature44235,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature44235,,Lemon balm,Melissa officinalis,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature45150,,Fescue sp.,Festuca sp.,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature45150,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,DP,DP_M4,DPMature45150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature45150,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature45150,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature45260,,Male fern,Dryopteris filix-mas,Generalist,0
+FTC,Mature,DP,DP_M4,DPMature46150,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature46150,,N/A,NA,Non-woodland,0
+FTC,Mature,DP,DP_M4,DPMature46260,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL2110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL2110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL21110,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,DP,DP_P1,DPPL21110,,Wood spurge,Euphorbia amygdaloides,Specialist,0
+FTC,PL,DP,DP_P1,DPPL21110,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL2210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL2210,,N/A,NA,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL22210,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,PL,DP,DP_P1,DPPL2310,,Wild angelica,Angelica sylvestris,Generalist,0
+FTC,PL,DP,DP_P1,DPPL2310,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL2310,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,DP,DP_P1,DPPL2310,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL23210,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,DP,DP_P1,DPPL23210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL23210,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,PL,DP,DP_P1,DPPL23210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL23210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,DP,DP_P1,DPPL23210,,N/A,NA,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL2410,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,PL,DP,DP_P1,DPPL24210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL24210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL24210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,DP,DP_P1,DPPL25150,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,PL,DP,DP_P1,DPPL25150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,DP,DP_P1,DPPL25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL25150,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL25150,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL25260,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL26150,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL26260,,Hoary ragwort,Jacobaea erucifolia,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL26260,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL1110,,Common fleabane,Pulicaria dysenterica,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL11210,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,DP,DP_P1,DPPL11210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL11210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL11210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL1210,,Common fleabane,Pulicaria dysenterica,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL1210,,Blackthorn seedling,Prunus spinosa,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL1210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,DP,DP_P1,DPPL1210,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,PL,DP,DP_P1,DPPL1210,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL12210,,Rosebay willowherb,Chamaenerion angustifolium,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL12210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL12210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL12210,,Birds foot trefoil,Lotus corniculatus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL12210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL13125,,Rosebay willowherb,Chamaenerion angustifolium,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL13125,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL13235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL13235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,DP,DP_P1,DPPL14125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL14125,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,DP,DP_P1,DPPL14235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DP,DP_P1,DPPL14235,,Rosebay willowherb,Chamaenerion angustifolium,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL15150,,Wild angelica,Angelica sylvestris,Generalist,0
+FTC,PL,DP,DP_P1,DPPL15260,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL15260,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,DP,DP_P1,DPPL15260,,Moss,Bryophyta ,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL16150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL16150,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL16150,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,DP,DP_P1,DPPL16150,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,DP,DP_P1,DPPL16150,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,DP,DP_P1,DPPL16260,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,DP,DP_P1,DPPL16260,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,DW,DW_M1,DWMature1110,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature1110,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature1110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature1210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature1210,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature1210,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature12210,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature12210,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature13125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature13125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,DW,DW_M1,DWMature13125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DW,DW_M1,DWMature13235,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature13235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DW,DW_M1,DWMature13235,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DW,DW_M1,DWMature14125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature14125,,Goldilocks buttercup,Ranunculus auricomus,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature14125,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature14125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature14235,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature14235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature14235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature14235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature15150,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DW,DW_M1,DWMature15150,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature15260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M1,DWMature15260,,Field maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,DW,DW_M1,DWMature16150,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M1,DWMature16260,,Broom,Cytisus scoparius,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature26150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature26260,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature25150,,Birch seedling,Betula sp.,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature25260,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature25260,,Birds foot trefoil,Lotus corniculatus,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature25260,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature25260,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature25260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature25260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature24125,,Willow sp. seedling,Salix sp.,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature24125,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature24125,,Bugle,Ajuga reptans,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature24125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Greater birds foot trefoil,Lotus pedunculatus,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature24235,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature24235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature23125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature23125,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature23125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Common fleabane,Pulicaria dysenterica,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature23235,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature2215,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature22210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature22210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature22210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature2110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature2110,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature2110,,Rosebay willowherb,Chamaenerion angustifolium,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature2110,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,Mature,DW,DW_M2,DWMature21210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DW,DW_M2,DWMature21210,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature21210,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,Mature,DW,DW_M2,DWMature21210,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,DW,DW_M2,DWMature21210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature3110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature3110,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature31210,,Birch seedling,Betula sp.,Non-woodland,1
+FTC,Mature,DW,DW_M3,DWMature31210,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature3210,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature32210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DW,DW_M3,DWMature32210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M3,DWMature32210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M3,DWMature33125,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature33125,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,DW,DW_M3,DWMature33235,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature34125,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature34235,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature35150,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature35260,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M3,DWMature36150,,Birch seedling,Betula sp.,Non-woodland,1
+FTC,Mature,DW,DW_M3,DWMature36260,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature4110,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature41210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DW,DW_M4,DWMature4210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M4,DWMature4210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,DW,DW_M4,DWMature42210,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,DW,DW_M4,DWMature43125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,DW,DW_M4,DWMature43235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,DW,DW_M4,DWMature43235,,Bracken,Pteridium aquilinum,Generalist,0
+FTC,Mature,DW,DW_M4,DWMature43235,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature44125,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,Mature,DW,DW_M4,DWMature44235,,Sycamore seedling,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DW,DW_M4,DWMature45150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature45260,,Sycamore seedling,Acer pseudoplatanus,Non-woodland,1
+FTC,Mature,DW,DW_M4,DWMature45260,,N/A,NA,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature46150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,DW,DW_M4,DWMature46260,,N/A,NA,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL1110,,Common chickweed,Stellaria media,Generalist,0
+FTC,PL,DW,DW_P1,DWPL11210,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL1210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,DW,DW_P1,DWPL1210,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL1210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL1210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,DW,DW_P1,DWPL1210,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL12210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL12210,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL13125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL13125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL13125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL13125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DW,DW_P1,DWPL13235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL13235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL14125,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL14235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,DW,DW_P1,DWPL15150,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL15150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL15260,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL16150,,Common fleabane,Pulicaria dysenterica,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL16260,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL16260,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL2110,,Blackthorn seedling,Prunus spinosa,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL2110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,DW,DW_P1,DWPL21210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,DW,DW_P1,DWPL21210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,DW,DW_P1,DWPL21210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL21210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL21210,,Ivy,Hedera helix,Generalist,0
+FTC,PL,DW,DW_P1,DWPL21210,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL21210,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL2210,,N/A,NA,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL22210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL23125,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL23125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DW,DW_P1,DWPL23125,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,DW,DW_P1,DWPL23235,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL23235,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL23235,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,PL,DW,DW_P1,DWPL24125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,DW,DW_P1,DWPL24125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24235,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL24235,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24235,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,DW,DW_P1,DWPL24235,,N/A,NA,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL25150,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,DW,DW_P1,DWPL25260,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL25260,,Herb robert,Geranium robertianum,Specialist,0
+FTC,PL,DW,DW_P1,DWPL26150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,PL,DW,DW_P1,DWPL26150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL26150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,DW,DW_P1,DWPL26260,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature1115,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,FF,FF_M1,FFMature1115,,N/A,NA,Non-woodland,0
+FTC,Mature,FF,FF_M1,FFMature11210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature13125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature13235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FF,FF_M1,FFMature13235,,Hairy st. Johns wort,Hypericum hirsutum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature1510,,Beech,Fagus sylvatica,Non-woodland,1
+FTC,Mature,FF,FF_M1,FFMature15210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature15210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,FF,FF_M1,FFMature1210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature12210,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FF,FF_M1,FFMature12210,,N/A,NA,Non-woodland,0
+FTC,Mature,FF,FF_M1,FFMature14125,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FF,FF_M1,FFMature14235,,Woodruff,Galium odoratum,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature14235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FF,FF_M1,FFMature16150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,FF,FF_M1,FFMature16150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,FF,FF_M1,FFMature16260,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Hogweed,Heracleum sphondylium,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature2110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature21210,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature21210,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature21210,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature23235,,Common mouse ear,Cerastium fontanum,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature23235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature23235,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature23125,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature25260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature25260,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FF,FF_M2,FFMature25260,,Bugle,Ajuga reptans,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature25150,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature25150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature25150,,Cranesbill,Geranium sp.,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature25150,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature26150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature26150,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature26150,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature26150,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,FF,FF_M2,FFMature26260,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature26260,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature26260,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature26260,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature26260,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature2210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature2210,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature2210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature2210,,N/A,NA,Non-woodland,0
+FTC,Mature,FF,FF_M2,FFMature2210,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature24125,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature24125,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature24125,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature24125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature24235,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,FF,FF_M2,FFMature24235,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,FF,FF_M2,FFMature24235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL2110,,Ivy,Hedera helix,Generalist,0
+FTC,PL,FF,FF_P1,FFPL2110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL2110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL2110,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL2110,,Dog violet,Viola riviniana,Specialist,0
+FTC,PL,FF,FF_P1,FFPL2110,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,FF,FF_P1,FFPL2110,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL21210,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL21210,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL21210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL21210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL21210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL21210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL21210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL2210,,Wood avens,Geum urbanum,Generalist,0
+FTC,PL,FF,FF_P1,FFPL2210,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FF,FF_P1,FFPL2210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL2210,,Maple,Acer campestre,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL22210,,N/A,NA,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL1110,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL1110,,Oak,Quercus sp.,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL1110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL11210,,Oak,Quercus sp.,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL1210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL1210,,St. johns wort,Hypericum perforatum,Generalist,0
+FTC,PL,FF,FF_P1,FFPL1210,,Wood melick,Melica uniflora,Specialist,0
+FTC,PL,FF,FF_P1,FFPL1210,,Dog violet,Viola riviniana,Specialist,0
+FTC,PL,FF,FF_P1,FFPL1210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL1210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL12210,,N/A,NA,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24235,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL24235,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FF,FF_P1,FFPL24235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24235,,Forget-me-not sp.,Myosotis sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24125,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24125,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL24125,,Oak,Quercus sp.,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL23125,,Beech,Fagus sylvatica,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL23235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL23235,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL23235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL26150,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL26150,,Hairy st. Johns wort,Hypericum hirsutum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL26260,,Oak,Quercus sp.,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL26260,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,FF,FF_P1,FFPL26260,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL25150,,Forget-me-not sp.,Myosotis sp.,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL25150,,Hairy st. Johns wort,Hypericum hirsutum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL25150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL25260,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL25260,,Hairy st. Johns wort,Hypericum hirsutum,Specialist,0
+FTC,PL,FF,FF_P1,FFPL13150,,Ivy,Hedera helix,Generalist,0
+FTC,PL,FF,FF_P1,FFPL13150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,FF,FF_P1,FFPL13260,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL14125,,Common mouse ear,Cerastium fontanum,Non-woodland,0
+FTC,PL,FF,FF_P1,FFPL14125,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FF,FF_P1,FFPL14235,,N/A,NA,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature1110,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature1110,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature1110,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FL,FL_M1,FLMature1110,,Wood sorrel,Oxalis acetosella,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature11210,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FL,FL_M1,FLMature11210,,Wood spurge,Euphorbia amygdaloides,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature1210,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature12210,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature12210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,FL,FL_M1,FLMature12210,,Wood spurge,Euphorbia amygdaloides,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature13125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature13125,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,FL,FL_M1,FLMature13125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FL,FL_M1,FLMature13235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature14125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature14125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature14125,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature14125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature14235,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature15150,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature15260,,Lemon balm,Melissa officinalis,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature15260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,FL,FL_M1,FLMature15260,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,FL,FL_M1,FLMature16150,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature16260,,N/A,NA,Non-woodland,0
+FTC,Mature,FL,FL_M1,FLMature1110,,Bedstraw,Gallium sp,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature2210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature2210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature2210,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature2210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature2210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature22210,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature23235,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature23335,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature21125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature21125,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature21125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature21125,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature21235,,Red campion,Silene dioica,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature21235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature24125,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature24125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature24125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature24235,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature24235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature3110,,Black bryony,Tamus communis,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature3110,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature3110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature3110,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature31210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature31210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature31210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature31210,,Nipplewort,Lapsana communis,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature3210,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature3210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature3210,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature32210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature33125,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,FL,FL_M2,FLMature33125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature33125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature33125,,Elder,Sambucus nigra,Non-woodland,1
+FTC,Mature,FL,FL_M2,FLMature33235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature33235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,FL,FL_M2,FLMature34125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M2,FLMature34235,,N/A,NA,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature4110,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature4110,,Selfheal,Prunella vulgaris,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature4110,,Common chickweed,Stellaria media,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature4110,,Marsh stitchwort,Stellaria palustris,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature4110,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature41210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature4210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,FL,FL_M4,FLMature4210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature4210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature4210,,Marsh stitchwort,Stellaria palustris,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature42210,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature43125,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature43125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature43125,,Sweet chestnut,Castanea sativa,Non-woodland,1
+FTC,Mature,FL,FL_M4,FLMature43235,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature43235,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature43235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature43235,,Spear thistle,Cirsium vulgare,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature43235,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature43235,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature44125,,Hazel,Corylus avellana,Non-woodland,1
+FTC,Mature,FL,FL_M4,FLMature44125,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature44125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature44235,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature45150,,Golden ragwort,Sencio sp.,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature45150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature45260,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature45260,,Spear thistle,Cirsium vulgare,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature45260,,Field forget-me-not,Myosotis arvensis,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature46150,,Oak,Quercus sp.,Non-woodland,1
+FTC,Mature,FL,FL_M4,FLMature46150,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature46260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,FL,FL_M4,FLMature46260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,FL,FL_M4,FLMature46260,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature46260,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,FL,FL_M4,FLMature46260,,Groundsel,Senecio sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL1110,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,FL,FL_P1,FLPL1110,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL1110,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,PL,FL,FL_P1,FLPL1110,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL1110,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,FL,FL_P1,FLPL1110,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,FL,FL_P1,FLPL1110,,Bugle,Ajuga reptans,Generalist,0
+FTC,PL,FL,FL_P1,FLPL11210,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,PL,FL,FL_P1,FLPL11210,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,FL,FL_P1,FLPL11210,,Dog violet,Viola riviniana,Specialist,0
+FTC,PL,FL,FL_P1,FLPL1210,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,PL,FL,FL_P1,FLPL12210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL23125,,Sweet vernal grass,Anthoxanthum odoratum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL23125,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,FL,FL_P1,FLPL23125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,FL,FL_P1,FLPL23125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL23235,,N/A,NA,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL13125,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,PL,FL,FL_P1,FLPL13235,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,FL,FL_P1,FLPL13235,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,FL,FL_P1,FLPL13235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,FL,FL_P1,FLPL14125,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,PL,FL,FL_P1,FLPL14125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL14125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,FL,FL_P1,FLPL14125,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,FL,FL_P1,FLPL14125,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL14235,,Imperforate st. Johns wort,Hypericum maculatum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL15150,,Common chickweed,Stellaria media,Generalist,0
+FTC,PL,FL,FL_P1,FLPL15150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL15150,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,FL,FL_P1,FLPL15260,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL15260,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL16150,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL16150,,Imperforate st. Johns wort,Hypericum maculatum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL16150,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL16150,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,PL,FL,FL_P1,FLPL16260,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL16260,,Imperforate st. Johns wort,Hypericum maculatum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL16260,,Cuckoo flower,Cardamine pratensis,Generalist,0
+FTC,PL,FL,FL_P1,FLPL2110,,N/A,NA,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL21210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,FL,FL_P1,FLPL21210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL21210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL21210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL21210,,Maple,Acer campestre,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL2210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL2210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL2210,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL2210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,FL,FL_P1,FLPL2210,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,PL,FL,FL_P1,FLPL22210,,Maple,Acer campestre,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL24125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,FL,FL_P1,FLPL24125,,Maple,Acer campestre,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL24125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,FL,FL_P1,FLPL24235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL25150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL25150,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25150,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25260,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL25260,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL25260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25260,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25260,,Field forget-me-not,Myosotis arvensis,Generalist,0
+FTC,PL,FL,FL_P1,FLPL25260,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,PL,FL,FL_P1,FLPL25260,,Sweet chestnut,Castanea sativa,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL26150,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,PL,FL,FL_P1,FLPL26260,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature16150,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature16150,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature16260,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature15150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature15260,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature13125,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature13235,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature14125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature14235,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M1,HFMature1210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature12210,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature1110,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M1,HFMature1110,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,HF,HF_M1,HFMature11210,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature26150,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,HF,HF_M2,HFMature26150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature26260,,Agrimony,Agrimonia eupatoria,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature26260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature26260,,Ribwort plantain,Plantago lanceolata,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Tufted vetch,Vicia cracca,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Wild angelica,Angelica sylvestris,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Ramsons,Allium ursinum,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,HF,HF_M2,HFMature24125,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24125,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature24125,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature2210,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2110,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature21210,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2210,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,HF,HF_M2,HFMature2210,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature2210,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature22210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Square-stalked willowherb,Epilobium tetragonum,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature22210,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature23125,,Red campion,Silene dioica,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature23235,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature23235,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature24125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Wild angelica,Angelica sylvestris,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Ribwort plantain,Plantago lanceolata,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature24235,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Heath speedwell,Veronica officinalis,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Common chickweed,Stellaria media,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature25260,,Yellow archangel,Lamium galeobdolon,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature26150,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature26150,,Sweet chestnut,Castanea sativa,Non-woodland,1
+FTC,Mature,HF,HF_M2,HFMature26150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature26150,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature26150,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,Mature,HF,HF_M2,HFMature26260,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,HF,HF_M2,HFMature26260,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature34125,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature34235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature34235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature33125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature33235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature33235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature3210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature3210,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature3210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature32210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,HF,HF_M3,HFMature3110,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,HF,HF_M3,HFMature3110,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,HF,HF_M3,HFMature3110,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M3,HFMature31210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,HF,HF_M4,HFMature46150,,Unknown seedling,,Non-woodland,1
+FTC,Mature,HF,HF_M4,HFMature46150,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,HF,HF_M4,HFMature46260,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature45150,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature45260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,HF,HF_M4,HFMature43125,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature43235,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature44125,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature44235,,Hornbeam seedling,Carpinus betulus,Non-woodland,1
+FTC,Mature,HF,HF_M4,HFMature4210,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature42210,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,HF,HF_M4,HFMature4110,,N/A,NA,Non-woodland,0
+FTC,Mature,HF,HF_M4,HFMature41210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL1110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,PL,HF,HF_P1,HFPL11210,,Hoary willowherb,Epilobium parviflorum,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL1210,,Early purple orchid,Orchis mascula,Specialist,0
+FTC,PL,HF,HF_P1,HFPL1210,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL1210,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,HF,HF_P1,HFPL1210,,Wood speedwell,Veronica montana,Specialist,0
+FTC,PL,HF,HF_P1,HFPL12210,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL14125,,Ivy,Hedera helix,Generalist,0
+FTC,PL,HF,HF_P1,HFPL14235,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL14235,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,HF,HF_P1,HFPL14235,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL14235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,HF,HF_P1,HFPL14235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,HF,HF_P1,HFPL14235,,Black bryony,Tamus communis,Specialist,0
+FTC,PL,HF,HF_P1,HFPL14235,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,PL,HF,HF_P1,HFPL13125,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,HF,HF_P1,HFPL13125,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL13125,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL13125,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL13125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL13235,,Dog rose,Rosa canina,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL13235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,HF,HF_P1,HFPL13235,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,PL,HF,HF_P1,HFPL16150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,PL,HF,HF_P1,HFPL16150,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL16150,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,HF,HF_P1,HFPL16150,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL16150,,Ivy,Hedera helix,Generalist,0
+FTC,PL,HF,HF_P1,HFPL16260,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,PL,HF,HF_P1,HFPL16260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL16260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,PL,HF,HF_P1,HFPL15150,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,HF,HF_P1,HFPL15150,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,HF,HF_P1,HFPL15260,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,HF,HF_P1,HFPL15260,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,PL,HF,HF_P1,HFPL15260,,Agrimony,Agrimonia eupatoria,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature1110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature1110,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature1110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature1110,,Wood speedwell,Veronica montana,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature1110,,Wood anemone,Anemonoides nemorosa,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature11210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature1210,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature1210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature1210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature1210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,LB,LB_M1,LBMature12210,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature12210,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature12210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature12210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature13125,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature13125,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature13125,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature13235,,Woodruff,Galium odoratum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature13235,,Field maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,LB,LB_M1,LBMature14125,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature14235,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature15150,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature15260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature16150,,Perennial ryegrass,Lolium perenne,Non-woodland,0
+FTC,Mature,LB,LB_M1,LBMature16150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature16260,,Field maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,LB,LB_M1,LBMature16260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M1,LBMature16260,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,LB,LB_M1,LBMature16260,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,LB,LB_M1,LBMature16260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature2110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,LB,LB_M2,LBMature2110,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature21210,,Bracken,Pteridium aquilinum,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature21210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature21210,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M2,LBMature2210,,Greater stitchwort,Stellaria holostea,Specialist,0
+FTC,Mature,LB,LB_M2,LBMature22210,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature23125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature23125,,Red dead nettle,Lamium purpureum,Non-woodland,0
+FTC,Mature,LB,LB_M2,LBMature23125,,Wood sorrel,Oxalis acetosella,Specialist,0
+FTC,Mature,LB,LB_M2,LBMature23125,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M2,LBMature24125,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M2,LBMature24135,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature25150,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature25150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature25260,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature25260,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature26150,,Bracken,Pteridium aquilinum,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature26150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature26150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature26260,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,LB,LB_M2,LBMature26260,,Unknown seedling,,Non-woodland,1
+FTC,Mature,LB,LB_M2,LBMature26260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,LB,LB_M2,LBMature26260,,Maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,LB,LB_M3,LBMature3110,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature3110,,White clover,Trifolium repens,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature3110,,Selfheal,Prunella vulgaris,Generalist,0
+FTC,Mature,LB,LB_M3,LBMature3110,,Greater birds foot trefoil,Lotus pedunculatus,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature3110,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,LB,LB_M3,LBMature3110,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,LB,LB_M3,LBMature31210,,Golden ragwort,Senecio sp.,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature31210,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature31210,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature3210,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature32210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,LB,LB_M3,LBMature32210,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature32210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature32210,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,Mature,LB,LB_M3,LBMature33125,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature33125,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature33235,,Field maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,LB,LB_M3,LBMature33235,,Moss,Bryophyta ,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature34125,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,LB,LB_M3,LBMature34235,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,Mature,LB,LB_M3,LBMature34235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature34235,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,LB,LB_M3,LBMature35150,,Unknown seedling,,Non-woodland,1
+FTC,Mature,LB,LB_M3,LBMature35260,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature36150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature36260,,Lesser celandine,Ficaria verna,Non-woodland,0
+FTC,Mature,LB,LB_M3,LBMature36260,,Primrose,Primula vulgaris,Specialist,0
+FTC,Mature,LB,LB_M3,LBMature36260,,Moschatel,Adoxa moschatellina,Specialist,0
+FTC,Mature,LB,LB_M3,LBMature36260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,LB,LB_M4,LBMature4110,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,LB,LB_M4,LBMature41210,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature41210,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M4,LBMature4210,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,LB,LB_M4,LBMature42210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature42210,,N/A,NA,Non-woodland,0
+FTC,Mature,LB,LB_M4,LBMature43125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature43235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature43235,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,LB,LB_M4,LBMature43235,,Nipplewort,Lapsana communis,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature43235,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,LB,LB_M4,LBMature44125,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,LB,LB_M4,LBMature44125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,LB,LB_M4,LBMature44125,,Yew seedling,Taxus baccata,Non-woodland,1
+FTC,Mature,LB,LB_M4,LBMature44235,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature44235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature45150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature45150,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,LB,LB_M4,LBMature45150,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature45150,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature45260,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature46150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature46150,,Common chickweed,Stellaria media,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature46150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,LB,LB_M4,LBMature46150,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL2110,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL21210,,Golden ragwort,Senecio sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL2210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL2210,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL2210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL22210,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL23125,,N/A,NA,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL23235,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24125,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24125,,Wooly yarrow,Achillea tomentosa,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24125,,Moss,Bryophyta ,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24235,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,LB,LB_P1,LBPL24235,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL24235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL25150,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL25150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,LB,LB_P1,LBPL25150,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,LB,LB_P1,LBPL25150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL25260,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,LB,LB_P1,LBPL26150,,Germander speedwell,Veronica chamaedrys,Generalist,0
+FTC,PL,LB,LB_P1,LBPL26150,,Unknown seedling,,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL26150,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL26260,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,LB,LB_P1,LBPL26260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL26260,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,LB,LB_P1,LBPL26260,,Wood avens,Geum urbanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL1110,,Wild strawberry,Fragaria vesca,Specialist,0
+FTC,PL,LB,LB_P1,LBPL1110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,LB,LB_P1,LBPL1110,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,LB,LB_P1,LBPL1210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL1210,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,LB,LB_P1,LBPL1210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,LB,LB_P1,LBPL1210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL1210,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL1210,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,LB,LB_P1,LBPL12210,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,LB,LB_P1,LBPL13125,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL13235,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,PL,LB,LB_P1,LBPL13235,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,LB,LB_P1,LBPL14125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL14125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL14125,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,LB,LB_P1,LBPL14235,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL14235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,LB,LB_P1,LBPL14235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL14235,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,PL,LB,LB_P1,LBPL14235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL15150,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL15150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,LB,LB_P1,LBPL16150,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,LB,LB_P1,LBPL16150,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,LB,LB_P1,LBPL16150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature1210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature1210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature1210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,MG,MG_M1,MGMature1210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature12210,,Blackthorn,Prunus spinosa,Non-woodland,1
+FTC,Mature,MG,MG_M1,MGMature12210,,Wood millet,Milium effusum,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature12210,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature14125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature14125,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature14125,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature14125,,Wood sage,Teucrium scorodonia,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature14235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature14235,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature14235,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature14235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature16150,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature16150,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature16150,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature16150,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,MG,MG_M1,MGMature16150,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature16260,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature16260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature16260,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature15150,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,MG,MG_M1,MGMature15150,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature15150,,Wood millet,Milium effusum,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature15150,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature15150,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature15260,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature15260,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature15260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature13125,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13125,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature13125,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13125,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13125,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13125,,Soft rush,Juncus effusus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13235,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature13235,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature13235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M1,MGMature13235,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M1,MGMature13235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature1110,,Foxglove,Digitalis purpurea,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature11210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature11210,,Wood sage,Teucrium scorodonia,Generalist,0
+FTC,Mature,MG,MG_M1,MGMature11210,,Wood sage,Teucrium scorodonia,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature23235,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature23235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature23235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature23125,,Common bent,Agrostis capillaris,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature23125,,N/A,NA,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature25260,,Field forget-me-not,Myosotis arvensis,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature25150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature25150,,Wood forget-me-not,Myosotis sylvatica,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature25150,,N/A,NA,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature26260,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature26150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature24125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature24125,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Wood millet,Milium effusum,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Soft brome,Bromus hordeaceus,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature24235,,Nipplewort,Lapsana communis,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature2210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature2210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature2210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M2,MGMature22210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature2110,,Pendulous sedge,Carex pendula,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature2110,,Remote sedge,Carex remota,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature2110,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature2110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M2,MGMature21210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,MG,MG_M2,MGMature21210,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature3210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature3210,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,MG,MG_M3,MGMature3210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature3210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature3210,,N/A,NA,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature32210,,Thistle sp.,Cirsium sp.,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature33125,,N/A,NA,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature33235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Common bent,Agrostis capillaris,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Wood melick,Melica uniflora,Specialist,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Spear thistle,Cirsium vulgare,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature3110,,Wild morning glory,Calystegia macrostegia,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature31210,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature34125,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature34125,,Spear thistle,Cirsium vulgare,Generalist,0
+FTC,Mature,MG,MG_M3,MGMature34125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M3,MGMature34125,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature4210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature4210,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,MG,MG_M4,MGMature42210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Great burdock,Arctium lappa,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Field rose,Rosa arvensis,Specialist,1
+FTC,Mature,MG,MG_M4,MGMature42210,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature42210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature44125,,Hedge woundwort,Stachys sylvatica,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature44125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature44125,,Garlic mustard,Alliaria petiolata,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature44125,,Cow parsley,Anthriscus sylvestris,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature44235,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature44235,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature44235,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature44235,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,MG,MG_M4,MGMature44235,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature44235,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,Mature,MG,MG_M4,MGMature44235,,Hedge woundwort,Stachys sylvatica,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature43125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature43125,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature43125,,Wood forget-me-not,Myosotis sylvatica,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature43125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature43125,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature43235,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature43235,,Field forget-me-not,Myosotis arvensis,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature43235,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature43235,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,MG,MG_M4,MGMature43235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature4110,,Garlic mustard,Alliaria petiolata,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature41210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,MG,MG_M4,MGMature41210,,Ivy,Hedera helix,Generalist,0
+FTC,Mature,MG,MG_M4,MGMature41210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL26150,,Crested dogs tail,Cynosurus cristatus,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL26150,,Sheeps fescue,Festuca ovina,Generalist,0
+FTC,PL,MG,MG_P1,MGPL26150,,Wood melick,Melica uniflora,Specialist,0
+FTC,PL,MG,MG_P1,MGPL26160,,Poplar seedling,Poplus sp.,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL25150,,Poplar seedling,Poplus sp.,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL25260,,Blackthorn seedling,Prunus spinosa,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL25260,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL25260,,Crested dogs tail,Cynosurus cristatus,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL25260,,Meadow buttercup,Ranunculus acris,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL25260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL24125,,Creeping thistle,Cirsium arvense,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL24125,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL24125,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,MG,MG_P1,MGPL24235,,Creeping buttercup,Ranunculus repens,Generalist,0
+FTC,PL,MG,MG_P1,MGPL23125,,Red campion,Silene dioica,Specialist,0
+FTC,PL,MG,MG_P1,MGPL23235,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL23235,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL2110,,Stickyweed,Galium aparine,Generalist,0
+FTC,PL,MG,MG_P1,MGPL2110,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL2110,,Creeping cinquefoil,Potentilla reptans,Generalist,0
+FTC,PL,MG,MG_P1,MGPL2110,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL2110,,Common vetch,Vicia sativa,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL21210,,Grass vetchling,Lathyrus nissolia,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL21210,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL21210,,Oxeye daisy,Leucanthemum vulgare,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL21210,,Greater birds foot trefoil,Lotus pedunculatus,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL2210,,Field forget-me-not,Myosotis arvensis,Generalist,0
+FTC,PL,MG,MG_P1,MGPL2210,,Dwarf mallow,Malva neglecta,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL2210,,Common chickweed,Stellaria media,Generalist,0
+FTC,PL,MG,MG_P1,MGPL22210,,Common bent,Agrostis capillaris,Generalist,0
+FTC,PL,MG,MG_P1,MGPL16150,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL16260,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL16260,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL16260,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,PL,MG,MG_P1,MGPL15150,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,MG,MG_P1,MGPL15150,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL15260,,Linden,Tilia sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL15260,,Hazel,Corylus avellana,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL13125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL13125,,Meadow foxtail,Alopecurus pratensis,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL13125,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL13235,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL13235,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL14125,,Common ragwort,Senecio jacobaea,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL14235,,Blackthorn seedling,Prunus spinosa,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL14235,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL14235,,False oat grass,Arrhenatherum elatius,Generalist,0
+FTC,PL,MG,MG_P1,MGPL14235,,Timothy,Phleum pratense,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL1210,,Wood millet,Milium effusum,Specialist,0
+FTC,PL,MG,MG_P1,MGPL1210,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL1210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL12210,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,MG,MG_P1,MGPL12210,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL12210,,Meadow foxtail,Alopecurus pratensis,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL1110,,Wall barley,Hordeum murinum,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL1110,,Blackthorn seedling,Prunus spinosa,Non-woodland,1
+FTC,PL,MG,MG_P1,MGPL1110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL11210,,Thistle sp.,Cirsium sp.,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL11210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL11210,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,MG,MG_P1,MGPL11210,,Timothy,Phleum pratense,Non-woodland,0
+FTC,PL,MG,MG_P1,MGPL11210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,MG,MG_P1,MGPL11210,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Dandelion,Taraxacum sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Red campion,Silene dioica,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Rumex,Rumex sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature1110,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature11210,,Three-nerved sandwort,Moehringia trinervia,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature11210,,Willow sp. seedling,Salix sp.,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature11210,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature11210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature1210,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature1210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature12210,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature12210,,Dog rose,Rosa canina,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature12210,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature12210,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature13125,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature13125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature13125,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature13235,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature14125,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature14125,,Field maple seedling,Acer campestre,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature14125,,Willow sp. seedling,Salix sp.,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature14125,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature14125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature14125,,N/A,NA,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature14235,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature15150,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature15150,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature15150,,Ash seedling,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature15150,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature15150,,Currant sp.,Rives sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature15260,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature15260,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M1,SHMature15260,,Enchanters nightshade,Circaea lutetiana,Generalist,0
+FTC,Mature,SH,SH_M1,SHMature16150,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature16260,,Hawthorn seedling,Crataegus monogyna,Non-woodland,1
+FTC,Mature,SH,SH_M1,SHMature16260,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,SH,SH_M1,SHMature16260,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature25150,,Holly seedling,Ilex aquifolium,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature25150,,N/A,NA,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature25260,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature26260,,Lemon balm,Melissa officinalis,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature26260,,Wood avens,Geum urbanum,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature26150,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature26150,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature24235,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature24235,,Unknown seedling,,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature24235,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature24235,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature24235,,Ground ivy,Glechoma hederacea,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature24125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature24125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature24125,,Bluebell,Hyacinthoides non-scripta,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature2110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature2110,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature2110,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature21210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature21210,,Dog violet,Viola riviniana,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature21210,,Lords and ladies,Arum maculatum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature22210,,Ash,Fraxinus excelsior,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature2210,,Maple,Acer campestre,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature2210,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature2210,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature2210,,Holly,Ilex aquifolium,Non-woodland,1
+FTC,Mature,SH,SH_M2,SHMature23125,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature23125,,Herb robert,Geranium robertianum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature23125,,Hairy brome,Bromopsis ramosa,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature23125,,Stickyweed,Galium aparine,Generalist,0
+FTC,Mature,SH,SH_M2,SHMature23235,,Honeysuckle,Lonicera periclymenum,Specialist,0
+FTC,Mature,SH,SH_M2,SHMature23235,,Fern,Pteridium sp.,Non-woodland,0
+FTC,Mature,SH,SH_M2,SHMature23235,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,SH,SH_P1,SHPL2210,,Field maple,Acer campestre,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL2210,,Green strawberry,Fragaria viridis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL22210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,SH,SH_P1,SHPL22210,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL24235,,St. peters wort,Hypericum tetrapterum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL24235,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,SH,SH_P1,SHPL24125,,Wood avens,Geum urbanum,Generalist,0
+FTC,PL,SH,SH_P1,SHPL24125,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL24125,,Glaucous sedge,Carex flacca,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL24225,,Ivy,Hedera helix,Generalist,0
+FTC,PL,SH,SH_P1,SHPL24125,,Horsetail,Equisetum arvense,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL24125,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL24125,,Dogs mercury,Mercurialis perennis,Specialist,0
+FTC,PL,SH,SH_P1,SHPL24125,,Sycamore,Acer pseudoplatanus,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL26150,,Wood avens,Geum urbanum,Generalist,0
+FTC,PL,SH,SH_P1,SHPL26150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,SH,SH_P1,SHPL26150,,St. peters wort,Hypericum tetrapterum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL26150,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL26150,,Fescue sp.,Festuca sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL26260,,Bramble,Rubus fruiticosus,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL26260,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL26260,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,SH,SH_P1,SHPL26260,,Green strawberry,Fragaria viridis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL26260,,Broad-leaved willowherb,Epilobium montanum,Generalist,0
+FTC,PL,SH,SH_P1,SHPL23150,,Birch,Betula sp.,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL23150,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL23150,,Green strawberry,Fragaria viridis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL23150,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL23260,,Thyme-leaved speedwell,Veronica serpyllifolia,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL23260,,Green strawberry,Fragaria viridis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL23260,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,SH,SH_P1,SHPL23150,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL23150,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL23150,,Wood avens,Geum urbanum,Generalist,0
+FTC,PL,SH,SH_P1,SHPL23150,,Glaucous sedge,Carex flacca,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL23150,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL23150,,Hawthorn,Crataegus monogyna,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL23260,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL23260,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL23260,,Tufted hairgrass,Deschampsia cespitosa,Generalist,0
+FTC,PL,SH,SH_P1,SHPL2110,,Soft rush,Juncus effusus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL22210,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL1110,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL11210,,Creeping bent,Agrostis stolonifera,Generalist,0
+FTC,PL,SH,SH_P1,SHPL11210,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL11210,,Stinging nettle,Urtica dioica,Generalist,0
+FTC,PL,SH,SH_P1,SHPL1210,,Fern,Pteridium sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL12210,,Rumex,Rumex sp.,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL12210,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL13125,,Oak seedling,Quercus sp.,Non-woodland,1
+FTC,PL,SH,SH_P1,SHPL13125,,Sheeps fescue,Festuca ovina,Generalist,0
+FTC,PL,SH,SH_P1,SHPL13125,,N/A,NA,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL13235,,N/A,NA,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL14125,,N/A,NA,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL14235,,False brome,Brachypodium sylvaticum,Specialist,0
+FTC,PL,SH,SH_P1,SHPL15150,,Yorkshire fog,Holcus lanatus,Generalist,0
+FTC,PL,SH,SH_P1,SHPL15150,,Rough meadow grass,Poa trivalis,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL15150,,Wood sedge,Carex sylvatica,Specialist,0
+FTC,PL,SH,SH_P1,SHPL15150,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,SH,SH_P1,SHPL15260,,Crested dogs tail,Cynosurus cristatus,Non-woodland,0
+FTC,PL,SH,SH_P1,SHPL16150,,Sheeps fescue,Festuca ovina,Generalist,0
+FTC,PL,SH,SH_P1,SHPL16150,,Cocks foot,Dactylis glomerata,Generalist,0
+FTC,PL,SH,SH_P1,SHPL16260,,Lords and ladies,Arum maculatum,Specialist,0
