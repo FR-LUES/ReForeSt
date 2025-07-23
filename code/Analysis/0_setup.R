@@ -20,6 +20,8 @@ shapes_path <- "data/shapefiles/ReForeSt_shapes.gpkg"
 
 # Plant data
 plant_path <- paste0(num_data_path, "masterPlant.csv")
+#Invert data
+invert_path <- paste0(num_data_path, "masterInvert.csv")
 # structure data
 structure_path <- paste0(path_output, "masterMetrics_df.csv")
 
@@ -46,6 +48,7 @@ plants <- read.csv(plant_path) |> # Plant data
          #sppWoodland = round(sppWoodland/sampleArea, 3),
          #sppSpecialist = round(sppSpecialist/sampleArea, 3)# Convert species richness data to densities
   )
+inverts <- read.csv(invert_path)# Invert data
 landscape <- st_read(shapes_path) |> # Landscape variables
   select(ID, bl500_m, aw500_m,
          nearestBL, nearestAW
@@ -65,24 +68,37 @@ landscape <- st_read(shapes_path) |> # Landscape variables
 medVar1 <- "dbhSD"
 medVar2 <- "mean30mEffCan"
 medVar3 <- "gap_prop"
-predMedVar1 <- "Age * Type + Source"
+invertMed1 <- "stemDensityHA" # Only used in invert models
+predMedVarPlants <- "Age * Type + Source"
+predMedVarInverts <- "Age * Type" # Type and Source completely overlap for inverts
 
-medMod1 <- bf(as.formula(paste0(medVar1, "~", predMedVar1)), family = Gamma(link = "log"))
-medMod2 <- bf(as.formula(paste0(medVar2, "~", predMedVar1)), family = Gamma(link = "log"))
-medMod3 <- bf(as.formula(paste0(medVar3, "~", predMedVar1)), family = Beta(link = "logit"))
+medMod1 <- bf(as.formula(paste0(medVar1, "~", predMedVarPlants)), family = Gamma(link = "log"))
+medMod2 <- bf(as.formula(paste0(medVar2, "~", predMedVarPlants)), family = Gamma(link = "log"))
+medMod3 <- bf(as.formula(paste0(medVar3, "~", predMedVarPlants)), family = Beta(link = "logit"))
+medMod4 <- bf(as.formula(paste0(invertMed1, "~", predMedVarInverts)), family = Gamma(link = "log"))
 
 # Group mediator models
-mediator_bfs <- list(
+plant_mediator_bfs <- list(
   medMod1,
   medMod2,
   medMod3
 )
+invert_mediator_bfs <- list(medMod1,
+                            medMod2,
+                            medMod3,
+                            medMod4)
 
 # Mediation variants for predicting species response as we want to test if field derived, LiDAR derived, or combined is best
-mediation_variants <- c(
+plant_mediation_variants <- c(
   "dbhSD",
   "mean30mEffCan + gap_prop",
   "dbhSD + mean30mEffCan + gap_prop"
+)
+
+invert_mediation_variants <- c(
+  "dbhSD + stemDensityHA",
+  "mean30mEffCan + gap_prop",
+  "dbhSD + stemDensityHA + mean30mEffCan + gap_prop"
 )
 
 

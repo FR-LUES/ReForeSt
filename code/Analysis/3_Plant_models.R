@@ -30,7 +30,7 @@ responses <- c(
 
 # Find all possible model combinations
 combos <- expand_grid(resp = responses,
-            med = mediation_variants,
+            med = plant_mediation_variants,
             constants  = paste(c("area_ha", "Age * Type", "Source"),
                                collapse = " + "))
 
@@ -60,10 +60,11 @@ plantModels <-  map(1:nrow(combos), function(x) {
     modelPriors <- make_priors(include_dbhSD = grepl("dbhSD",  combos$med[x]),
                                include_mean30mEffCan = grepl("mean30mEffCan",combos$med[x]),
                                include_gap_prop = grepl("gap_prop", combos$med[x]),
+                               include_stem_dens = FALSE,
                                respo = resp_name)
     
     
-    formulas <- c(list(responseBF), mediator_bfs) |>
+    formulas <- c(list(responseBF), plant_mediator_bfs) |>
       as.list() |>
       reduce(`+`)
     

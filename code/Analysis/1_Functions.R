@@ -23,7 +23,7 @@ betaSqueeze <- function(x){
 # Priors function
 # A function to customize priors based on model formulas
 # Currently this function returns the same prior each time, but may be useful as we build more complex models
-make_priors <- function(include_dbhSD = TRUE, include_mean30mEffCan = TRUE, include_gap_prop = TRUE, respo) {
+make_priors <- function(include_dbhSD = TRUE, include_mean30mEffCan = TRUE, include_gap_prop = TRUE, include_stem_dens = TRUE,respo) {
   respo <- as.character(respo)
   p1 <- prior_string(paste0("normal(",0,", ",1,")"), class = "b", resp = respo)
   p2 <- c(
@@ -36,6 +36,12 @@ make_priors <- function(include_dbhSD = TRUE, include_mean30mEffCan = TRUE, incl
     prior(gamma(2, 0.1), class = "phi", resp = "gapprop")
   )
   priors <- c(p1, p2)
+  
+  if(include_stem_dens == TRUE){
+    stemPriors <- c(prior(exponential(1), class = "shape", resp = "stemDensityHA"),
+                    prior(normal(0, 1), class = "b", resp = "stemDensityHA"))
+    priors <- c(priors, stemPriors)
+  }
   
   return(priors)
 }
