@@ -12,7 +12,7 @@
 #shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
 # ---- !#
 
-clipped <- clip_roi(clipped, shapes)
+
 
 # Define range list for map functions
 clipRange <- seq(1:length(clipped))
@@ -22,7 +22,7 @@ clipRange <- seq(1:length(clipped))
 
 
 # Extract site level canopy layering ---- !# 
-siteLayers <- map(clipRange, .f = function(x) canopyEntropy(clipped[[x]]@data$Z,
+siteLayers <- map(clipRange, .f = function(x) canopyEntropy(pointsNormalized[[x]]@data$Z,
                                                             strata = strata) |> round(2))
 
 
@@ -30,11 +30,11 @@ siteLayers <- map(clipRange, .f = function(x) canopyEntropy(clipped[[x]]@data$Z,
 # extract gridded effective canopy layers at 30 m resolution ---- !#
 # Create the rasters
 # 30 m 
-effLayers30M <- map(clipRange, .f = function(x) pixel_metrics(clipped[[x]],
+effLayers30M <- map(clipRange, .f = function(x) pixel_metrics(pointsNormalized[[x]],
                                                               func = ~canopyEntropy(Z, strata),
                                                               res = 30))
 # 10 m
-effLayers10M <- map(clipRange, .f = function(x) pixel_metrics(clipped[[x]],
+effLayers10M <- map(clipRange, .f = function(x) pixel_metrics(pointsNormalized[[x]],
                                                               func = ~canopyEntropy(Z, strata),
                                                               res = 10))
 
