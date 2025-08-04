@@ -45,7 +45,7 @@ geom_sf(data = this_shape, fill = "blue")
 
 # READ IN DATA
 # Read in sites
-shapes <- st_read("Shapefiles/ReForeSt_shapes.gpkg")
+shapes <- st_read("data/shapefiles/ReForeSt_shapes.gpkg")
 # Read in NFI
 nfi <- st_read("Shapefiles/nfi/National_Forest_Inventory_England_2022.shp") |>
   filter(IFT_IOA %in% c("Broadleaved",

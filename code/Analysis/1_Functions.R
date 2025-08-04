@@ -11,9 +11,29 @@ betaSqueeze <- function(x){
 
 
 
-
-
-
+# test <- filter(crawler, ID == "56429")
+# p <- test$Count
+# Function to calculate Hill numbers (effective number of species) ---- !#
+hill_number <- function(p, q) {
+  p <- p[p > 0]
+  pProp <- p / sum(p)
+  
+  
+  if(sum(p) == 0)
+    { return(0)} else{
+    if(q == 0) {
+    return(length(p))
+  } else{ if(q == "abund") {
+    return(sum(p)) } else{
+      if(q == 1) {
+        return(exp(-sum(pProp * log(pProp), na.rm = TRUE)))
+      } else{
+    return((sum(pProp^q, na.rm = TRUE))^(1 / (1 - q)))
+      }
+    }
+  }
+      }
+}
 
 
 

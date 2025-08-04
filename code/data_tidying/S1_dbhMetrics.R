@@ -2,12 +2,10 @@
 library(tidyverse)
 
 # Read in dbh data
-wren <- read.csv("Data/dbh/wren_dbh.csv")
-ftc <- read.csv("Data/dbh/ftc_dbh.csv") |>
+wren <- read.csv("data/numerical_data/wren_dbh.csv")
+ftc <- read.csv("data/numerical_data/ftc_dbh.csv") |>
   mutate(dbh = as.numeric(dbh))
-nc <- read.csv("Data/dbh/nc_dbh.csv") |>
-  mutate(dbh = as.numeric(dbh))
-
+nc <- read.csv("data/numerical_data/nc_dbh.csv")
 
 # summarize ftc dbh data to match WrEN data
 ftcSum <- ftc |>
@@ -35,9 +33,10 @@ ncSum <- nc |>
 wrenSum <- wren |> group_by(ID) |>
   summarize(stemDensityHA = mean(treeDensity),
             dbhMean = mean(dbhMean, na.rm = TRUE),
-            dbhSD = sd(dbhSD, na.rm = TRUE)) |>
+            dbhSD = mean(dbhSD, na.rm = TRUE)) |>
   select(ID, stemDensityHA, dbhMean, dbhSD)
 
 # Combine data and save
 masterDBH <- rbind(wrenSum, ftcSum, ncSum)
-write.csv(masterDBH, "Data/dbh/masterDBH.csv")
+write.csv(masterDBH, "data/numerical_data/masterDBH.csv")
+

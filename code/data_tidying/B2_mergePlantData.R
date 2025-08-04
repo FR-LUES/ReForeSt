@@ -7,9 +7,9 @@ library(sf)
 
 ## MERGE PLANT DATA##########
 # Read in data
-wren <- read.csv("Data/plant/WrENPlantData.csv")# WrEN data
-nc <- read.csv("Data/plant/NCplantData.csv")# NC data
-ftc <- read.csv("Data/plant/FTCplantData.csv") |>
+wren <- read.csv("data/numerical_data/WrENPlantData.csv")# WrEN data
+nc <- read.csv("data/numerical_data/NCplantData.csv")# NC data
+ftc <- read.csv("data/numerical_data/FTCplantData.csv") |>
   filter(Tree != 1) |> mutate(Age = case_when(Type == "Mature" ~ 250,
                                               .default = 25))# FTC data
 
@@ -50,17 +50,16 @@ ftcSum <- ftc |> group_by(Age, Source, Type, ID) |>
 masterPlant <- rbind(wrenSum, ncSum, ftcSum)
       
 ### MERGE DBH DATA ##########
-dbh <- read.csv("Data/dbh/masterDBH.csv") |>
-  select(!c(X)) |> group_by(ID) |> summarize(stemDensityHA = mean(stemDensityHA), dbhMean = mean(dbhMean), dbhSD = mean(dbhSD))
+dbh <- read.csv("data/numerical_data/masterDBH.csv") |>
+  select(!c(X)) |>
+  group_by(ID) |>
+  summarize(stemDensityHA = mean(stemDensityHA),
+            dbhSD = mean(dbhSD))
 
 # Join plant and dbh data
 masterPlant <- left_join(masterPlant, dbh, by = "ID")
 
-### MERGE LANDSCAPE VARIABLES #####
-lsVars <- st_read("Shapefiles/ReforeSt_shapes.gpkg")
 
-# join landscape variables to plant data
-masterPlant <- inner_join(masterPlant, st_drop_geometry(lsVars), by = c("ID" = "ID", "Source" = "Source"))
 
 # save data for now
-write.csv(masterPlant, "Data/plant/masterPlant.csv")
+write.csv(masterPlant, "data/numerical_data/masterPlant.csv")

@@ -1,0 +1,968 @@
+﻿Site,Plot,ID,Order ,Species ,Count,Type
+BF,BF_M1_1,BF_M1,Coleoptera,Notiophilus rufipes,1,Mature
+BF,BF_M1_1,BF_M1,Coleoptera,Amara ovata,1,Mature
+BF,BF_M1_3,BF_M1,Araneae,Linyphiidae,3,Mature
+BF,BF_M1_3,BF_M1,Araneae,Notiophilus biguttatus,1,Mature
+BF,BF_M1_4,BF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+BF,BF_M1_4,BF_M1,Coleoptera,Pirata hygrophilus,1,Mature
+BF,BF_M1_4,BF_M1,Coleoptera,Linyphiidae,2,Mature
+BF,BF_M1_4,BF_M1,Coleoptera,Notiophilus rufipes,1,Mature
+BF,BF_M1_5,BF_M1,Coleoptera,Abax parallelepipedus,3,Mature
+BF,BF_M1_5,BF_M1,Araneae,Linyphiidae,1,Mature
+BF,BF_M1_6,BF_M1,Coleoptera,Abax parallelepipedus,1,Mature
+BF,BF_M2_1,BF_M2,Coleoptera,Pterostichus madidus,3,Mature
+BF,BF_M2_1,BF_M2,Coleoptera,Nebria brevicollis,4,Mature
+BF,BF_M2_1,BF_M2,Araneae,Dysdera erythina,1,Mature
+BF,BF_M2_1,BF_M2,Araneae,Linyphiidae,1,Mature
+BF,BF_M2_1,BF_M2,Coleoptera,Notiophilus rufipes,1,Mature
+BF,BF_M2_2,BF_M2,Araneae,Linyphiidae,6,Mature
+BF,BF_M2_3,BF_M2,Araneae,Linyphiidae,1,Mature
+BF,BF_M2_4,BF_M2,Coleoptera,Nebria brevicollis,2,Mature
+BF,BF_M2_5,BF_M2,Coleoptera,Nebria brevicollis,3,Mature
+BF,BF_M2_5,BF_M2,Coleoptera,Pterostichus madidus,1,Mature
+BF,BF_M2_5,BF_M2,Coleoptera,Notiophilus rufipes,1,Mature
+BF,BF_M2_5,BF_M2,Araneae,Linyphiidae,2,Mature
+BF,BF_M2_6,BF_M2,Coleoptera,Pterostichus madidus,1,Mature
+BF,BF_M2_6,BF_M2,Coleoptera,Abax parallelepipedus,1,Mature
+BF,BF_P1_1,BF_P1,Araneae,Pachygnatha degeeri,1,PL
+BF,BF_P1_1,BF_P1,Araneae,Linyphiidae,2,PL
+BF,BF_P1_1,BF_P1,Araneae,Dysdera erythina,1,PL
+BF,BF_P1_3,BF_P1,Araneae,Linyphiidae,1,PL
+BF,BF_P1_3,BF_P1,Coleoptera,Bembidion lampros,1,PL
+BF,BF_P1_3,BF_P1,Araneae,Dysdera erythina,1,PL
+BF,BF_P1_3,BF_P1,Araneae,Linyphiidae,2,PL
+BF,BF_P1_5,BF_P1,Araneae,Pirata hygrophilus,2,PL
+BF,BF_P1_6,BF_P1,Araneae,Pachygnatha degeeri,1,PL
+BF,BF_P1_6,BF_P1,Araneae,Linyphiidae,1,PL
+BF,BF_P2_1,BF_P2,Araneae,Pirata hygrophilus,1,PL
+BF,BF_P2_1,BF_P2,Coleoptera,Notiophilus biguttatus,1,PL
+BF,BF_P2_1,BF_P2,Coleoptera,Harpalus rufipes,1,PL
+BF,BF_P2_1,BF_P2,Coleoptera,Badister bullatus,1,PL
+BF,BF_P2_2,BF_P2,Araneae,Linyphiidae,2,PL
+BF,BF_P2_2,BF_P2,Coleoptera,Abax parallelepipedus,1,PL
+BF,BF_P2_3,BF_P2,Araneae,Linyphiidae,2,PL
+BF,BF_P2_3,BF_P2,Araneae,Pardosa palustris,1,PL
+BF,BF_P2_4,BF_P2,Coleoptera,Nebria brevicollis,1,PL
+BF,BF_P2_4,BF_P2,Araneae,Pisaura mirabilis,1,PL
+BF,BF_P2_5,BF_P2,Araneae,Linyphiidae,2,PL
+CS,CS_M1_1,CS_M1,Coleoptera,Abax parallelepipedus,2,Mature
+CS,CS_M1_1,CS_M1,Coleoptera,Pterostichus madidus,3,Mature
+CS,CS_M1_1,CS_M1,Araneae,Linyphiidae,5,Mature
+CS,CS_M1_1,CS_M1,Coleoptera,Notiophilus rufipes,2,Mature
+CS,CS_M1_2,CS_M1,Coleoptera,Abax parallelepipedus,2,Mature
+CS,CS_M1_2,CS_M1,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M1_2,CS_M1,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M1_3,CS_M1,Coleoptera,Abax parallelepipedus,1,Mature
+CS,CS_M1_3,CS_M1,Araneae,Linyphiidae,3,Mature
+CS,CS_M1_4,CS_M1,Coleoptera,Abax parallelepipedus,2,Mature
+CS,CS_M1_4,CS_M1,Araneae,Linyphiidae,3,Mature
+CS,CS_M1_4,CS_M1,Coleoptera,Nebria brevicollis,1,Mature
+CS,CS_M1_4,CS_M1,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M1_4,CS_M1,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M1_5,CS_M1,Coleoptera,Abax parallelepipedus,2,Mature
+CS,CS_M1_5,CS_M1,Coleoptera,Carabus nemoralis ,1,Mature
+CS,CS_M1_5,CS_M1,Araneae,Linyphiidae,1,Mature
+CS,CS_M1_5,CS_M1,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M1_5,CS_M1,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M1_6,CS_M1,Coleoptera,Abax parallelepipedus,2,Mature
+CS,CS_M1_6,CS_M1,Coleoptera,Bycatch,13,Mature
+CS,CS_M1_6,CS_M1,Araneae,Linyphiidae,2,Mature
+CS,CS_M1_6,CS_M1,Coleoptera,Nebria brevicollis,1,Mature
+CS,CS_M1_6,CS_M1,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M1_6,CS_M1,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M2_2,CS_M2,Coleoptera,Abax parallelepipedus,1,Mature
+CS,CS_M2_2,CS_M2,Araneae,Dysdera erythina,1,Mature
+CS,CS_M2_2,CS_M2,Araneae,Linyphiidae,4,Mature
+CS,CS_M2_2,CS_M2,Araneae,Pardosa sp,1,Mature
+CS,CS_M2_2,CS_M2,Coleoptera,Pterostichus madidus,2,Mature
+CS,CS_M2_3,CS_M2,Araneae,Dysdera erythina,1,Mature
+CS,CS_M2_3,CS_M2,Araneae,Linyphiidae,3,Mature
+CS,CS_M2_3,CS_M2,Araneae,Notiophilus biguttatus,1,Mature
+CS,CS_M2_3,CS_M2,Araneae,Notiophilus rufipes,1,Mature
+CS,CS_M2_3,CS_M2,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M2_3,CS_M2,Araneae,Trochosa ruricola,1,Mature
+CS,CS_M2_4,CS_M2,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M2_4,CS_M2,Araneae,Linyphiidae,2,Mature
+CS,CS_M2_5,CS_M2,Araneae,Linyphiidae,8,Mature
+CS,CS_M2_5,CS_M2,Coleoptera,Nebria brevicollis,3,Mature
+CS,CS_M2_5,CS_M2,Coleoptera,Notiophilus biguttatus,3,Mature
+CS,CS_M2_5,CS_M2,Coleoptera,Notiophilus rufipes,2,Mature
+CS,CS_M2_5,CS_M2,Coleoptera,Limodromus assimilis,4,Mature
+CS,CS_M2_5,CS_M2,Coleoptera,Pterostichus madidus,5,Mature
+CS,CS_M2_6,CS_M2,Coleoptera,Abax parallelepipedus,1,Mature
+CS,CS_M2_6,CS_M2,Araneae,Dysdera erythina,1,Mature
+CS,CS_M2_6,CS_M2,Coleoptera,Leistus fulvibarbis,1,Mature
+CS,CS_M2_6,CS_M2,Coleoptera,Nebria brevicollis,2,Mature
+CS,CS_M2_6,CS_M2,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M3_1,CS_M3,Coleoptera,Abax parallelepipedus,4,Mature
+CS,CS_M3_1,CS_M3,Araneae,Dysdera erythina,4,Mature
+CS,CS_M3_1,CS_M3,Araneae,Linyphiidae,3,Mature
+CS,CS_M3_1,CS_M3,Coleoptera,Bembidion lampros,1,Mature
+CS,CS_M3_1,CS_M3,Araneae,Linyphiidae,2,Mature
+CS,CS_M3_1,CS_M3,Coleoptera,Nebria brevicollis,1,Mature
+CS,CS_M3_1,CS_M3,Coleoptera,Notiophilus biguttatus,1,Mature
+CS,CS_M3_1,CS_M3,Araneae,Trochosa sp,2,Mature
+CS,CS_M3_2,CS_M3,Coleoptera,Bembidion lampros,1,Mature
+CS,CS_M3_2,CS_M3,Araneae,Linyphiidae,3,Mature
+CS,CS_M3_2,CS_M3,Coleoptera,Nebria brevicollis,1,Mature
+CS,CS_M3_2,CS_M3,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M3_2,CS_M3,Coleoptera,Notiophilus substriatus,1,Mature
+CS,CS_M3_3,CS_M3,Coleoptera,Asaphidion flavipes,1,Mature
+CS,CS_M3_3,CS_M3,Coleoptera,Bembidion lampros,1,Mature
+CS,CS_M3_3,CS_M3,Araneae,Pardosa sp,1,Mature
+CS,CS_M3_3,CS_M3,Coleoptera,Pterostichus longicollis,1,Mature
+CS,CS_M3_3,CS_M3,Coleoptera,Pterostichus strenuus,1,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Abax parallelepipedus,1,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Asaphidion flavipes,1,Mature
+CS,CS_M3_4,CS_M3,Araneae,Linyphiidae,2,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Notiophilus biguttatus,1,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Pterostichus strenuus,1,Mature
+CS,CS_M3_4,CS_M3,Coleoptera,Syntomus obscuroguttatus,1,Mature
+CS,CS_M4_1,CS_M4,Coleoptera,Bembidion lampros,1,Mature
+CS,CS_M4_2,CS_M4,Coleoptera,Bembidion lampros,1,Mature
+CS,CS_M4_2,CS_M4,Araneae,Linyphiidae,1,Mature
+CS,CS_M4_2,CS_M4,Coleoptera,Limodromus assimilis,1,Mature
+CS,CS_M4_3,CS_M4,Coleoptera,Abax parallelepipedus,1,Mature
+CS,CS_M4_3,CS_M4,Coleoptera,Linyphiidae,2,Mature
+CS,CS_M4_3,CS_M4,Coleoptera,Syntomus obscuroguttatus,1,Mature
+CS,CS_M4_4,CS_M4,Araneae,Linyphiidae,3,Mature
+CS,CS_M4_4,CS_M4,Coleoptera,Notiophilus rufipes,1,Mature
+CS,CS_M4_4,CS_M4,Coleoptera,Pterostichus madidus,1,Mature
+CS,CS_M4_5,CS_M4,Coleoptera,Pterostichus strenuus,4,Mature
+CS,CS_M4_5,CS_M4,Araneae,Trochosa ruricola,1,Mature
+CS,CS_M4_6,CS_M4,Coleoptera,Notiophilus biguttatus,2,Mature
+CS,CS_M4_6,CS_M4,Araneae,Pardosa pullata,1,Mature
+CS,CS_M4_6,CS_M4,Coleoptera,Pterostichus macer,3,Mature
+CS,CS_P1_1,CS_P1,Coleoptera,Asaphidion flavipes,1,PL
+CS,CS_P1_1,CS_P1,Coleoptera,Nebria brevicollis,1,PL
+CS,CS_P1_1,CS_P1,Coleoptera,Limodromus assimilis,1,PL
+CS,CS_P1_1,CS_P1,Coleoptera,Pterostichus madidus,2,PL
+CS,CS_P1_2,CS_P1,Araneae,Linyphiidae,4,PL
+CS,CS_P1_2,CS_P1,Coleoptera,Notiophilus biguttatus,1,PL
+CS,CS_P1_2,CS_P1,Coleoptera,Limodromus assimilis,1,PL
+CS,CS_P1_2,CS_P1,Coleoptera,Pterostichus madidus,1,PL
+CS,CS_P1_3,CS_P1,Coleoptera,Clivina fossor,1,PL
+CS,CS_P1_3,CS_P1,Araneae,Linyphiidae,2,PL
+CS,CS_P1_3,CS_P1,Coleoptera,Peocilus cupreus,4,PL
+CS,CS_P1_3,CS_P1,Coleoptera,Limodromus assimilis,3,PL
+CS,CS_P1_3,CS_P1,Araneae,Trochosa terricola,1,PL
+CS,CS_P1_4,CS_P1,Coleoptera,Bembidion lampros,1,PL
+CS,CS_P1_4,CS_P1,Coleoptera,Bembidion lampros,2,PL
+CS,CS_P1_4,CS_P1,Araneae,Linyphiidae,4,PL
+CS,CS_P1_4,CS_P1,Araneae,Linyphiidae,2,PL
+CS,CS_P1_4,CS_P1,Araneae,Pardosa amentata,7,PL
+CS,CS_P1_4,CS_P1,Coleoptera,Limodromus assimilis,5,PL
+CS,CS_P1_6,CS_P1,Coleoptera,Harpalus affinis,1,PL
+CS,CS_P1_6,CS_P1,Araneae,Linyphiidae,4,PL
+CS,CS_P1_6,CS_P1,Coleoptera,Loricera pilicornis,1,PL
+CS,CS_P1_6,CS_P1,Coleoptera,Pterostichus strenuus,1,PL
+CS,CS_P2_1,CS_P2,Araneae,Linyphiidae,5,PL
+CS,CS_P2_1,CS_P2,Coleoptera,Notiophilus biguttatus,1,PL
+CS,CS_P2_1,CS_P2,Coleoptera,Notiophilus rufipes,1,PL
+CS,CS_P2_1,CS_P2,Coleoptera,Pterostichus madidus,2,PL
+CS,CS_P2_2,CS_P2,Coleoptera,Abax parallelepipedus,1,PL
+CS,CS_P2_2,CS_P2,Araneae,Clubiona comta,1,PL
+CS,CS_P2_2,CS_P2,Araneae,Linyphiidae,7,PL
+CS,CS_P2_2,CS_P2,Araneae,Pardosa lugabris,1,PL
+CS,CS_P2_2,CS_P2,Coleoptera,Pterostichus madidus,1,PL
+CS,CS_P2_3,CS_P2,Coleoptera,Abax parallelepipedus,1,PL
+CS,CS_P2_3,CS_P2,Araneae,Alopecosa pulverulenta,1,PL
+CS,CS_P2_3,CS_P2,Coleoptera,Asaphidion flavipes,1,PL
+CS,CS_P2_3,CS_P2,Araneae,Linyphiidae,4,PL
+CS,CS_P2_3,CS_P2,Coleoptera,Nebria brevicollis,7,PL
+CS,CS_P2_4,CS_P2,Coleoptera,Pterostichus madidus,1,PL
+CS,CS_P2_4,CS_P2,Coleoptera,Abax parallelepipedus,1,PL
+CS,CS_P2_4,CS_P2,Araneae,Linyphiidae,17,PL
+CS,CS_P2_4,CS_P2,Araneae,Clubiona comta,2,PL
+CS,CS_P2_4,CS_P2,Coleoptera,Notiophilus rufipes,3,PL
+CS,CS_P2_4,CS_P2,Coleoptera,Notiophilus biguttatus,2,PL
+CS,CS_P2_5,CS_P2,Coleoptera,Abax parallelepipedus,2,PL
+CS,CS_P2_5,CS_P2,Coleoptera,Asaphidion flavipes,1,PL
+CS,CS_P2_5,CS_P2,Araneae,Linyphiidae,3,PL
+CS,CS_P2_5,CS_P2,Coleoptera,Notiophilus biguttatus,1,PL
+CS,CS_P2_5,CS_P2,Coleoptera,Limodromus assimilis,1,PL
+CS,CS_P2_5,CS_P2,Araneae,Trochosa ruricola,1,PL
+CS,CS_P2_6,CS_P2,Coleoptera,Asaphidion flavipes,3,PL
+CS,CS_P2_6,CS_P2,Araneae,Linyphiidae,6,PL
+CS,CS_P2_6,CS_P2,Coleoptera,Limodromus assimilis,2,PL
+DP,DP_M1_1,DP_M1,Coleoptera,Nebria brevicollis,6,Mature
+DP,DP_M1_1,DP_M1,Coleoptera,Pterostichus madidus,1,Mature
+DP,DP_M1_1,DP_M1,Coleoptera,Notiophilus rufipes,1,Mature
+DP,DP_M1_2,DP_M1,Coleoptera,Pterostichus madidus,1,Mature
+DP,DP_M1_2,DP_M1,Araneae,Linyphiidae,1,Mature
+DP,DP_M1_2,DP_M1,Araneae,clubiona sp,1,Mature
+DP,DP_M1_3,DP_M1,Coleoptera,Pterostichus madidus,1,Mature
+DP,DP_M1_4,DP_M1,Coleoptera,Nebria brevicollis,1,Mature
+DP,DP_M1_4,DP_M1,Coleoptera,Loricera pilicornis,1,Mature
+DP,DP_M1_4,DP_M1,Coleoptera,Notiophilus rufipes,2,Mature
+DP,DP_M1_4,DP_M1,Coleoptera,Notiophilus biguttatus,1,Mature
+DP,DP_M1_4,DP_M1,Araneae,Linyphiidae,2,Mature
+DP,DP_M1_4,DP_M1,Araneae,Pachygnatha degeeri,1,Mature
+DP,DP_M1_5,DP_M1,Coleoptera,Nebria brevicollis,2,Mature
+DP,DP_M1_5,DP_M1,Araneae,Linyphiidae,1,Mature
+DP,DP_M1_6,DP_M1,Araneae,Linyphiidae,3,Mature
+DP,DP_M1_6,DP_M1,Coleoptera,Nebria brevicollis,1,Mature
+DP,DP_M1_6,DP_M1,Coleoptera,Pterostichus madidus,,Mature
+DP,DP_M2_1,DP_M2,Coleoptera,Pterostichus madidus,1,Mature
+DP,DP_M2_1,DP_M2,Araneae,Pachygnatha degeeri,1,Mature
+DP,DP_M2_1,DP_M2,Araneae,Linyphiidae,1,Mature
+DP,DP_M2_1,DP_M2,Coleoptera,Notiophilus rufipes,1,Mature
+DP,DP_M2_2,DP_M2,Coleoptera,Abax parallelepipedus,1,Mature
+DP,DP_M2_3,DP_M2,Coleoptera,Abax parallelepipedus,1,Mature
+DP,DP_M2_3,DP_M2,Coleoptera,Notiophilus rufipes,1,Mature
+DP,DP_M2_3,DP_M2,Coleoptera,Notiophilus biguttatus,1,Mature
+DP,DP_M2_3,DP_M2,Araneae,Linyphiidae,1,Mature
+DP,DP_M2_4,DP_M2,Coleoptera,Abax parallelepipedus,1,Mature
+DP,DP_M2_4,DP_M2,Coleoptera,Pterostichus madidus,2,Mature
+DP,DP_M2_4,DP_M2,Coleoptera,Notiophilus rufipes,3,Mature
+DP,DP_M2_4,DP_M2,Araneae,Linyphiidae,2,Mature
+DP,DP_M2_4,DP_M2,Araneae,Tetragnatha sp,1,Mature
+DP,DP_M2_4,DP_M2,Araneae,Oxyptila trux,1,Mature
+DP,DP_M2_5,DP_M2,Araneae,Linyphiidae,2,Mature
+DP,DP_M2_5,DP_M2,Araneae,Pardosa sp,2,Mature
+DP,DP_M2_6,DP_M2,Araneae,Trochosa terricola,1,Mature
+DP,DP_M2_6,DP_M2,Araneae,Pardosa sp,2,Mature
+DP,DP_M2_6,DP_M2,Araneae,Linyphiidae,1,Mature
+DP,DP_M2_6,DP_M2,Araneae,Notiophilus rufipes,1,Mature
+DP,DP_M2_6,DP_M2,Araneae,Pterostichus madidus,1,Mature
+DP,DP_M2_6,DP_M2,Araneae,Bycatch,11,Mature
+DP,DP_M3_1,DP_M3,Coleoptera,Carabus nemoralis ,1,Mature
+DP,DP_M3_1,DP_M3,Araneae,Linyphiidae,1,Mature
+DP,DP_M3_1,DP_M3,Araneae,Trochosa ruricola,2,Mature
+DP,DP_M3_1,DP_M3,Araneae,Pardosa sp,1,Mature
+DP,DP_M3_2,DP_M3,Coleoptera,Abax parallelepipedus,6,Mature
+DP,DP_M3_2,DP_M3,Araneae,Agroeca brunnea,1,Mature
+DP,DP_M3_2,DP_M3,Coleoptera,Nebria brevicollis,1,Mature
+DP,DP_M3_2,DP_M3,Coleoptera,Notiophilus rufipes,1,Mature
+DP,DP_M3_2,DP_M3,Araneae,Robertus lividus,1,Mature
+DP,DP_M3_3,DP_M3,Coleoptera,Nebria brevicollis,3,Mature
+DP,DP_M3_3,DP_M3,Coleoptera,Trochosa ruricola,4,Mature
+DP,DP_M3_4,DP_M3,Araneae,Trochosa sp,,Mature
+DP,DP_M3_5,DP_M3,Araneae,Linyphiidae,2,Mature
+DP,DP_M3_5,DP_M3,Coleoptera,Nebria brevicollis,2,Mature
+DP,DP_M3_5,DP_M3,Coleoptera,Notiophilus rufipes,1,Mature
+DP,DP_M3_5,DP_M3,Coleoptera,Pterostichus madidus,1,Mature
+DP,DP_M4_1,DP_M4,Araneae,Linyphiidae,1,Mature
+DP,DP_M4_2,DP_M4,Coleoptera,Pterostichus madidus,3,Mature
+DP,DP_M4_2,DP_M4,Coleoptera,Nebria brevicollis,1,Mature
+DP,DP_M4_2,DP_M4,Araneae,Linyphiidae,1,Mature
+DP,DP_M4_3,DP_M4,Coleoptera,Abax parallelepipedus,2,Mature
+DP,DP_M4_3,DP_M4,Coleoptera,Nebria brevicollis,1,Mature
+DP,DP_M4_3,DP_M4,Coleoptera,Notiophilus biguttatus ,1,Mature
+DP,DP_M4_3,DP_M4,Araneae,Trochosa sp,1,Mature
+DP,DP_M4_4,DP_M4,Coleoptera,Abax parallelepipedus,2,Mature
+DP,DP_M4_4,DP_M4,Araneae,lycosidae. Immature.,1,Mature
+DP,DP_M4_4,DP_M4,Araneae,Trochosa terricola,1,Mature
+DP,DP_M4_5,DP_M4,Coleoptera,Notiophilus rufipes,3,Mature
+DP,DP_M4_6,DP_M4,Araneae,Linyphiidae,1,Mature
+DP,DP_P1_1,DP_P1,Coleoptera,Pterostichus madidus,1,PL
+DP,DP_P1_1,DP_P1,Araneae,Pachygnatha degeeri,1,PL
+DP,DP_P1_1,DP_P1,Araneae,Pardosa sp,1,PL
+DP,DP_P1_3,DP_P1,Araneae,Pachygnatha degeeri,1,PL
+DP,DP_P1_4,DP_P1,Araneae,Clubiona comta,1,PL
+DP,DP_P1_5,DP_P1,Araneae,Trochosa terricola,1,PL
+DP,DP_P1_6,DP_P1,Araneae,Pachygnatha degeeri,1,PL
+DP,DP_P2_1A,DP_P2,Araneae,Linyphiidae,2,PL
+DP,DP_P2_2,DP_P2,Araneae,Trochosa terricola,1,PL
+DP,DP_P2_3,DP_P2,Araneae,Trochosa ruricola,1,PL
+DP,DP_P2_3,DP_P2,Araneae,Linyphiidae,1,PL
+DP,DP_P2_3,DP_P2,Coleoptera,Pselaphus heisei ,1,PL
+DP,DP_P2_4,DP_P2,Araneae,Linyphiidae,1,PL
+DP,DP_P2_4,DP_P2,Araneae,Pardosa sp,1,PL
+DP,DP_P2_4,DP_P2,Araneae,Trochosa terricola,4,PL
+DP,DP_P2_5,DP_P2,Araneae,Clubionidae,1,PL
+DP,DP_P2_5,DP_P2,Araneae,Linyphiidae,1,PL
+DP,DP_P2_5,DP_P2,Araneae,Lycosidae. Immature.,1,PL
+DW,DW_M1_1,DW_M1,Coleoptera,Nebria brevicollis,2,Mature
+DW,DW_M1_1,DW_M1,Coleoptera,Abax parallelepipedus,1,Mature
+DW,DW_M1_1,DW_M1,Araneae,Linyphiidae,3,Mature
+DW,DW_M1_2,DW_M1,Coleoptera,Abax parallelepipedus,2,Mature
+DW,DW_M1_2,DW_M1,Araneae,Linyphiidae,1,Mature
+DW,DW_M1_2,DW_M1,Coleoptera,Nebria brevicollis,1,Mature
+DW,DW_M1_2,DW_M1,Coleoptera,Pterostichus madidus,1,Mature
+DW,DW_M1_3,DW_M1,Coleoptera,Nebria brevicollis,1,Mature
+DW,DW_M1_3,DW_M1,Araneae,Linyphiidae,4,Mature
+DW,DW_M1_4,DW_M1,Coleoptera,Abax parallelepipedus,1,Mature
+DW,DW_M1_4,DW_M1,Araneae,Linyphiidae,2,Mature
+DW,DW_M1_4,DW_M1,Coleoptera,Notiophilus biguttatus,2,Mature
+DW,DW_M1_5,DW_M1,Araneae,Linyphiidae,3,Mature
+DW,DW_M1_5,DW_M1,Coleoptera,Notiophilus rufipes,5,Mature
+DW,DW_M1_5,DW_M1,Coleoptera,Pterostichus madidus,1,Mature
+DW,DW_M1_6,DW_M1,Araneae,Linyphiidae,2,Mature
+DW,DW_M1_6,DW_M1,Coleoptera,Nebria brevicollis,4,Mature
+DW,DW_M1_6,DW_M1,Coleoptera,Notiophilus biguttatus ,1,Mature
+DW,DW_M1_6,DW_M1,Coleoptera,Notiophilus rufipes,1,Mature
+DW,DW_M2_1,DW_M2,Araneae,Linyphiidae,1,Mature
+DW,DW_M2_1,DW_M2,Coleoptera,Notiophilus rufipes,1,Mature
+DW,DW_M2_1,DW_M2,Coleoptera,Syntomus obscuroguttatus,1,Mature
+DW,DW_M2_2,DW_M2,Araneae,Linyphiidae,3,Mature
+DW,DW_M2_2,DW_M2,Coleoptera,Notiophilus rufipes,2,Mature
+DW,DW_M2_3,DW_M2,Araneae,Trochosa terricola,2,Mature
+DW,DW_M2_3,DW_M2,Araneae,Pardosa sp,1,Mature
+DW,DW_M2_4,DW_M2,Coleoptera,Abax parallelepipedus,1,Mature
+DW,DW_M2_4,DW_M2,Araneae,Pardosa amentata,3,Mature
+DW,DW_M2_4,DW_M2,Araneae,Alopecosa pulverulenta,1,Mature
+DW,DW_M2_5,DW_M2,Coleoptera,Acupalpus flavicollis,1,Mature
+DW,DW_M2_5,DW_M2,Araneae,Pardosa sp,1,Mature
+DW,DW_M2_6,DW_M2,Araneae,Trochosa terricola,1,Mature
+DW,DW_M2_6,DW_M2,Araneae,Pardosa sp,2,Mature
+DW,DW_M2_6,DW_M2,Coleoptera,Peocilus cupreus,1,Mature
+DW,DW_M3_1,DW_M3,Coleoptera,Carabus nemoralis ,1,Mature
+DW,DW_M3_1,DW_M3,Coleoptera,Carabus problematicus,1,Mature
+DW,DW_M3_1,DW_M3,Araneae,Pardosa sp,1,Mature
+DW,DW_M3_1,DW_M3,Coleoptera,Syntomus obscuroguttatus,1,Mature
+DW,DW_M3_1,DW_M3,Araneae,Xysticus cristatus,1,Mature
+DW,DW_M3_3,DW_M3,Araneae,Trochosa terricola,1,Mature
+DW,DW_M3_5,DW_M3,Coleoptera,Notiophilus palustris,1,Mature
+DW,DW_M3_5,DW_M3,Coleoptera,Notiophilus substriatus,1,Mature
+DW,DW_M3_5,DW_M3,Araneae,Pardosa lugabris,1,Mature
+DW,DW_M3_5,DW_M3,Araneae,Pardosa sp,1,Mature
+DW,DW_M3_5,DW_M3,Araneae,Trochosa terricola,1,Mature
+DW,DW_M3_6,DW_M3,Coleoptera,Notiophilus germinyi,1,Mature
+DW,DW_M3_6,DW_M3,Araneae,Linyphiidae,1,Mature
+DW,DW_M3_6,DW_M3,Araneae,Pardosa lugabris,8,Mature
+DW,DW_M4_1,DW_M4,Coleoptera,Bembidion obtusum ,1,Mature
+DW,DW_M4_1,DW_M4,Coleoptera,Leistus spinibarbis,1,Mature
+DW,DW_M4_1,DW_M4,Araneae,Linyphiidae,2,Mature
+DW,DW_M4_1,DW_M4,Coleoptera,Nebria brevicollis,2,Mature
+DW,DW_M4_1,DW_M4,Coleoptera,Notiophilus rufipes,1,Mature
+DW,DW_M4_1,DW_M4,Araneae,Trochosa ruricola,1,Mature
+DW,DW_M4_1,DW_M4,Araneae,Trochosa sp,1,Mature
+DW,DW_M4_2,DW_M4,Araneae,Linyphiidae,1,Mature
+DW,DW_M4_2,DW_M4,Coleoptera,Notiophilus rufipes,1,Mature
+DW,DW_M4_2,DW_M4,Araneae,Trochosa sp,1,Mature
+DW,DW_M4_2,DW_M4,Coleoptera,Notiophilus biguttatus,1,Mature
+DW,DW_M4_3,DW_M4,Araneae,Linyphiidae,2,Mature
+DW,DW_M4_3,DW_M4,Coleoptera,Bembidion lampros,3,Mature
+DW,DW_M4_4,DW_M4,Coleoptera,Nebria brevicollis,1,Mature
+DW,DW_M4_4,DW_M4,Coleoptera,Asaphidion flavipes,2,Mature
+DW,DW_M4_4,DW_M4,Araneae,Linyphiidae,1,Mature
+DW,DW_M4_5,DW_M4,Coleoptera,Pterostichus madidus,1,Mature
+DW,DW_M4_5,DW_M4,Araneae,Trochosa ruricola,1,Mature
+DW,DW_M4_6,DW_M4,Coleoptera,Abax parallelepipedus,1,Mature
+DW,DW_M4_6,DW_M4,Coleoptera,amara eurynota,1,Mature
+DW,DW_M4_6,DW_M4,Araneae,Linyphiidae,2,Mature
+DW,DW_M4_6,DW_M4,Coleoptera,Notiophilus rufipes,3,Mature
+DW,DW_M4_6,DW_M4,Coleoptera,Pterostichus madidus,1,Mature
+DW,DW_M4_6,DW_M4,Araneae,Trochosa terricola,1,Mature
+DW,DW_P1_1,DW_P1,Araneae,Linyphiidae,1,PL
+DW,DW_P1_1,DW_P1,Coleoptera,Notiophilus biguttatus,1,PL
+DW,DW_P1_2,DW_P1,Coleoptera,Platynus assimilis,2,PL
+DW,DW_P1_2,DW_P1,Coleoptera,Bycatch,3,PL
+DW,DW_P1_2,DW_P1,Coleoptera,Trochosa terricola,1,PL
+DW,DW_P1_2,DW_P1,Araneae,Linyphiidae,1,PL
+DW,DW_P1_3,DW_P1,Coleoptera,Bembidion biguttatum,1,PL
+DW,DW_P1_3,DW_P1,Araneae,Linyphiidae,5,PL
+DW,DW_P1_3,DW_P1,Coleoptera,Platynus assimilis,2,PL
+DW,DW_P1_4,DW_P1,Araneae,Linyphiidae,6,PL
+DW,DW_P1_4,DW_P1,Coleoptera,Limodromus assimilis,1,PL
+DW,DW_P1_5,DW_P1,Araneae,Lycosidae. Immature.,1,PL
+DW,DW_P1_6,DW_P1,Araneae,Alopecosa pulverulenta,1,PL
+DW,DW_P1_6,DW_P1,Araneae,Pardosa proxima,1,PL
+DW,DW_P1_6,DW_P1,Araneae,Pardosa pullata,9,PL
+DW,DW_P1_6,DW_P1,Coleoptera,Limodromus assimilis,2,PL
+DW,DW_P1_6,DW_P1,Araneae,Xysticus cristatus,6,PL
+DW,DW_P2_2,DW_P2,Araneae,Linyphiidae,1,PL
+DW,DW_P2_2,DW_P2,Araneae,Pardosa sp,1,PL
+DW,DW_P2_2,DW_P2,Araneae,Trochosa terricola,2,PL
+DW,DW_P2_3,DW_P2,Araneae,Linyphiidae,3,PL
+DW,DW_P2_3,DW_P2,Araneae,Trochosa ruricola,1,PL
+DW,DW_P2_3,DW_P2,Coleoptera,Notiophilus biguttatus,2,PL
+DW,DW_P2_4,DW_P2,Araneae,Trochosa terricola,1,PL
+DW,DW_P2_4,DW_P2,Araneae,Linyphiidae,2,PL
+DW,DW_P2_5,DW_P2,Araneae,Linyphiidae,2,PL
+DW,DW_P2_5,DW_P2,Araneae,Pachygnatha clercki,1,PL
+DW,DW_P2_5,DW_P2,Araneae,Trochosa terricola,1,PL
+DW,DW_P2_5,DW_P2,Araneae,Pardosa sp,1,PL
+DW,DW_P2_5,DW_P2,Coleoptera,Platynus assimilis,1,PL
+DW,DW_P2_5,DW_P2,Coleoptera,Nebria brevicollis,1,PL
+DW,DW_P2_6,DW_P2,Araneae,Linyphiidae,1,PL
+DW,DW_P2_6,DW_P2,Araneae,Trochosa terricola,1,PL
+DW,DW_P2_6,DW_P2,Araneae,Notiophilus biguttatus,2,PL
+FF,FF_M1_1,FF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+FF,FF_M1_1,FF_M1,Araneae,Alopecosa pulverulenta,1,Mature
+FF,FF_M1_1,FF_M1,Coleoptera,Nebria brevicollis,1,Mature
+FF,FF_M1_1,FF_M1,Coleoptera,Pterostichus madidus,3,Mature
+FF,FF_M1_2,FF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+FF,FF_M1_2,FF_M1,Coleoptera,Pterostichus madidus,1,Mature
+FF,FF_M1_2,FF_M1,Araneae,Linyphiidae,2,Mature
+FF,FF_M1_2,FF_M1,Araneae,Clubiona sp,1,Mature
+FF,FF_M1_3,FF_M1,Coleoptera,Abax parallelepipedus,6,Mature
+FF,FF_M1_3,FF_M1,Coleoptera,Bembidion lampros,1,Mature
+FF,FF_M1_3,FF_M1,Araneae,Coelotes terrestris,1,Mature
+FF,FF_M1_3,FF_M1,Coleoptera,Nebria brevicollis,5,Mature
+FF,FF_M1_3,FF_M1,Araneae,Pardosa lugabris,4,Mature
+FF,FF_M1_3,FF_M1,Coleoptera,Pterostichus madidus,4,Mature
+FF,FF_M1_4,FF_M1,Coleoptera,Abax parallelepipedus,8,Mature
+FF,FF_M1_4,FF_M1,Araneae,Clubiona stagnalis,1,Mature
+FF,FF_M1_4,FF_M1,Coleoptera,Nebria brevicollis,5,Mature
+FF,FF_M1_4,FF_M1,Coleoptera,Pterostichus madidus,2,Mature
+FF,FF_M1_5,FF_M1,Coleoptera,Pterostichus madidus,9,Mature
+FF,FF_M1_5,FF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+FF,FF_M1_5,FF_M1,Coleoptera,Nebria brevicollis,2,Mature
+FF,FF_M1_5,FF_M1,Araneae,Linyphiidae,1,Mature
+FF,FF_M1_5,FF_M1,Araneae,Pisaura mirabilis,1,Mature
+FF,FF_M1_6,FF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+FF,FF_M1_6,FF_M1,Coleoptera,Pterostichus madidus,9,Mature
+FF,FF_M1_6,FF_M1,Coleoptera,Nebria brevicollis,20,Mature
+FF,FF_M1_6,FF_M1,Araneae,Clubiona sp,1,Mature
+FF,FF_M2_1,FF_M2,Araneae,Linyphiidae,3,Mature
+FF,FF_M2_2,FF_M2,Araneae,Pardosa lugabris,1,Mature
+FF,FF_M2_3,FF_M2,Araneae,Pardosa lugabris,1,Mature
+FF,FF_M2_3,FF_M2,Coleoptera,Pterostichus madidus,1,Mature
+FF,FF_M2_4,FF_M2,Araneae,Clubiona comta,2,Mature
+FF,FF_M2_4,FF_M2,Coleoptera,Notiophilus palustris,1,Mature
+FF,FF_M2_4,FF_M2,Araneae,Pardosa lugabris,3,Mature
+FF,FF_M2_4,FF_M2,Araneae,Trochosa terricola,1,Mature
+FF,FF_M2_5,FF_M2,Coleoptera,Abax parallelepipedus,1,Mature
+FF,FF_M2_5,FF_M2,Araneae,Linyphiidae,1,Mature
+FF,FF_M2_5,FF_M2,Araneae,Pardosa lugabris,1,Mature
+FF,FF_M2_5,FF_M2,Araneae,Trochosa terricola,2,Mature
+FF,FF_M2_6,FF_M2,Coleoptera,Abax parallelepipedus,1,Mature
+FF,FF_M2_6,FF_M2,Araneae,Linyphiidae,1,Mature
+FF,FF_M2_6,FF_M2,Coleoptera,Nebria brevicollis,1,Mature
+FF,FF_M2_6,FF_M2,Araneae,Pardosa lugabris,1,Mature
+FF,FF_M2_6,FF_M2,Araneae,Trochosa terricola,1,Mature
+FF,FF_M2_6,FF_M2,Araneae,Zolotes apricorum,1,Mature
+FF,FF_P1_1,FF_P1,Araneae,Alopecosa pulverulenta,5,PL
+FF,FF_P1_1,FF_P1,Coleoptera,Bembidion lampros,1,PL
+FF,FF_P1_1,FF_P1,Coleoptera,Pardosa lugabris,3,PL
+FF,FF_P1_1,FF_P1,Coleoptera,Pterostichus madidus,1,PL
+FF,FF_P1_1,FF_P1,Coleoptera,Zolotes apricorum,3,PL
+FF,FF_P1_2,FF_P1,Coleoptera,Badister bullatus,1,PL
+FF,FF_P1_2,FF_P1,Araneae,Linyphiidae,1,PL
+FF,FF_P1_2,FF_P1,Araneae,Pardosa lugabris,7,PL
+FF,FF_P1_3,FF_P1,Araneae,Alopecosa pulverulenta,8,PL
+FF,FF_P1_3,FF_P1,Araneae,Linyphiidae,2,PL
+FF,FF_P1_3,FF_P1,Coleoptera,Liparus coronatus,1,PL
+FF,FF_P1_3,FF_P1,Araneae,Oxyptila trux,1,PL
+FF,FF_P1_3,FF_P1,Araneae,Pardosa lugabris,2,PL
+FF,FF_P1_4,FF_P1,Araneae,Pardosa palustris,3,PL
+FF,FF_P1_4,FF_P1,Coleoptera,Pterostichus madidus,1,PL
+FF,FF_P1_4,FF_P1,Araneae,Xysticus cristatus,1,PL
+FF,FF_P1_4,FF_P1,Araneae,Zolotes apricorum,2,PL
+FF,FF_P2_1,FF_P2,Coleoptera,Abax parallelepipedus,1,PL
+FF,FF_P2_1,FF_P2,Coleoptera,Badister bullatus,1,PL
+FF,FF_P2_1,FF_P2,Coleoptera,Propylea quattuordecimpunctata,1,PL
+FF,FF_P2_1,FF_P2,Araneae,Linyphiidae,1,PL
+FF,FF_P2_1,FF_P2,Araneae,Pardosa lugabris,1,PL
+FF,FF_P2_3,FF_P2,Coleoptera,Abax parallelepipedus,5,PL
+FF,FF_P2_3,FF_P2,Araneae,Alopecosa pulverulenta,2,PL
+FF,FF_P2_3,FF_P2,Coleoptera,Nebria brevicollis,1,PL
+FF,FF_P2_3,FF_P2,Araneae,Pirata hygrophilus,17,PL
+FF,FF_P2_3,FF_P2,Coleoptera,Subcoccinella vigintiquattuorpunctata,1,PL
+FF,FF_P2_3,FF_P2,Araneae,Trochosa terricola,2,PL
+FF,FF_P2_4,FF_P2,Coleoptera,Abax parallelepipedus,6,PL
+FF,FF_P2_4,FF_P2,Coleoptera,Pterostichus madidus,4,PL
+FF,FF_P2_4,FF_P2,Araneae,Pardosa lugabris,23,PL
+FF,FF_P2_5,FF_P2,Araneae,Alopecosa pulverulenta,6,PL
+FF,FF_P2_5,FF_P2,Araneae,Linyphiidae,1,PL
+FF,FF_P2_5,FF_P2,Araneae,Pachygnatha degeeri,1,PL
+FF,FF_P2_5,FF_P2,Araneae,Pardosa pullata,2,PL
+FF,FF_P2_5,FF_P2,Araneae,Zora spinimana,1,PL
+FF,FF_P2_6,FF_P2,Araneae,Alopecosa pulverulenta,9,PL
+FF,FF_P2_6,FF_P2,Araneae,Linyphiidae,1,PL
+FF,FF_P2_6,FF_P2,Araneae,Pardosa lugabris,8,PL
+FL,FL_M1_1,FL_M1,Coleoptera,Abax parallelepipedus,3,Mature
+FL,FL_M1_1,FL_M1,Coleoptera,Abax parallelepipedus,3,Mature
+FL,FL_M1_1,FL_M1,Coleoptera,Bycatch,7,Mature
+FL,FL_M1_1,FL_M1,Coleoptera,Linyphiidae,1,Mature
+FL,FL_M1_1,FL_M1,Coleoptera,Notiophilus rufipes,1,Mature
+FL,FL_M1_1,FL_M1,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M1_2,FL_M1,Coleoptera,Abax parallelepipedus,5,Mature
+FL,FL_M1_2,FL_M1,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M1_2,FL_M1,Araneae,Pirata hygrophilus,1,Mature
+FL,FL_M1_2,FL_M1,Araneae,Pardosa lugabris,2,Mature
+FL,FL_M1_4,FL_M1,Araneae,Linyphiidae,3,Mature
+FL,FL_M1_4,FL_M1,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M1_5,FL_M1,Coleoptera,Abax parallelepipedus,6,Mature
+FL,FL_M1_5,FL_M1,Araneae,Harpactea hombergi,1,Mature
+FL,FL_M1_5,FL_M1,Araneae,Linyphiidae,3,Mature
+FL,FL_M1_5,FL_M1,Coleoptera,Notiophilus biguttatus,1,Mature
+FL,FL_M1_5,FL_M1,Coleoptera,Notiophilus rufipes,1,Mature
+FL,FL_M1_5,FL_M1,Araneae,Oxyptila trux,1,Mature
+FL,FL_M1_5,FL_M1,Araneae,Pardosa lugabris,3,Mature
+FL,FL_M1_6,FL_M1,Coleoptera,Abax parallelepipedus,4,Mature
+FL,FL_M2_1,FL_M2,Coleoptera,Badister bullatus,1,Mature
+FL,FL_M2_1,FL_M2,Araneae,Linyphiidae,2,Mature
+FL,FL_M2_1,FL_M2,Coleoptera,Notiophilus rufipes,2,Mature
+FL,FL_M2_1,FL_M2,Araneae,Pardosa lugabris,7,Mature
+FL,FL_M2_1,FL_M2,Araneae,Pirata hygrophilus,2,Mature
+FL,FL_M2_1,FL_M2,Coleoptera,Pterostichus madidus,2,Mature
+FL,FL_M2_2,FL_M2,Araneae,Ozyptila trux,1,Mature
+FL,FL_M2_2,FL_M2,Araneae,Pardosa lugabris,37,Mature
+FL,FL_M2_2,FL_M2,Coleoptera,Pterostichus madidus,4,Mature
+FL,FL_M2_3,FL_M2,Araneae,Linyphiidae,1,Mature
+FL,FL_M2_3,FL_M2,Araneae,Pardosa lugabris,19,Mature
+FL,FL_M2_3,FL_M2,Araneae,Pirata hygrophilus,1,Mature
+FL,FL_M2_3,FL_M2,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M2_3,FL_M2,Araneae,Trochosa terricola,2,Mature
+FL,FL_M2_4,FL_M2,Coleoptera,Abax parallelepipedus,1,Mature
+FL,FL_M2_4,FL_M2,Araneae,Linyphiidae,3,Mature
+FL,FL_M2_4,FL_M2,Araneae,Pachygnatha degeeri,3,Mature
+FL,FL_M2_4,FL_M2,Araneae,Pardosa palustris,2,Mature
+FL,FL_M2_4,FL_M2,Araneae,Pardosa pullata,2,Mature
+FL,FL_M2_4,FL_M2,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M2_4,FL_M2,Araneae,Trochosa terricola,1,Mature
+FL,FL_M2_4,FL_M2,Araneae,Zolotes pusillus,1,Mature
+FL,FL_M3_1,FL_M3,Coleoptera,Abax parallelepipedus,2,Mature
+FL,FL_M3_1,FL_M3,Araneae,Pardosa lugabris,11,Mature
+FL,FL_M3_1,FL_M3,Araneae,Zolotes pusillus,1,Mature
+FL,FL_M3_3,FL_M3,Coleoptera,Abax parallelepipedus,1,Mature
+FL,FL_M3_3,FL_M3,Araneae,Alopecosa pulverulenta,1,Mature
+FL,FL_M3_3,FL_M3,Araneae,Dysdera crocota,1,Mature
+FL,FL_M3_3,FL_M3,Araneae,Linyphiidae,5,Mature
+FL,FL_M3_3,FL_M3,Araneae,Pachygnatha degeeri,1,Mature
+FL,FL_M3_3,FL_M3,Araneae,Pardosa lugabris,15,Mature
+FL,FL_M3_3,FL_M3,Coleoptera,Pterostichus madidus,1,Mature
+FL,FL_M3_3,FL_M3,Araneae,Trochosa ruricola,1,Mature
+FL,FL_M3_3,FL_M3,Coleoptera,Tytthaspis sedecimpunctata,1,Mature
+FL,FL_M4_1,FL_M4,Coleoptera,Abax parallelepipedus,3,Mature
+FL,FL_M4_1,FL_M4,Araneae,Ozyptila praticola,2,Mature
+FL,FL_M4_1,FL_M4,Araneae,Pardosa lugabris,12,Mature
+FL,FL_M4_3,FL_M4,Coleoptera,Abax parallelepipedus,1,Mature
+FL,FL_M4_3,FL_M4,Araneae,Linyphiidae,1,Mature
+FL,FL_M4_3,FL_M4,Araneae,Ozyptila trux,1,Mature
+FL,FL_M4_3,FL_M4,Araneae,Pardosa lugabris,13,Mature
+FL,FL_M4_3,FL_M4,Coleoptera,Pterostichus madidus,4,Mature
+FL,FL_M4_5,FL_M4,Coleoptera,Abax parallelepipedus,1,Mature
+FL,FL_M4_5,FL_M4,Coleoptera,Carabus nemoralis ,1,Mature
+FL,FL_M4_5,FL_M4,Araneae,Linyphiidae,1,Mature
+FL,FL_M4_5,FL_M4,Araneae,Pachygnatha degeeri,1,Mature
+FL,FL_M4_5,FL_M4,Araneae,Pardosa lugabris,24,Mature
+FL,FL_M4_5,FL_M4,Araneae,Pardosa pullata,1,Mature
+FL,FL_M4_5,FL_M4,Coleoptera,Pterostichus madidus,11,Mature
+FL,FL_M4_5,FL_M4,Araneae,Trochosa sp,1,Mature
+FL,FL_M4_6,FL_M4,Coleoptera,Abax parallelepipedus,1,Mature
+FL,FL_M4_6,FL_M4,Araneae,Coelotes terrestris,1,Mature
+FL,FL_M4_6,FL_M4,Araneae,Alopecosa pulverulenta,1,Mature
+FL,FL_M4_6,FL_M4,Araneae,Pirata hygrophilus,1,Mature
+FL,FL_M4_6,FL_M4,Araneae,Pardosa amentata,4,Mature
+FL,FL_M4_6,FL_M4,Araneae,Xysticus kochi,1,Mature
+FL,FL_M4_6,FL_M4,Araneae,Pachygnatha degeeri,1,Mature
+FL,FL_P1_1,FL_P1,Araneae,Linyphiidae,3,PL
+FL,FL_P1_1,FL_P1,Coleoptera,Nebria brevicollis,1,PL
+FL,FL_P1_2,FL_P1,Coleoptera,Abax parallelepipedus,1,PL
+FL,FL_P1_2,FL_P1,Coleoptera,Carabus nemoralis ,3,PL
+FL,FL_P1_2,FL_P1,Araneae,Linyphiidae,2,PL
+FL,FL_P1_2,FL_P1,Araneae,Pirata hygrophilus,1,PL
+FL,FL_P1_2,FL_P1,Araneae,Trochosa terricola,1,PL
+FL,FL_P1_3,FL_P1,Araneae,Pirata hygrophilus,2,PL
+FL,FL_P1_3,FL_P1,Coleoptera,Pterostichus madidus,1,PL
+FL,FL_P1_4,FL_P1,Araneae,Linyphiidae,4,PL
+FL,FL_P1_4,FL_P1,Coleoptera,Notiophilus biguttatus,1,PL
+FL,FL_P1_5,FL_P1,Araneae,Agraecina striata,1,PL
+FL,FL_P1_5,FL_P1,Araneae,Linyphiidae,1,PL
+FL,FL_P1_5,FL_P1,Araneae,Pirata hygrophilus,4,PL
+FL,FL_P1_6,FL_P1,Coleoptera,Abax parallelepipedus,2,PL
+FL,FL_P1_6,FL_P1,Coleoptera,Clivina fossor,2,PL
+FL,FL_P1_6,FL_P1,Araneae,Linyphiidae,2,PL
+FL,FL_P1_6,FL_P1,Araneae,Linyphiidae,5,PL
+FL,FL_P1_6,FL_P1,Araneae,Pardosa lugabris,11,PL
+FL,FL_P1_6,FL_P1,Araneae,Pirata hygrophilus,3,PL
+FL,FL_P1_6,FL_P1,Coleoptera,Pterostichus madidus,1,PL
+FL,FL_P2_1,FL_P2,Araneae,Clubiona stagnalis,1,PL
+FL,FL_P2_1,FL_P2,Araneae,Linyphiidae,6,PL
+FL,FL_P2_1,FL_P2,Araneae,Pirata hygrophilus,1,PL
+FL,FL_P2_2,FL_P2,Coleoptera,Nebria brevicollis,4,PL
+FL,FL_P2_2,FL_P2,Coleoptera,Notiophilus rufipes,2,PL
+FL,FL_P2_2,FL_P2,Coleoptera,Pterostichus madidus,3,PL
+FL,FL_P2_3,FL_P2,Araneae,Clubiona stagnalis,3,PL
+FL,FL_P2_3,FL_P2,Araneae,Linyphiidae,1,PL
+FL,FL_P2_3,FL_P2,Araneae,Pirata hygrophilus,11,PL
+FL,FL_P2_4,FL_P2,Araneae,Linyphiidae,1,PL
+FL,FL_P2_4,FL_P2,Araneae,Pardosa lugabris,2,PL
+FL,FL_P2_4,FL_P2,Coleoptera,Pterostichus madidus,2,PL
+FL,FL_P2_5,FL_P2,Coleoptera,Abax parallelepipedus,1,PL
+FL,FL_P2_5,FL_P2,Coleoptera,Asaphidion flavipes,2,PL
+FL,FL_P2_5,FL_P2,Coleoptera,Bembidion obtusum ,2,PL
+FL,FL_P2_5,FL_P2,Coleoptera,Nebria brevicollis,1,PL
+FL,FL_P2_5,FL_P2,Coleoptera,Pterostichus madidus,3,PL
+FL,FL_P2_6,FL_P2,Araneae,Alopecosa pulverulenta,1,PL
+FL,FL_P2_6,FL_P2,Coleoptera,Asaphidion flavipes,1,PL
+FL,FL_P2_6,FL_P2,Coleoptera,Lampyris noctiluca,1,PL
+FL,FL_P2_6,FL_P2,Araneae,Linyphiidae,3,PL
+FL,FL_P2_6,FL_P2,Araneae,Linyphiidae,1,PL
+FL,FL_P2_6,FL_P2,Coleoptera,Nebria brevicollis,1,PL
+FL,FL_P2_6,FL_P2,Coleoptera,Notiophilus biguttatus,1,PL
+FL,FL_P2_6,FL_P2,Araneae,Pachygnatha degeeri,7,PL
+FL,FL_P2_6,FL_P2,Araneae,Pardosa palustris,9,PL
+FL,FL_P2_6,FL_P2,Araneae,Pardosa pullata,4,PL
+FL,FL_P2_6,FL_P2,Araneae,Pirata hygrophilus,3,PL
+FL,FL_P2_6,FL_P2,Araneae,Pisaura mirabilis,1,PL
+FL,FL_P2_6,FL_P2,Coleoptera,Pterostichus madidus,2,PL
+FL,FL_P2_6,FL_P2,Araneae,Trochosa ruricola,1,PL
+FL,FL_P2_6,FL_P2,Araneae,Trochosa terricola,2,PL
+HF,HF_M1_1,HF_M1,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M1_1,HF_M1,Coleoptera,Carabus nemoralis ,1,Mature
+HF,HF_M1_1,HF_M1,Araneae,Pardosa amentata,3,Mature
+HF,HF_M1_2,HF_M1,Coleoptera,Abax parallelepipedus,3,Mature
+HF,HF_M1_2,HF_M1,Araneae,Linyphiidae,1,Mature
+HF,HF_M1_2,HF_M1,Coleoptera,Nebria brevicollis,1,Mature
+HF,HF_M1_2,HF_M1,Coleoptera,Limodromus assimilis,1,Mature
+HF,HF_M1_3,HF_M1,Araneae,Dysdera erythina,2,Mature
+HF,HF_M1_3,HF_M1,Araneae,Linyphiidae,1,Mature
+HF,HF_M1_3,HF_M1,Araneae,Pardosa lugabris,5,Mature
+HF,HF_M1_4,HF_M1,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M1_5,HF_M1,Coleoptera,Abax parallelepipedus,2,Mature
+HF,HF_M1_5,HF_M1,Araneae,Linyphiidae,1,Mature
+HF,HF_M1_5,HF_M1,Araneae,Nebria brevicollis,6,Mature
+HF,HF_M1_5,HF_M1,Araneae,Trochosa ruricola,1,Mature
+HF,HF_M1_6,HF_M1,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M1_6,HF_M1,Araneae,Haplodrassus signifer,1,Mature
+HF,HF_M2_1,HF_M2,Araneae,Pardosa amentata,1,Mature
+HF,HF_M2_1,HF_M2,Araneae,Pardosa palustris,2,Mature
+HF,HF_M2_2,HF_M2,Coleoptera,Carabus nemoralis ,2,Mature
+HF,HF_M2_2,HF_M2,Araneae,Pachygnatha degeeri,10,Mature
+HF,HF_M2_3,HF_M2,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M2_3,HF_M2,Araneae,Clubionidae,1,Mature
+HF,HF_M2_3,HF_M2,Coleoptera,Nebria brevicollis,1,Mature
+HF,HF_M2_3,HF_M2,Araneae,Pardosa amentata,4,Mature
+HF,HF_M2_4,HF_M2,Coleoptera,Abax parallelepipedus,3,Mature
+HF,HF_M2_5,HF_M2,Araneae,Clubiona reclusa,1,Mature
+HF,HF_M2_5,HF_M2,Coleoptera,Nebria brevicollis,1,Mature
+HF,HF_M2_5,HF_M2,Araneae,Pardosa pullata,1,Mature
+HF,HF_M2_5,HF_M2,Coleoptera,Peocilus cupreus,1,Mature
+HF,HF_M2_5,HF_M2,Araneae,Zelotes lututianus,1,Mature
+HF,HF_M2_6,HF_M2,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M2_6,HF_M2,Coleoptera,Pardosa lugabris,2,Mature
+HF,HF_M2_6,HF_M2,Coleoptera,Pterostichus madidus,1,Mature
+HF,HF_M3_1,HF_M3,Coleoptera,Abax parallelepipedus,2,Mature
+HF,HF_M3_1,HF_M3,Coleoptera,Nebria brevicollis,2,Mature
+HF,HF_M3_1,HF_M3,Coleoptera,Notiophilus rufipes,1,Mature
+HF,HF_M3_1,HF_M3,Coleoptera,Pterostichus madidus,2,Mature
+HF,HF_M3_2,HF_M3,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M3_2,HF_M3,Araneae,Linyphiidae,2,Mature
+HF,HF_M3_2,HF_M3,Coleoptera,Tytthaspis sedecimpunctata,1,Mature
+HF,HF_M3_3,HF_M3,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M3_3,HF_M3,Coleoptera,Pterostichus madidus,1,Mature
+HF,HF_M3_4,HF_M3,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M3_4,HF_M3,Araneae,Dysdera erythina,1,Mature
+HF,HF_M3_4,HF_M3,Araneae,Pardosa lugabris,1,Mature
+HF,HF_M4_1,HF_M4,Coleoptera,Abax parallelepipedus,2,Mature
+HF,HF_M4_2,HF_M4,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M4_2,HF_M4,Coleoptera,Asaphidion flavipes,2,Mature
+HF,HF_M4_2,HF_M4,Araneae,Linyphiidae,1,Mature
+HF,HF_M4_2,HF_M4,Coleoptera,Nebria brevicollis,2,Mature
+HF,HF_M4_3,HF_M4,Coleoptera,Abax parallelepipedus,2,Mature
+HF,HF_M4_3,HF_M4,Coleoptera,Nebria brevicollis,4,Mature
+HF,HF_M4_3,HF_M4,Coleoptera,Limodromus assimilis,2,Mature
+HF,HF_M4_3,HF_M4,Coleoptera,Pterostichus madidus,2,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Bembidion lampros,2,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Nebria brevicollis,1,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Nebria brevicollis,2,Mature
+HF,HF_M4_4,HF_M4,Coleoptera,Limodromus assimilis,2,Mature
+HF,HF_M4_5,HF_M4,Coleoptera,Abax parallelepipedus,2,Mature
+HF,HF_M4_5,HF_M4,Araneae,Linyphiidae,2,Mature
+HF,HF_M4_6,HF_M4,Coleoptera,Abax parallelepipedus,1,Mature
+HF,HF_P1_1,HF_P1,Coleoptera,Abax parallelepipedus,1,PL
+HF,HF_P1_1,HF_P1,Coleoptera,Nebria brevicollis,1,PL
+HF,HF_P1_1,HF_P1,Coleoptera,Limodromus assimilis,4,PL
+HF,HF_P1_2,HF_P1,Coleoptera,Abax parallelepipedus,2,PL
+HF,HF_P1_3,HF_P1,Coleoptera,Asaphidion flavipes,1,PL
+HF,HF_P1_3,HF_P1,Araneae,Ozyptila praticola,1,PL
+HF,HF_P1_5,HF_P1,Coleoptera,Abax parallelepipedus,1,PL
+HF,HF_P1_5,HF_P1,Coleoptera,Asaphidion flavipes,1,PL
+HF,HF_P1_5,HF_P1,Coleoptera,Carabus nemoralis ,1,PL
+HF,HF_P1_5,HF_P1,Araneae,Linyphiidae,1,PL
+HF,HF_P1_5,HF_P1,Coleoptera,Nebria brevicollis,1,PL
+HF,HF_P1_5,HF_P1,Araneae,Ozyptila simplex,1,PL
+HF,HF_P1_5,HF_P1,Araneae,Pirata hygrophilus,2,PL
+HF,HF_P1_5,HF_P1,Coleoptera,Limodromus assimilis,1,PL
+HF,HF_P1_6,HF_P1,Coleoptera,Abax parallelepipedus,3,PL
+HF,HF_P1_6,HF_P1,Araneae,Linyphiidae,2,PL
+HF,HF_P1_6,HF_P1,Coleoptera,Limodromus assimilis,1,PL
+HF,HF_P2_1,HF_P2,Coleoptera,Abax parallelepipedus,1,PL
+HF,HF_P2_1,HF_P2,Coleoptera,Nebria brevicollis,1,PL
+HF,HF_P2_1,HF_P2,Araneae,Pachygnatha clercki,1,PL
+HF,HF_P2_1,HF_P2,Araneae,Pirata hygrophilus,1,PL
+HF,HF_P2_1,HF_P2,Coleoptera,Pterostichus madidus,1,PL
+HF,HF_P2_2,HF_P2,Coleoptera,Abax parallelepipedus,1,PL
+HF,HF_P2_2,HF_P2,Coleoptera,Asaphidion flavipes,1,PL
+HF,HF_P2_2,HF_P2,Araneae,Linyphiidae,1,PL
+HF,HF_P2_2,HF_P2,Araneae,Pirata hygrophilus,2,PL
+HF,HF_P2_2,HF_P2,Coleoptera,Limodromus assimilis,2,PL
+HF,HF_P2_2,HF_P2,Coleoptera,Pterostichus macer,1,PL
+HF,HF_P2_3,HF_P2,Coleoptera,Abax parallelepipedus,1,PL
+HF,HF_P2_4,HF_P2,Coleoptera,Nebria brevicollis,2,PL
+HF,HF_P2_4,HF_P2,Araneae,Pardosa lugabris,1,PL
+HF,HF_P2_4,HF_P2,Coleoptera,pterostichus aethiops,2,PL
+HF,HF_P2_5,HF_P2,Coleoptera,Limodromus assimilis,6,PL
+HF,HF_P2_5,HF_P2,Coleoptera,Pterostichus madidus,2,PL
+HF,HF_P2_6,HF_P2,Coleoptera,Abax parallelepipedus,2,PL
+HF,HF_P2_6,HF_P2,Araneae,Pirata hygrophilus,7,PL
+HF,HF_P2_6,HF_P2,Coleoptera,Pterostichus madidus,2,PL
+LB,LB_M1_1,LB_M1,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M1_1,LB_M1,Coleoptera,Notiophilus biguttatus,1,Mature
+LB,LB_M1_1,LB_M1,Coleoptera,Pterostichus madidus,2,Mature
+LB,LB_M1_1,LB_M1,Araneae,Theridiidae,1,Mature
+LB,LB_M1_3,LB_M1,Coleoptera,Notiophilus rufipes,1,Mature
+LB,LB_M1_4,LB_M1,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M1_4,LB_M1,Coleoptera,Pterostichus nigrita/rhaeticus,1,Mature
+LB,LB_M1_4,LB_M1,Araneae,Linyphiidae,1,Mature
+LB,LB_M1_6,LB_M1,Araneae,Linyphiidae,2,Mature
+LB,LB_M2_1,LB_M2,Araneae,Linyphiidae,1,Mature
+LB,LB_M2_2,LB_M2,Coleoptera,Abax parallelepipedus,1,Mature
+LB,LB_M2_2,LB_M2,Araneae,Microneta viaria,1,Mature
+LB,LB_M2_3,LB_M2,Coleoptera,Abax parallelepipedus,3,Mature
+LB,LB_M2_3,LB_M2,Araneae,Linyphiidae,1,Mature
+LB,LB_M2_4,LB_M2,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M3_1,LB_M3,Araneae,Alopecosa pulverulenta,1,Mature
+LB,LB_M3_1,LB_M3,Araneae,Linyphiidae,3,Mature
+LB,LB_M3_1,LB_M3,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M3_1,LB_M3,Araneae,Sub adult unknown sp,1,Mature
+LB,LB_M3_3,LB_M3,Araneae,Linyphiidae,1,Mature
+LB,LB_M3_3,LB_M3,Araneae,Oxyptila sp,1,Mature
+LB,LB_M3_4,LB_M3,Araneae,Trochosa terricola,1,Mature
+LB,LB_M3_5,LB_M3,Coleoptera,Abax parallelepipedus,3,Mature
+LB,LB_M3_6,LB_M3,Araneae,Linyphiidae,3,Mature
+LB,LB_M3_6,LB_M3,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M3_6,LB_M3,Coleoptera,Abax parallelepipedus,1,Mature
+LB,LB_M3_6,LB_M3,Coleoptera,Pterostichus madidus,1,Mature
+LB,LB_M3_6,LB_M3,Araneae,Linyphiidae,1,Mature
+LB,LB_M4_1,LB_M4,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M4_2,LB_M4,Coleoptera,Nebria brevicollis,1,Mature
+LB,LB_M4_3,LB_M4,Coleoptera,Nebria brevicollis,3,Mature
+LB,LB_M4_3,LB_M4,Araneae,Pardosa agrestis,1,Mature
+LB,LB_M4_3,LB_M4,Araneae,Pardosa pullata,2,Mature
+LB,LB_M4_3,LB_M4,Araneae,Xysticus kochi,2,Mature
+LB,LB_M4_4,LB_M4,Araneae,Linyphiidae,3,Mature
+LB,LB_M4_4,LB_M4,Coleoptera,Nebria brevicollis,7,Mature
+LB,LB_M4_4,LB_M4,Coleoptera,Pterostichus madidus,1,Mature
+LB,LB_M4_4,LB_M4,Araneae,Pachygnatha degeeri,1,Mature
+LB,LB_M4_4,LB_M4,Araneae,Pardosa sp,2,Mature
+LB,LB_M4_5,LB_M4,Coleoptera,Notiophilus rufipes,1,Mature
+LB,LB_M4_5,LB_M4,Coleoptera,Nebria brevicollis,9,Mature
+LB,LB_M4_6,LB_M4,Coleoptera,Badister bullatus,1,Mature
+LB,LB_M4_6,LB_M4,Coleoptera,Calathus rotundicollis,1,Mature
+LB,LB_P1_1,LB_P1,Coleoptera,Notiophilus biguttatus,1,PL
+LB,LB_P1_1,LB_P1,Coleoptera,Loricera pilicornis,1,PL
+LB,LB_P1_2,LB_P1,Araneae,Linyphiidae,1,PL
+LB,LB_P1_2,LB_P1,Coleoptera,Neuraphes elongatulus,1,PL
+LB,LB_P1_3,LB_P1,Araneae,Linyphiidae,1,PL
+LB,LB_P1_4,LB_P1,Araneae,Linyphiidae,5,PL
+LB,LB_P1_4,LB_P1,Araneae,lycosidae. Immature.,1,PL
+LB,LB_P1_4,LB_P1,Araneae,Pachygnatha degeeri,1,PL
+LB,LB_P1_4,LB_P1,Araneae,Trochosa ruricola,1,PL
+LB,LB_P1_5,LB_P1,Araneae,Linyphiidae,1,PL
+LB,LB_P1_5,LB_P1,Araneae,Pachygnatha degeeri,1,PL
+LB,LB_P1_5,LB_P1,Araneae,Trochosa ruricola,1,PL
+LB-P1,LB_P1_6_,LB_P1,Araneae,Trochosa ruricola,1,PL
+LB-P1,LB_P1_6_,LB_P1,Araneae,Pachygnatha degeeri,1,PL
+LB-P1,LB_P1_6_,LB_P1,Araneae,Linyphiidae,2,PL
+LB,LB_P2_1,LB_P2,Coleoptera,Notiophilus germinyi,1,PL
+LB,LB_P2_1,LB_P2,Araneae,Xysticus kochi,1,PL
+LB,LB_P2_1,LB_P2,Araneae,Pachygnatha degeeri,1,PL
+LB,LB_P2_1,LB_P2,Araneae,Linyphiidae,2,PL
+LB,LB_P2_1,LB_P2,Araneae,Pachygnatha degeeri,1,PL
+LB,LB_P2_1,LB_P2,Araneae,Trochosa ruricola,1,PL
+LB,LB_P2_1,LB_P2,Coleoptera,Notiophilus biguttatus,2,PL
+LB,LB_P2_2,LB_P2,Coleoptera,Nebria brevicollis,1,PL
+LB,LB_P2_2,LB_P2,Coleoptera,Pachygnatha degeeri,1,PL
+LB,LB_P2_2,LB_P2,Araneae,Pardosa pullata,2,PL
+LB,LB_P2_2,LB_P2,Araneae,Trochosa ruricola,1,PL
+LB,LB_P2_3,LB_P2,Araneae,Linyphiidae,8,PL
+LB,LB_P2_3,LB_P2,Coleoptera,Notiophilus biguttatus,1,PL
+LB,LB_P2_4,LB_P2,Araneae,Bycatch,3,PL
+LB,LB_P2_4,LB_P2,Araneae,Linyphiidae,1,PL
+LB,LB_P2_4,LB_P2,Araneae,Pachygnatha degeeri,2,PL
+LB,LB_P2_4,LB_P2,Araneae,Trochosa ruricola,1,PL
+LB,LB_P2_6,LB_P2,Coleoptera,Pterostichus madidus,1,PL
+LB,LB_P2_6,LB_P2,Araneae,Linyphiidae,2,PL
+LB,LB_P2_6,LB_P2,Araneae,Trochosa sp,1,PL
+MG,MG_M1_1,MG_M1,Coleoptera,Carabus nemoralis ,1,Mature
+MG,MG_M1_1,MG_M1,Coleoptera,Pirata hygrophilus,3,Mature
+MG,MG_M1_1,MG_M1,Araneae,Linyphiidae,1,Mature
+MG,MG_M1_1,MG_M1,Araneae,Pirata hygrophilus,5,Mature
+MG,MG_M1_2,MG_M1,Araneae,Linyphiidae,1,Mature
+MG,MG_M1_2,MG_M1,Araneae,Pardosa sp,1,Mature
+MG,MG_M1_2,MG_M1,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M1_3,MG_M1,Coleoptera,Pterostichus strenuus,1,Mature
+MG,MG_M1_5,MG_M1,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M1_5,MG_M1,Araneae,Pirata hygrophilus,1,Mature
+MG,MG_M1_5,MG_M1,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M1_6,MG_M1,Coleoptera,Notiophilus biguttatus,1,Mature
+MG,MG_M1_6,MG_M1,Coleoptera,Pachygantha clercki,1,Mature
+MG,MG_M2_1,MG_M2,Coleoptera,Loricera pilicornis,1,Mature
+MG,MG_M2_1,MG_M2,Coleoptera,Abax parallelepipedus,2,Mature
+MG,MG_M2_1,MG_M2,Coleoptera,Pachygnatha degeeri ,1,Mature
+MG,MG_M2_1,MG_M2,Coleoptera,Linyphiidae,1,Mature
+MG,MG_M2_1,MG_M2,Coleoptera,Bycatch,4,Mature
+MG,MG_M2_2,MG_M2,Coleoptera,Nebria brevicollis,1,Mature
+MG,MG_M2_3,MG_M2,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M2_4,MG_M2,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M2_4,MG_M2,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M2_4,MG_M2,Coleoptera,Notiophilus rufipes,1,Mature
+MG,MG_M2_5,MG_M2,Coleoptera,Badister bullatus,1,Mature
+MG,MG_M2_5,MG_M2,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M2_6,MG_M2,Araneae,Linyphiidae,1,Mature
+MG,MG_M2_6,MG_M2,Araneae,Bycatch,2,Mature
+MG,MG_M3_1,MG_M3,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M3_1,MG_M3,Coleoptera,Nebria brevicollis,3,Mature
+MG,MG_M3_1,MG_M3,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M3_1,MG_M3,Araneae,Segestria senoculata,1,Mature
+MG,MG_M3_4,MG_M3,Coleoptera,Abax parallelepipedus,3,Mature
+MG,MG_M3_4,MG_M3,Coleoptera,Pterostichus madidus,1,Mature
+MG,MG_M3_4,MG_M3,Araneae,Euophrys frontalis,1,Mature
+MG,MG_M3_4,MG_M3,Araneae,Pardosa sp,,Mature
+MG,MG_M3_4,MG_M3,Araneae,Linyphiidae,2,Mature
+MG,MG_M4_1,MG_M4,Coleoptera,Pterostichus madidus,5,Mature
+MG,MG_M4_1,MG_M4,Coleoptera,Notiophilus rufipes,1,Mature
+MG,MG_M4_1,MG_M4,Coleoptera,Pterostichus madidus,2,Mature
+MG,MG_M4_1,MG_M4,Coleoptera,Nebria brevicollis,3,Mature
+MG,MG_M4_1,MG_M4,Coleoptera,Notiophilus rufipes,1,Mature
+MG,MG_M4_2,MG_M4,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M4_2,MG_M4,Coleoptera,Pterostichus madidus,12,Mature
+MG,MG_M4_2,MG_M4,Coleoptera,Bycatch,54,Mature
+MG,MG_M4_3,MG_M4,Coleoptera,Pterostichus madidus,4,Mature
+MG,MG_M4_3,MG_M4,Coleoptera,Nebria brevicollis,2,Mature
+MG,MG_M4_3,MG_M4,Coleoptera,Linyphiidae,1,Mature
+MG,MG_M4_3,MG_M4,Araneae,Pachygantha clercki,1,Mature
+MG,MG_M4_3,MG_M4,Coleoptera,Pterostichus madidus,8,Mature
+MG,MG_M4_3,MG_M4,Coleoptera,Nebria brevicollis,1,Mature
+MG,MG_M4_4,MG_M4,Coleoptera,Abax parallelepipedus,1,Mature
+MG,MG_M4_4,MG_M4,Coleoptera,Pterostichus madidus,2,Mature
+MG,MG_M4_4,MG_M4,Coleoptera,Nebria brevicollis,1,Mature
+MG,MG_M4_4,MG_M4,Coleoptera,Notiophilus biguttatus,1,Mature
+MG,MG_P1_2,MG_P1,Coleoptera,Abax parallelepipedus,1,PL
+MG,MG_P1_2,MG_P1,Araneae,Pirata hygrophilus,1,PL
+MG,MG_P1_2,MG_P1,Coleoptera,Bembidion guttula,1,PL
+MG,MG_P1_2,MG_P1,Coleoptera,Pterostichus strenuus,1,PL
+MG,MG_P1_2,MG_P1,Coleoptera,Pachygnatha degeeri,1,PL
+MG,MG_P1_2,MG_P1,Coleoptera,Pirata hygrophilus,1,PL
+MG,MG_P1_3,MG_P1,Araneae,Pardosa lugabris,2,PL
+MG,MG_P1_3,MG_P1,Araneae,Pirata hygrophilus,7,PL
+MG,MG_P1_3,MG_P1,Coleoptera,Nebria brevicollis,1,PL
+MG,MG_P1_3,MG_P1,Coleoptera,Notiophilus germinyi,1,PL
+MG,MG_P1_3,MG_P1,Araneae,Pirata latitans,1,PL
+MG,MG_P1_4,MG_P1,Coleoptera,pterostichus niger,1,PL
+MG,MG_P1_4,MG_P1,Araneae,Pirata hygrophilus,1,PL
+MG,MG_P1_4,MG_P1,Araneae,Pardosa pullata,9,PL
+MG,MG_P1_4,MG_P1,Araneae,Pirata latitans,2,PL
+MG,MG_P1_4,MG_P1,Coleoptera,Poecilus cupreus,1,PL
+MG,MG_P1_4,MG_P1,Araneae,Pachygnatha degeeri,1,PL
+MG,MG_P1_5,MG_P1,Coleoptera,Abax parallelepipedus,1,PL
+MG,MG_P1_5,MG_P1,Araneae,Pardosa pullata,2,PL
+MG,MG_P1_5,MG_P1,Araneae,Pirata latitans,2,PL
+MG,MG_P1_6,MG_P1,Araneae,Zoelotes pusillus,1,PL
+MG,MG_P1_6,MG_P1,Araneae,Pardosa pullata,3,PL
+MG,MG_P1_6,MG_P1,Araneae,Trochosa ruricola,2,PL
+MG,MG_P1_6,MG_P1,Araneae,Pardosa lugabris,5,PL
+MG,MG_P1_6,MG_P1,Araneae,Pirata latitans,5,PL
+MG,MG_P1_6,MG_P1,Coleoptera,Notiophilus germinyi,1,PL
+MG,MG_P1_6,MG_P1,Araneae,Linyphiidae,6,PL
+MG,MG_P1_6,MG_P1,Araneae,Pardosa pullata,7,PL
+MG,MG_P1_6,MG_P1,Coleoptera,Notiophilus germinyi,1,PL
+MG,MG_P2_1,MG_P2,Coleoptera,Pterostichus strenuus,1,PL
+MG,MG_P2_1,MG_P2,Coleoptera,Abax parallelepipedus,1,PL
+MG,MG_P2_1,MG_P2,Araneae,Trochosa ruricola,1,PL
+MG,MG_P2_1,MG_P2,Araneae,Pardosa lugabris,1,PL
+MG,MG_P2_1,MG_P2,Araneae,Pardosa nigriceps,3,PL
+MG,MG_P2_1,MG_P2,Araneae,Pirata hygrophilus,1,PL
+MG,MG_P2_1,MG_P2,Araneae,Pirata latitans,3,PL
+MG,MG_P2_1,MG_P2,Araneae,Pardosa pullata,1,PL
+MG,MG_P2_1,MG_P2,Coleoptera,Clivina fossor,1,PL
+MG,MG_P2_2,MG_P2,Coleoptera,Subcoccinella vigintiquattuorpunctata,1,PL
+MG,MG_P2_2,MG_P2,Araneae,Linyphiidae,2,PL
+MG,MG_P2_2,MG_P2,Coleoptera,Poecilus cupreus,2,PL
+MG,MG_P2_2,MG_P2,Araneae,Trochosa terricola,3,PL
+MG,MG_P2_2,MG_P2,Araneae,Pardosa pullata,5,PL
+MG,MG_P2_2,MG_P2,Araneae,Pirata latitans,6,PL
+MG,MG_P2_2,MG_P2,Araneae,Pirata hygrophilus,2,PL
+MG,MG_P2_4,MG_P2,Araneae,Pachygnatha degeeri,1,PL
+MG,MG_P2_4,MG_P2,Araneae,Linyphiidae,1,PL
+MG,MG_P2_5,MG_P2,Araneae,Pirata latitans,5,PL
+MG,MG_P2_5,MG_P2,Araneae,Pachygnatha degeeri,2,PL
+MG,MG_P2_5,MG_P2,Coleoptera,Clivina fossor,1,PL
+MG,MG_P2_5,MG_P2,Araneae,Pirata latitans,2,PL
+MG,MG_P2_5,MG_P2,Araneae,Pardosa pullata,4,PL
+MG,MG_P2_5,MG_P2,Araneae,Pachygnatha degeeri,2,PL
+MG,MG_P2_6,MG_P2,Araneae,Pirata hygrophilus,1,PL
+SH,SH_M1_2,SH_M1,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M1_2,SH_M1,Araneae,Pirata hygrophilus,3,Mature
+SH,SH_M1_2,SH_M1,Coleoptera,Calathus rotundicollis,1,Mature
+SH,SH_M1_3,SH_M1,Coleoptera,Abax parallelepipedus,2,Mature
+SH,SH_M1_3,SH_M1,Coleoptera,Nebria brevicollis,1,Mature
+SH,SH_M1_3,SH_M1,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M1_3,SH_M1,Araneae,Pirata hygrophilus,1,Mature
+SH,SH_M1_4,SH_M1,Coleoptera,Abax parallelepipedus,2,Mature
+SH,SH_M1_4,SH_M1,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M1_4,SH_M1,Araneae,Coelotes sp,1,Mature
+SH,SH_M1_5,SH_M1,Coleoptera,Abax parallelepipedus,1,Mature
+SH,SH_M1_5,SH_M1,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M1_5,SH_M1,Araneae,Linyphiidae,1,Mature
+SH,SH_M1_6,SH_M1,Araneae,Pirata hygrophilus,1,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Abax parallelepipedus,1,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Nebria brevicollis,1,Mature
+SH,SH_M2_1,SH_M2,Araneae,Pachygnatha degeeri,2,Mature
+SH,SH_M2_1,SH_M2,Araneae,Linyphiidae,1,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Pterostichus madidus,2,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Limodromus assimilis,7,Mature
+SH,SH_M2_1,SH_M2,Araneae,Linyphiidae,2,Mature
+SH,SH_M2_1,SH_M2,Araneae,Pachygnatha degeeri,1,Mature
+SH,SH_M2_1,SH_M2,Araneae,Pirata hygrophilus,10,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Loricera pilicornis,1,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Bembidion lampros,2,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Bembidion guttula,6,Mature
+SH,SH_M2_1,SH_M2,Coleoptera,Bembidion obtusum,4,Mature
+SH,SH_M2_2,SH_M2,Coleoptera,Abax parallelepipedus,2,Mature
+SH,SH_M2_2,SH_M2,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M2_2,SH_M2,Coleoptera,Nebria brevicollis,2,Mature
+SH,SH_M2_3,SH_M2,Coleoptera,Abax parallelepipedus,3,Mature
+SH,SH_M2_3,SH_M2,Coleoptera,Nebria brevicollis,1,Mature
+SH,SH_M2_4,SH_M2,Coleoptera,Abax parallelepipedus,2,Mature
+SH,SH_M2_4,SH_M2,Araneae,Linyphiidae,3,Mature
+SH,SH_M2_5,SH_M2,Coleoptera,Abax parallelepipedus,3,Mature
+SH,SH_M2_5,SH_M2,Coleoptera,Pterostichus madidus,1,Mature
+SH,SH_M2_5,SH_M2,Coleoptera,Nebria brevicollis,1,Mature
+SH,SH_M2_6,SH_M2,Coleoptera,Abax parallelepipedus,3,Mature
+SH,SH_M2_6,SH_M2,Araneae,Pirata hygrophilus,2,Mature
+SH,SH_P1_2,SH_P1,Coleoptera,Limodromus assimilis,2,PL
+SH,SH_P1_2,SH_P1,Araneae,Linyphiidae,1,PL
+SH,SH_P1_2,SH_P1,Araneae,Pirata hygrophilus,1,PL
+SH,SH_P1_2,SH_P1,Coleoptera,Bembidion obtusum,1,PL
+SH,SH_P1_2,SH_P1,Coleoptera,Pterostichus madidus,1,PL
+SH,SH_P1_2,SH_P1,Coleoptera,Nebria brevicollis,8,PL
+SH,SH_P1_2,SH_P1,Araneae,Pirata hygrophilus,2,PL
+SH,SH_P1_4,SH_P1,Coleoptera,Limodromus assimilis,6,PL
+SH,SH_P1_4,SH_P1,Araneae,Pirata hygrophilus,2,PL
+SH,SH_P1_4,SH_P1,Araneae,Linyphiidae,1,PL
+SH,SH_P1_4,SH_P1,Araneae,Pirata hygrophilus,12,PL
+SH,SH_P1_4,SH_P1,Coleoptera,Nebria brevicollis,1,PL
+SH,SH_P1_6,SH_P1,Coleoptera,Abax parallelepipedus,2,PL
+SH,SH_P1_6,SH_P1,Coleoptera,Pterostichus madidus,2,PL
+SH,SH_P1_6,SH_P1,Coleoptera,Nebria brevicollis,4,PL
+SH,SH_P1_6,SH_P1,Araneae,Trochosa terricola,1,PL
+SH,SH_P1_6,SH_P1,Araneae,Pirata hygrophilus,5,PL
+SH,SH_P1_6,SH_P1,Coleoptera,Notiophilus biguttatus,1,PL
+SH,SH_P1_6,SH_P1,Araneae,Pirata hygrophilus,5,PL
+SH,SH_P1_6,SH_P1,Araneae,Pachygnatha clercki,1,PL
+SH,SH_P2_1,SH_P2,Coleoptera,Abax parallelepipedus,1,PL
+SH,SH_P2_1,SH_P2,Coleoptera,Platynus assimilis,5,PL
+SH,SH_P2_1,SH_P2,Coleoptera,Nebria brevicollis,3,PL
+SH,SH_P2_1,SH_P2,Araneae,Pirata hygrophilus,4,PL
+SH,SH_P2_1,SH_P2,Coleoptera,Bembidion sp ,4,PL
+SH,SH_P2_2,SH_P2,Coleoptera,Abax parallelepipedus,4,PL
+SH,SH_P2_2,SH_P2,Coleoptera,Pirata hygrophilus,6,PL
+SH,SH_P2_2,SH_P2,Coleoptera,Bycatch,11,PL
+SH,SH_P2_4,SH_P2,Coleoptera,Limodromus assimilis,2,PL
+SH,SH_P2_4,SH_P2,Coleoptera,Nebria brevicollis,2,PL
+SH,SH_P2_4,SH_P2,Araneae,Pirata hygrophilus,7,PL
+SH,SH_P2_4,SH_P2,Coleoptera,Bembidion lampros,2,PL
+SH,SH_P2_4,SH_P2,Coleoptera,Bembidion guttula,1,PL
+SH,SH_P2_5,SH_P2,Araneae,Pirata hygrophilus,5,PL
+SH,SH_P2_5,SH_P2,Coleoptera,Calathus rotundicollis,1,PL
+SH,SH_P2_5,SH_P2,Coleoptera,Bembidion lampros,1,PL
+SH,SH_P2_5,SH_P2,Araneae,Linyphiidae,1,PL
+SH,SH_P2_5,SH_P2,Coleoptera,Abax parallelepipedus,1,PL
+SH,SH_P2_5,SH_P2,Coleoptera,Pterostichus madidus,1,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Pterostichus melanarius,1,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Nebria brevicollis,1,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Limodromus assimilis,2,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Bembidion quadrimaculatum,1,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Bembidion guttula,1,PL
+SH,SH_P2_6,SH_P2,Coleoptera,Bembidion obtusum,1,PL
+SH,SH_P2_6,SH_P2,Araneae,Pirata hygrophilus,7,PL

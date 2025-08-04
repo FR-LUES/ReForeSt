@@ -7,14 +7,14 @@ library(sf)
 
 
 ### MERGE DBH DATA ##########
-dbh <- read.csv("data/dbh/masterDBH.csv")
+dbh <- read.csv("data/numeric_data/masterDBH.csv")
 
 # Join plant and dbh data
-masterInvert <- read.csv("data/invert/masterInvert.csv") |>
+masterInvert <- read.csv("data/numeric_data/masterInvert.csv") |>
   left_join(dbh, by = "ID")
 
 ### MERGE LANDSCAPE VARIABLES #####
-lsVars <- st_read("Shapefiles/ReforeSt_shapes.gpkg")
+lsVars <- st_read("data/shapefiles/ReforeSt_shapes.gpkg")
 
 # join landscape variables to plant data
 masterInvert <- inner_join(masterInvert, st_drop_geometry(lsVars), by = c("ID" = "ID", "Source" = "Source"))
@@ -24,5 +24,5 @@ masterInvert <- inner_join(masterInvert, st_drop_geometry(lsVars), by = c("ID" =
 plant <- read.csv("data/plant/masterPlant.csv")
 masterInvert <- inner_join(masterInvert, plant[, c("Age", "ID")], by = "ID")
 # save data for now
-write.csv(masterInvert, "Data/invert/masterInvert.csv")
+write.csv(masterInvert, "data/numeric_data/masterInvert.csv")
 View(masterInvert)

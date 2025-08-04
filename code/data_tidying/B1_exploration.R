@@ -1,7 +1,7 @@
 library(tidyverse)
 library(sjPlot)
 # Read in data
-plants <- read.csv("Data/plant/masterPlant.csv")
+plants <- read.csv("data/numeric_data/masterPlant.csv")
 
 plants <- plants |> mutate(nearestAW = case_when(is.na(nearestAW) ~ 1000,
                                                  .default = nearestAW),
