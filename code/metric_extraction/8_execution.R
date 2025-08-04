@@ -11,7 +11,9 @@ clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM 
 shapes_buffered <- st_read(paste0(path_data_shp, "ReForeSt_shapes_buffered.gpkg"))# Read in buffered shapefiles for chm processing
 
 # Run CHM script ---- !#
-#source("code/2_CHMS.R")
+source("code/metric_extraction/2_CHMS.R")
+
+pointsNormalized <- readLAScatalog(path_DASH_lasNormalised) # Read in normalised LiDAR data 
 
 # Read in data for metric extraction scripts ---- !#
 shapes <- st_read(paste0(path_data_shp, "ReForeSt_shapes.gpkg")) # Read in non-buffered shapes for masking
@@ -24,6 +26,7 @@ source("code/metric_extraction/3_canopyHeightVariation.R")
 source("code/metric_extraction/4_gap_analysis.R")
 source("code/metric_extraction/5_texture.R")
 source("code/metric_extraction/6_FHD.R")
+
 # Combine dataframe ---- !#
 master_metrics_df <-
   effCanDF |>

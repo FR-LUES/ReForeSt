@@ -29,8 +29,8 @@ path_test_data_lasNormalised = paste0(path_test_data, "normalised_pointClouds/")
 path_test_data_shp = paste0(path_test_data, "shapes/")
 path_test_data_chm = paste0(path_test_data, "chms/")
 
-path_DASH_lasClipped = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/clipped"
-path_DASH_lasNormalised = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised"
+path_DASH_lasClipped = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/clipped/"
+path_DASH_lasNormalised = "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised/"
 
 path_outputs = "outputs/"
 path_outputs_gap = paste0(path_outputs, "gap_analysis/")
