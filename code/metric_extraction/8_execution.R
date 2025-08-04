@@ -3,8 +3,8 @@
 # Finally we combine all metrics into one dataframe
 
 # Run preamble script and function script---- !#
-source("code/0_setup.R")
-source("code/1_Functions.R")
+source("code/metric_extraction/0_setup.R")
+source("code/metric_extraction/1_Functions.R")
 
 # Read in data for chm script ---- !#
 clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM script to process
@@ -20,16 +20,18 @@ chms <- map(dir(path_data_chm), function(x)
 shapes <- chmMatch(path_data_chm, shapes) # Order shapefiles to match chms
 
 # Run metric extraction scripts ---- !#
-source("code/3_canopyHeightVariation.R")
-source("code/4_gap_analysis.R")
-source("code/5_texture.R")
-
+source("code/metric_extraction/3_canopyHeightVariation.R")
+source("code/metric_extraction/4_gap_analysis.R")
+source("code/metric_extraction/5_texture.R")
+source("code/metric_extraction/6_FHD.R")
 # Combine dataframe ---- !#
 master_metrics_df <-
   effCanDF |>
   left_join(df_l_metrics_all %>% select(-level),
             by = c("ID" = "site_id")) |>
   left_join(textureMetrics_df,
+            by = "ID") |>
+  left_join(effStorDF,
             by = "ID")
 
 write_csv(master_metrics_df, paste0(path_outputs, "masterMetrics_df.csv"))

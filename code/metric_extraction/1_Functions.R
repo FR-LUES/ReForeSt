@@ -96,6 +96,7 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
 
 
 # Top canopy heights----#!
+
 # Entropy function to operate at varying resolutions
 canopyEntropy <- function(heights, strata){
   # Tidy some ground heights
@@ -118,6 +119,7 @@ canopyEntropy <- function(heights, strata){
 # This function takes a CHM and masks it by a corresponding shapefile to remove edge effects
 # It then calculates Shannon's diversity index using chm values based on user defined canopy height bins
 # Strata is user defined height bins
+
 effCanopyLayer <- function(chm, shape, strata){
   
   chmMask <- mask(chm, st_buffer(shape,-5))
@@ -137,8 +139,6 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
   )
   return(effCanopyRaster)  
 }
-
-
 
 
 
@@ -193,9 +193,8 @@ chmTexture <- function(chm, shape){
 # It can be caculated at the site level or at the cell level
 # To correct for occlusion from higher canopy levels we calculate foliage density
 # only including points that actually reached each canopy layer
-las <- readLAS(paste0(path_test_data_lasNormalised, "1105206.laz"))
-cloud <- las@data$Z
-FHD <- function(cloud, maxHeight){# Cloud is a vector of heights
+
+effStories <- function(cloud, maxHeight){# Cloud is a vector of heights
   # Calculate the LAD profile of the height vector
   ladDF <- LAD(cloud, dz = 2, z0 = 1, k = 0.3)
   
@@ -207,9 +206,9 @@ FHD <- function(cloud, maxHeight){# Cloud is a vector of heights
 
   # Shannon entropy
   H <- -sum(ladDF$prop * log(ladDF$prop))
-  
+  Hexp <- exp(H) |> round(2)
   # Maximum possible entropy (uniform distribution)
-  Hmax <- log(length(seq(2, max(cloud), by = 2)))
+  #Hmax <- log(length(seq(2, max(cloud), by = 2)))
   
   # Shannon's eveness
   E <- H / Hmax
