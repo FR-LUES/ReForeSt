@@ -39,50 +39,43 @@ hill_number <- function(p, q) {
 
 
   
-# Model fitting ---- !#
-# Priors function
-# A function to customize priors based on model formulas
-# Currently this function returns the same prior each time, but may be useful as we build more complex models
-make_priors <- function(include_dbhSD = TRUE, include_mean30mEffCan = TRUE, include_gap_prop = TRUE, include_stem_dens = TRUE,respo) {
-  respo <- as.character(respo)
-  p1 <- prior_string(paste0("normal(",0,", ",1,")"), class = "b", resp = respo)
-  p2 <- c(
-    prior(normal(0, 1), class = "b", resp = "dbhSD"),
-    prior(normal(0, 1), class = "b", resp = "mean30mEffCan"),
-    prior(normal(0, 1), class = "b", resp = "gapprop"),
-    prior(normal(0, 5), class = "Intercept"),
-    prior(exponential(1), class = "shape", resp = "dbhSD"),
-    prior(exponential(1), class = "shape", resp = "mean30mEffCan"),
-    prior(gamma(2, 0.1), class = "phi", resp = "gapprop")
-  )
-  priors <- c(p1, p2)
+
+
+
+
+
+
+
+
+
+
+# Model somary function ---- !#
+# This function extracts model summaries and tidies them up
+#model <- sppMod
+sumFun <- function(model) {
+  #model <- q1Mod
+  sum <- broom::tidy(model)
+  response <- as.character(formula(model)[[2]])
+  sum <- sum |>
+    mutate(p.value = round(p.value, 3))
   
-  if(include_stem_dens == TRUE){
-    stemPriors <- c(prior(exponential(1), class = "shape", resp = "stemDensityHA"),
-                    prior(normal(0, 1), class = "b", resp = "stemDensityHA"))
-    priors <- c(priors, stemPriors)
+  if ("p.value" %in% names(sum)) {
+    sum <- sum |>
+      mutate(
+        p.value = round(p.value, 3),
+        sig = case_when(
+          p.value < 0.001 ~ "***",
+          p.value < 0.01  ~ "**",
+          p.value < 0.05  ~ "*",
+          p.value < 0.1   ~ ".",
+          TRUE            ~ ""
+        )
+      )
   }
   
-  return(priors)
-}
-
-
-# Model function
-# A function that saves all the arguments of BRM so we do not need to double up
-
-modelFunction <- function(form, data, priors){
- model <-  brm(
-    formula = form,
-    data = data,
-    chains = 4,
-    iter = 4000,
-    sample_prior = "yes",
-    init = 0,
-    prior = priors,
-    save_pars = save_pars(all = TRUE),
-    cores = 2
-    )
- return(model)
+  sum <- sum |>
+    mutate(response = response, .before = 1)
+  return(sum)
 }
 
 
@@ -97,55 +90,49 @@ modelFunction <- function(form, data, priors){
 
 
 
-# Diagnostics ---- !#
-# Prior posterior comparison
-# A function to plot prior draws against posterior draws to sense check priors
-ppComp <- function(model){
-  #model <- models[[1]]
-  response <- model$formula$responses[[1]]
-  posteriorLong <- as_draws_df(model, resp = response) |>
-    select(starts_with(paste0("b_", response))) |>
-    pivot_longer(everything(), names_to = "Coef", values_to = "values") |>
-    mutate(sample = "posterior")
+
+
+# results plotting ---- !#
+# This function extracts model effects and overlays them on ggplot
+
+# Function to get structural terms in a model
+get_struct_terms <- function(model, struct_vars) {
+ 
+    terms <- names(coef(model))
+    intersect(terms, struct_vars)
+  }
   
-  priorLong <- prior_draws(model) |>
-    select(starts_with(paste0("b_", response))) |>
-    pivot_longer(everything(), names_to = "Coef", values_to = "values") |>
-    mutate(sample = "prior")
+plot_struct_effects <- function(model, data, response_name, struct_vars) {
   
-  rbind(posteriorLong, priorLong) |>
+   #model <- bestMods[[1]]
+   #data <- crawlData
+   #response_name <- "q0Log"
+   #struct_vars <- struct_vars
+  # Identify included structural terms in the model
+  included_terms <- get_struct_terms(model, struct_vars)
+  
+  # For each included structural term, get predicted values and plot
+  plots <- map(included_terms, function(var) {
+    #var <- "stemDensity"
+    pval <- broom::tidy(model) |> filter(term == var) |> pull(p.value) |> round(3)
+    
+    pval_label <- paste0("p = ", signif(pval, 3))
+    
+    #var <- included_terms[[1]]
+    # Get predictions with confidence intervals
+    pred_df <- get_model_data(model, type = "pred", terms = var, conf = TRUE) |> 
+      as_tibble()
+    
+    # Plot points (raw data), prediction line, ribbon for CI
     ggplot() +
-    geom_density(aes(x = values, fill = sample), alpha = 0.2, linewidth = 0.5) +
-    facet_wrap(~Coef, scales = "free") +
-    theme_classic()
-}
-
-
-
-
-# Residual correlations
-# A function to check if residuals correlate with specific variables. Namely, sampling effort
-# Currently only works for boxplots
-residCorr <- function(model, variable){
+      geom_point(data = data, aes(x = !!sym(var), y = !!sym(response_name)), alpha = 0.4, size = 2) +
+      geom_line(data = pred_df, aes(x = x, y = predicted), linewidth = 1) +
+      geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.2) +
+      labs(title = paste(response_name, "effect of", var)) +
+      annotate("text", x = Inf, y = Inf, label = pval_label, hjust = 1.1, vjust = 1.5, size = 5) +
+      theme_calc()
+  })
   
-  # Extract residuals for the first response only
-  first_resp <- model$formula$responses[[1]] # Get response name
-  resids <- residuals(model, type = "pearson", resp = first_resp)[, "Estimate"]# Extract residuals
-  plot <- ggplot(data = model$data, aes(x = variable, y = resids))+
-    geom_boxplot()+
-    theme_classic()
-  print(plot)# Plot residuals against variable
-  
-  return(resids)# save residuals
+  # Return list of plots for that model
+  return(plots)
 }
-
-# Posterior prediction function
-# There is a function for this already but here we had a bit so that it always extracts the species response variable
-pp_response <- function(model){
-  first_resp <- model$formula$responses[[1]]
-  response <- model$formula$responses[[1]]
-  print(pp_check(model, resp = response))
-}
-
-
-  

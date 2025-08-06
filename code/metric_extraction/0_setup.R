@@ -64,4 +64,4 @@ l_metrics = c("lsm_l_np", # Number of Patches
 
 # canopy height variation
 
-strata <- c(0, 1, 2, 10, 20, 50)
+strata <- c(0, 1, 2, 5, 8, 20, 100)

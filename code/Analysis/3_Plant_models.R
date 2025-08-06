@@ -1,15 +1,4 @@
 source("code/Analysis/0_setup.R")
-source("code/analysis/1_Functions.R")
-
-
-# Merge data ---- !#
-plantData <- structure |>
-  inner_join(plants, by = "ID") |># merge plant data with structure data
-  inner_join(landscape, by = "ID") |># merge with landscape data
-  mutate(gap_prop = betaSqueeze(gap_prop),# squeeze gap proportion to makesure values aren't 0 or 1
-         dbhSD = dbhSD + 0.001,
-         Age = as.numeric(Age)) |>  # So that dbhSD can be modelled as Gamma
-  filter(!(Type == "Mature" & Source == "NC"))# Filter out mature NC woodlands
 
 
 
@@ -30,10 +19,10 @@ responses <- c(
 
 # Find all possible model combinations
 combos <- expand_grid(resp = responses,
-            med = plant_mediation_variants,
+            med = plantModelVariants,
             constants  = paste(c("area_ha", "Age * Type", "Source"),
                                collapse = " + "))
-
+# Extract model names
 modelNames <- map(1:nrow(combos),
                   function(x) paste0(combos$resp[x], " ~ ", combos$med[x]))
 
@@ -42,36 +31,17 @@ modelNames <- map(1:nrow(combos),
 
 
 
-
-
 # Run the models ---- !#
 plantModels <-  map(1:nrow(combos), function(x) {
-    
+    #x <- 1
     resp_name <- combos$resp[x]
     med_name <- combos$med[x]
 
-    # Create bfs
-    responseBF <- bf(as.formula(paste0(resp_name, "~", med_name, "+", combos$constants[x])),
-                     family = poisson(link = "log"))
+    # Create formula
+    responseF <- as.formula(paste0(resp_name, "~", med_name, "+", combos$constants[x]))
     
-    
-    
-    # Chose priors
-    modelPriors <- make_priors(include_dbhSD = grepl("dbhSD",  combos$med[x]),
-                               include_mean30mEffCan = grepl("mean30mEffCan",combos$med[x]),
-                               include_gap_prop = grepl("gap_prop", combos$med[x]),
-                               include_stem_dens = FALSE,
-                               respo = resp_name)
-    
-    
-    formulas <- c(list(responseBF), plant_mediator_bfs) |>
-      as.list() |>
-      reduce(`+`)
-    
-    modelFunction(form = formulas,
-                  data = plantData,
-                  priors = modelPriors)
-    
+    # Run model
+    glm(responseF, family = poisson(link = "log"), data = plants)
     
   })
 

@@ -6,8 +6,8 @@ library(brms)
 library(sf)
 library(GGally)
 library(glmm)
-
-
+library(sjPlot)
+library(ggthemes)
 
 
 
@@ -45,7 +45,7 @@ structure_path <- paste0(path_output, "masterMetrics_df.csv")
 # Read in and tidy the data ---- !#
 # Structural data (dbh is already merged with species data)
 structure <- read.csv(structure_path) |>
-  select(ID, mean30mEffCan, gap_prop, siteEffCan)
+  select(ID, mean30mEffStories, gap_prop)
 # Landscape variables
 landscape <- st_read(shapes_path) |> 
   select(ID, bl500_m, aw500_m,
@@ -56,7 +56,8 @@ landscape <- st_read(shapes_path) |>
 plants <- read.csv(plant_path) |>
   mutate(Age = case_when(Age == "Mature" ~ "250",
                          .default = Age),
-         Age = as.numeric(Age)) |># Make age numeric and mark mature woodlands as 250 yo
+         Age = as.numeric(Age), # Make age numeric and mark mature woodlands as 250 yo
+         Type = factor(Type, levels = c("NC", "PL", "Mature"))) |># Change reference level of type
   select(ID, Type, Age,
          spp, sppWoodland, sppSpecialist,
          sppGeneralist, Source,
@@ -66,8 +67,7 @@ plants <- read.csv(plant_path) |>
   filter(!(Type == "Mature" & Source == "NC"))# Filter out mature NC woodlands as not sampled properly
 # Ground crawling inverts (Spiders and beetles only)
 crawler <- read.csv(crawler_path) |>
-  na.omit(Count) |>
-  filter(Source == "WrEN")|>
+  na.omit(Count)|>
   group_by(ID, Source, Type) |>
   summarise(q1 = hill_number(Count, 1),
             q0 = hill_number(Count, 0),# calculate hill numbers
@@ -77,7 +77,12 @@ crawler <- read.csv(crawler_path) |>
             dbhSD = mean(dbhSD, na.rm = TRUE)) |>
   left_join(structure, by = "ID") |>
   left_join(landscape[, c("ID", "area_ha")], by = "ID") |>
-  left_join(plants[, c("ID", "Age")], by = "ID")
+  left_join(plants[, c("ID", "Age")], by = "ID") |>
+  mutate(q0Log = log(q0+1),
+         q1Log = log(q1+1),
+         q2Log = log(q2 +1),
+         logAbund = log(abund+1))
+
 # Flying inverts (Hove and crane flies only)
 flies <- read.csv(flyer_path) |>
   na.omit(Count) |>
@@ -86,11 +91,15 @@ flies <- read.csv(flyer_path) |>
             q0 = hill_number(Count, 0),# calculate hill numbers
             q2 = hill_number(Count, 2),
             abund = hill_number(Count, "abund"),
-            stemDensity = mean(stemDensityHA, na.rm = TRUE),
-            dbhSD = mean(dbhSD, na.rm = TRUE)) |>
+            dbhSD = mean(dbhSD, na.rm = TRUE),
+            understoryCover = mean(meanUnderstoryCover, na.rm = TRUE)) |>
   left_join(structure, by = "ID") |>
   left_join(landscape[, c("ID", "area_ha")], by = "ID") |>
-  left_join(plants[, c("ID", "Age")], by = "ID")
+  left_join(plants[, c("ID", "Age")], by = "ID") |>
+  mutate(q0Log = log(q0+1),
+         q1Log = log(q1+1),
+         q2Log = log(q2 +1),
+         logAbund = log(abund+1))
 
 
 
@@ -99,50 +108,24 @@ flies <- read.csv(flyer_path) |>
 
 
 
+# Create model combinations ---- !#
+# plant models
+plantModel1 <- paste0("dbhSD + gap_prop + mean30mEffStories")
+plantModel2 <- paste0("gap_prop + mean30mEffStories")
+plantModel3 <- paste0("dbhSD")
+plantModelVariants <- c(plantModel1, plantModel2, plantModel3)
 
 
-# Mediation models ---- !#
-medVar1 <- "dbhSD"
-medVar2 <- "mean30mEffCan"
-medVar3 <- "gap_prop"
-invertMed1 <- "stemDensityHA" # Only used in invert models
-predMedVarPlants <- "Age * Type + Source"
-predMedVarInverts <- "Age * Type" # Type and Source completely overlap for inverts
+# crawler models
+crawlModel1 <- paste0("stemDensity + gap_prop + mean30mEffStories")
+crawlModel2 <- paste0("gap_prop + mean30mEffStories")
+crawlModel3 <- paste0("stemDensity")
+crawlModelVariants <- c(crawlModel1, crawlModel2, crawlModel3)
 
-medMod1 <- bf(as.formula(paste0(medVar1, "~", predMedVarPlants)), family = Gamma(link = "log"))
-medMod2 <- bf(as.formula(paste0(medVar2, "~", predMedVarPlants)), family = Gamma(link = "log"))
-medMod3 <- bf(as.formula(paste0(medVar3, "~", predMedVarPlants)), family = Beta(link = "logit"))
-medMod4 <- bf(as.formula(paste0(invertMed1, "~", predMedVarInverts)), family = Gamma(link = "log"))
-
-# Group mediator models
-plant_mediator_bfs <- list(
-  medMod1,
-  medMod2,
-  medMod3
-)
-invert_mediator_bfs <- list(medMod1,
-                            medMod2,
-                            medMod3,
-                            medMod4)
-
-# Mediation variants for predicting species response as we want to test if field derived, LiDAR derived, or combined is best
-plant_mediation_variants <- c(
-  "dbhSD",
-  "mean30mEffCan + gap_prop",
-  "dbhSD + mean30mEffCan + gap_prop"
-)
-
-invert_mediation_variants <- c(
-  "dbhSD + stemDensityHA",
-  "mean30mEffCan + gap_prop",
-  "dbhSD + stemDensityHA + mean30mEffCan + gap_prop"
-)
-
-
-
-
-
-
-
+# Fly models
+flyModel1 <- paste0("dbhSD + understoryCover + gap_prop + mean30mEffStories")
+flyModel2 <- paste0("gap_prop + mean30mEffStories")
+flyModel3 <- paste0("dbhSD + understoryCover ")
+flyModelVariants <- c(flyModel1, flyModel2, flyModel3)
 
 
