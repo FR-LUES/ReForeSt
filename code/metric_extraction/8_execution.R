@@ -26,6 +26,7 @@ source("code/metric_extraction/3_canopyHeightVariation.R")
 source("code/metric_extraction/4_gap_analysis.R")
 source("code/metric_extraction/5_texture.R")
 source("code/metric_extraction/6_FHD.R")
+source("code/metric_extraction/7_Tree_detection.R")
 
 # Combine dataframe ---- !#
 master_metrics_df <-
@@ -35,6 +36,10 @@ master_metrics_df <-
   left_join(textureMetrics_df,
             by = "ID") |>
   left_join(effStorDF,
-            by = "ID")
+            by = "ID") |>
+  left_join(df_ttops_all,
+            by = "ID") %>% 
+  mutate(ttops_den_chm = ttops_chm / (site_area - ta), # add ttop density metrics
+         ttops_den_las = ttops_las / (site_area - ta))
 
 write_csv(master_metrics_df, paste0(path_outputs, "masterMetrics_df.csv"))
