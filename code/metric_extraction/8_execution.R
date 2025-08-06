@@ -7,8 +7,8 @@ source("code/metric_extraction/0_setup.R")
 source("code/metric_extraction/1_Functions.R")
 
 # Read in data for chm script ---- !#
-clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM script to process
-shapes_buffered <- st_read(paste0(path_data_shp, "ReForeSt_shapes_buffered.gpkg"))# Read in buffered shapefiles for chm processing
+#clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM script to process
+#shapes_buffered <- st_read(paste0(path_data_shp, "ReForeSt_shapes_buffered.gpkg"))# Read in buffered shapefiles for chm processing
 
 # Run CHM script ---- !#
 #source("code/metric_extraction/2_CHMS.R")
