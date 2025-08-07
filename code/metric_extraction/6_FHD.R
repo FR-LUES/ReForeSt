@@ -16,7 +16,7 @@
 Normalized <- clip_roi(pointsNormalized, shapes)
 
 # Define range list for map functions
-clipRange <- seq(1:length(clipped))
+
 clipRange <- seq(1:length(Normalized))
 
 
