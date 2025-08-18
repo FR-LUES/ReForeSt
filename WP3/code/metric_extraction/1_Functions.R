@@ -40,6 +40,9 @@ chmMatch <- function(chmDir, Shapes){
 # chm is the canopy height model
 # Shape is the corresponding SF object for the chm
 gapsToRast <- function(chm, Shape){
+  
+  #chm <- chms[[1]]
+  #Shape <- shapes[1,]
   # Gap detection algorithm based on max height within gaps and a minimal surface area
   gapSF <- gap_detection(chm,
                          res = 1,
@@ -59,6 +62,25 @@ gapsToRast <- function(chm, Shape){
   
   return(gaps)
 }
+
+
+
+
+
+
+# A function to remove detected gaps from a shapefile
+gap_clip <- function(shapefiles, chm){
+  gaps <- gapsToRast(chm, shapefiles)
+  shapefiles <- vect(shapefiles)
+  gapless <- crop(shapefiles, gaps)
+  return(st_as_sf(gapless))
+  
+}
+
+
+
+
+
 
 
 # Calculate gap metrics function

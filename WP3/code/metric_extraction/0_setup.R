@@ -26,10 +26,6 @@ path_data_shp <- paste0(path_data, "shapefiles/")
 path_data_chm <- paste0(path_data, "chms/")
 
 
-path_test_data_lasNormalised = paste0(path_test_data, "normalised_pointClouds/")
-
-path_data <- "data/"
-
 path_data_shp <- paste0(path_data, "shapefiles/")
 path_data_chm <- paste0(path_data, "chms/")
 
