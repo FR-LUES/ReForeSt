@@ -1,4 +1,4 @@
-source("code/Analysis/1_Functions.R")
+source("WP3/code/Analysis/1_Functions.R")
 
 # Packages
 library(tidyverse)
@@ -8,7 +8,8 @@ library(GGally)
 library(glmm)
 library(sjPlot)
 library(ggthemes)
-
+library(officer)
+library(rvg)
 
 
 

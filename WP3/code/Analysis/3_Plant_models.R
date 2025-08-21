@@ -49,4 +49,4 @@ plantModels <-  map(1:nrow(combos), function(x) {
 names(plantModels) <- modelNames
 
 # Save models
-saveRDS(plantModels, "data/numerical_data/plantModels.rds")
+saveRDS(plantModels, "WP3/data/numerical_data/plantModels.rds")

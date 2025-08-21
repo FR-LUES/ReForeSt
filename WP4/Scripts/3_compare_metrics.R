@@ -1,17 +1,19 @@
-source("Scripts/0_setup.R")
-source("Scripts/0_functions.R")
-metrics$Area <- st_area(nfi)
+source("WP4/Scripts/0_setup.R")
+source("WP4/Scripts/0_functions.R")
+
+
 # Read in the data ---- !#
 metrics <- read.csv(metricsPath) |>
   select(-c(X, taM))
+
 metricsWide <-  metrics |>
-  pivot_longer(cols = -c(OBJECTID, source, level, Area),
+  pivot_longer(cols = -c(OBJECTID, source, level, area),
                names_to = "Variable",
                values_to = "Value") |>
   pivot_wider(names_from = source, values_from = Value) |>
   mutate(LiDAR = round(LiDAR, 3),
          Imagery = round(Imagery, 3))
-View(metricsWide)
+
 
 # Generate equations to link LiDAR and Imagery metrics ---- !#
 r2_results <- metricsWide |>
@@ -43,4 +45,4 @@ ggplot(data = plot_data, aes(x = LiDAR, y = Imagery))+
    theme_calc()
 
 
-View(metrics)
+

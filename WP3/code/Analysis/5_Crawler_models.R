@@ -43,7 +43,7 @@ crawlerModels <-  map(1:nrow(combos), function(x) {
 
 
 
-crawlerModels[[1]]
+
 
 
 
@@ -51,4 +51,4 @@ crawlerModels[[1]]
 names(crawlerModels) <- modelNames
 
 # Save models
-saveRDS(crawlerModels, "data/numerical_data/crawlerModels.rds")
+saveRDS(crawlerModels, "WP3/data/numerical_data/crawlerModels.rds")

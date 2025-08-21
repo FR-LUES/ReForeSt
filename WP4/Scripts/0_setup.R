@@ -6,16 +6,24 @@ library(landscapemetrics)
 library(ggthemes)
 #library(ggpmisc)
 library(broom)
+
+
+
+
+
+
+
+
 # Data paths ---- !#
-dataPath <- "data/"
+dataPath <- "WP4/data/"
 metricsPath <- paste0(dataPath, "comparison_metrics.csv")
 # Shapefile paths
-shapePath <- "Shapes"
+shapePath <- "WP4/Shapes"
 NFIpath <- paste0(shapePath,"/NFI/National_Forest_Inventory_England_2023.shp")
 NFIsamplePath <- paste0(shapePath, "/NFI/nfi_sample.shp")
 
 # Raster paths
-rastPath <- "Image_data"
+rastPath <- "WP4/Image_data"
 sCHMPath <- paste0(rastPath, "/Synthetic_CHMs/")
 CHMPath <- paste0(rastPath, "/LiDAR_CHMs/")
 sCHMclipPath <- paste0(rastPath, "/sCHM_clip/")

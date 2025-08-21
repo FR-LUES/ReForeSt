@@ -4,7 +4,7 @@ source("WP3/code/Analysis/0_setup.R")
 # Read in model data ---- !#
 models <- readRDS(paste0(num_data_path, "crawlerModels.rds"))
 crawlData <- models[[1]]$data
-glimpse(crawlData)
+
 
 
 
@@ -60,11 +60,19 @@ plotList <- map(1:length(bestMods),
                 .f = function(x) plot_struct_effects(bestMods[[x]],
                                                      crawlData,
                                                      response_name = response[[x]],
-                                                     struct_vars = struct_vars))
+                                                     struct_vars = struct_vars,
+                                                     taxa = "Crawling invert")
+)
 
 # Save plots
-pdf("outputs/figures/crawler_structural_effects.pdf", width = 8, height = 6)
-for (p in plotList) {
-  print(p)
+# Create a new PowerPoint
+ppt <- read_pptx()
+
+for (plotGroup in plotList) {
+  for (p in plotGroup) {
+    ppt <- add_slide(ppt, layout = "Blank", master = "Office Theme") %>%
+      ph_with(dml(ggobj = p), location = ph_location_fullsize())
+  }
 }
-dev.off()
+
+print(ppt, target = "WP3/outputs/figures/crawler_structural_effects.pptx")

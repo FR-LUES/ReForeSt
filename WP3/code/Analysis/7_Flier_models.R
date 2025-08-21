@@ -51,7 +51,7 @@ flyModels <-  map(1:nrow(combos), function(x) {
 names(flyModels) <- modelNames
 
 # Save models
-saveRDS(flyModels, "data/numerical_data/flyModels.rds")
+saveRDS(flyModels, "WP3/data/numerical_data/flyModels.rds")
 
 
 

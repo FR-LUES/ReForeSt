@@ -15,12 +15,6 @@ nfi <- chmMatch(sCHMclipPath, nfi) # Order shapefiles to match chms
 range <- 1:length(sCHMs)
 
 
-
-
-
-
-
-
 # Calculate gap fraction ---- !# 
 sGaps <- map(range, .f = function(x)
   gapsToRast(sCHMs[[x]], nfi[x,]))# synthetic gaps
@@ -34,9 +28,9 @@ gap_metrics <- rbind(sGap_metrics, lGap_metrics) |>
 gap_metrics$taM <- gap_metrics$ta * 10000 # Convert gap area to m^2
 gap_metrics$gap_prop <- gap_metrics$taM / st_area(nfi) # Calculate gap_proportion
 
-# Examples of house errors over small areas make a big difference
-plot(sCHMs[[20]])
-plot(lCHMs[[20]])
+# Examples of errors over small areas make a big difference
+plot(sCHMs[[27]])
+plot(lCHMs[[27]])
 
 
 # Effective top canopy layers ---- !#
@@ -65,4 +59,7 @@ meanEffCanDF <- rbind(sEffCandf, lEffCandf)
 # Combine metrics ---- !#
 comparisonMetrics <- left_join(gap_metrics, meanEffCanDF, by = c("OBJECTID" = "OBJECTID",
                                                                  "source" = "source"))
+
+
+comparisonMetrics$area <- rep(st_area(nfi), 2) |> round(0)
 write.csv(comparisonMetrics, paste0(dataPath, "comparison_metrics.csv"))

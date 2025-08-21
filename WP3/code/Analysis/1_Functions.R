@@ -101,8 +101,24 @@ get_struct_terms <- function(model, struct_vars) {
     terms <- names(coef(model))
     intersect(terms, struct_vars)
   }
-  
-plot_struct_effects <- function(model, data, response_name, struct_vars) {
+
+# Labelling function
+responseLabel_function <- function(response) {
+  dplyr::case_when(
+    response == "spp"           ~ "total species richness",
+    response == "sppWoodland"   ~ "woodland species richness",
+    response == "sppSpecialist" ~ "woodland specialist species richness",
+    response == "q0Log"         ~ "species richness",
+    response == "q1Log"         ~ "Shannon's effective species",
+    response == "q2Log"         ~ "Simpson's effective species",
+    response == "logAbund"      ~ "abundance",
+    TRUE                        ~ response
+  )
+}
+
+
+
+plot_struct_effects <- function(model, data, response_name, struct_vars, taxa) {
   
    #model <- bestMods[[1]]
    #data <- crawlData
@@ -110,7 +126,7 @@ plot_struct_effects <- function(model, data, response_name, struct_vars) {
    #struct_vars <- struct_vars
   # Identify included structural terms in the model
   included_terms <- get_struct_terms(model, struct_vars)
-  
+  response_Lab <- responseLabel_function(response_name)
   # For each included structural term, get predicted values and plot
   plots <- map(included_terms, function(var) {
     #var <- "stemDensity"
@@ -125,12 +141,12 @@ plot_struct_effects <- function(model, data, response_name, struct_vars) {
     
     # Plot points (raw data), prediction line, ribbon for CI
     ggplot() +
-      geom_point(data = data, aes(x = !!sym(var), y = !!sym(response_name)), alpha = 0.4, size = 2) +
+      geom_rug(data = data, aes(x = !!sym(var)), sides = "b", alpha = 0.4) + 
       geom_line(data = pred_df, aes(x = x, y = predicted), linewidth = 1) +
       geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.2) +
-      labs(title = paste(response_name, "effect of", var)) +
+      labs(y = paste0(taxa," ", response_Lab)) +
       annotate("text", x = Inf, y = Inf, label = pval_label, hjust = 1.1, vjust = 1.5, size = 5) +
-      theme_calc()
+      theme_gdocs()
   })
   
   # Return list of plots for that model
