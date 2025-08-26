@@ -72,7 +72,7 @@ map(clipRange, .f = function(x) writeRaster(effLayers30M_gaps[[x]],
 map(clipRange, .f = function(x) writeRaster(effLayers10M_gaps[[x]],
                                            filetype = "Gtiff",
                                            paste0(path_outputs,
-                                                  "effectiveStoryRasters_10mRes_WGaps/",
+                                                  "effectiveStoryRasters_10mRes_wGaps/",
                                                   shapes[x,]$ID, ".tif"),
                                            overwrite = TRUE))
 
