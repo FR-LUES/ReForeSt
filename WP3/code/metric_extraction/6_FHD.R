@@ -7,8 +7,11 @@
 # Preamble
 # source("code/0_setup.R")
 # source("code/1_Functions.R")
+#source("WP3/code/metric_extraction/0_setup.R")
+#source("WP3/code/metric_extraction/1_Functions.R")
 # # Load in data ---- !#
 #Normalized <- readLAScatalog(path_test_data_lasNormalised)# Read in LiDAR data
+#pointsNormalized <- readLAScatalog(path_test_data_lasNormalised)# Read in LiDAR data
 # # read in shapefiles
 #shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
 # Read in chms

@@ -70,9 +70,12 @@ gapsToRast <- function(chm, Shape){
 
 # A function to remove detected gaps from a shapefile
 gap_clip <- function(shapefiles, chm){
-  gaps <- gapsToRast(chm, shapefiles)
-  shapefiles <- vect(shapefiles)
-  gapless <- crop(shapefiles, gaps)
+  #chm <- chms[[1]]
+  #shapefiles <- shapes[1,]
+  gaps <- gapsToRast(chm, shapefiles) # Locate gaps
+  gapsVect <- subset(gaps, 1) |> as.polygons() # Convert gaps to vector
+  shapefiles <- vect(shapefiles) # Convert shapefiles to terra object
+  gapless <- erase(shapefiles, gapsVect)
   return(st_as_sf(gapless))
   
 }
