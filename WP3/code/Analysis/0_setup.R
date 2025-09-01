@@ -47,7 +47,7 @@ structure_path <- paste0(path_output, "masterMetrics_df.csv")
 # Read in and tidy the data ---- !#
 # Structural data (dbh is already merged with species data)
 structure <- read.csv(structure_path) |>
-  select(ID, mean30mEffStories, gap_prop)
+  select(ID, mean30mFHD_gapless, gap_prop, ttops_den_las)
 # Landscape variables
 landscape <- st_read(shapes_path) |> 
   select(ID, bl500_m, aw500_m,
@@ -111,23 +111,31 @@ flies <- read.csv(flyer_path) |>
 
 
 # Create model combinations ---- !#
+# Define predictors
+lid1 <- " gap_prop "
+lid2 <- " mean30mFHD_gapless "
+lid3 <- " ttops_den_las "
+
+field1 <- " dbhSD "
+field2 <- " stemDensity "
+field3 <- " understoryCover "
 # plant models
-plantModel1 <- paste0("dbhSD + gap_prop + mean30mEffStories")
-plantModel2 <- paste0("gap_prop + mean30mEffStories")
-plantModel3 <- paste0("dbhSD")
+plantModel1 <- paste0(c(field1, lid1, lid2), collapse = "+")
+plantModel2 <- paste0(c(lid1, lid2), collapse = "+")
+plantModel3 <- paste0(field1)
 plantModelVariants <- c(plantModel1, plantModel2, plantModel3)
 
 
 # crawler models
-crawlModel1 <- paste0("stemDensity + gap_prop + mean30mEffStories")
-crawlModel2 <- paste0("gap_prop + mean30mEffStories")
-crawlModel3 <- paste0("stemDensity")
+crawlModel1 <- paste0(c(field2, lid1, lid2, lid3), collapse = "+")
+crawlModel2 <- paste0(c(lid1, lid2, lid3), collapse = "+")
+crawlModel3 <- paste0(field2)
 crawlModelVariants <- c(crawlModel1, crawlModel2, crawlModel3)
 
 # Fly models
-flyModel1 <- paste0("dbhSD + understoryCover + gap_prop + mean30mEffStories")
-flyModel2 <- paste0("gap_prop + mean30mEffStories")
-flyModel3 <- paste0("dbhSD + understoryCover ")
+flyModel1 <- paste0(c(field1, field3, lid1, lid2), collapse = "+")
+flyModel2 <- paste0(c(lid1, lid2), collapse = "+")
+flyModel3 <- paste0(c(field1, field3), collapse = "+")
 flyModelVariants <- c(flyModel1, flyModel2, flyModel3)
 
 
