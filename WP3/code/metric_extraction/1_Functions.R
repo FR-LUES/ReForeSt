@@ -33,6 +33,11 @@ chmMatch <- function(chmDir, Shapes){
 
 
 
+
+
+
+
+
 # Gap fraction ---- !# 
 # This function takes a canopy height model and turns it into a raster denoting forest gaps
 # The function returns an SpatRaster object
@@ -120,8 +125,10 @@ calculate_gap_metrics = function(gap_raster, site_ID) {
 
 
 
-# Top canopy heights----#!
 
+
+
+# Top canopy heights----#!
 # Entropy function to operate at varying resolutions
 canopyEntropy <- function(heights, strata){
   # Tidy some ground heights
@@ -170,45 +177,6 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
 
 
 
-# Texture analysis ---- !#
-# This function converts a raster to a GLCM texture matrix
-# The function returns descriptive metrics relating to its contrast and entropy
-# These are returned as a list
-
-chmTexture <- function(chm, shape){
-  # Coerce chm values into discrete height bins
-  levels <- chm |> values() |> na.omit() |>
-    max() |> ceiling()
-  rasterDiscrete <- quantize_raster(chm, n_levels = levels, quant_method = "range")
-  
-  # mask raster by the shape to remove edge effects
-  rasterMask <- mask(rasterDiscrete, st_buffer(shape, -10))
-  
-  # Calculate texture rasters
-  glcmRasters <- glcm_textures(rasterMask, quant_method = "none", w = 5, n_levels = levels, shift = c(1, 1))
-  
-  # entropy values
-  glcmEntropy_mean <- glcmRasters$glcm_entropy |> values() |>
-    na.omit() |> mean()
-  glcmEntropy_sd <- glcmRasters$glcm_entropy |> values() |>
-    na.omit() |> sd()
-  
-  # contrast values
-  glcmContrast_mean <- glcmRasters$glcm_contrast |> values() |>
-    na.omit() |> mean()
-  glcmContrast_sd <- glcmRasters$glcm_contrast |> values() |>
-    na.omit() |> sd()
-  
-  # correlation values
-  glcmCorrelation_mean <- glcmRasters$glcm_correlation |> values() |>
-    na.omit() |> mean()
-  glcmCorrelation_sd <- glcmRasters$glcm_correlation |> values() |>
-    na.omit() |> sd()
-  
-  return(data.frame(glcmCorrelation_mean, glcmCorrelation_sd, glcmContrast_mean,
-                    glcmContrast_sd, glcmEntropy_mean, glcmEntropy_sd))
-}
-  
 
 
 
@@ -219,24 +187,35 @@ chmTexture <- function(chm, shape){
 # To correct for occlusion from higher canopy levels we calculate foliage density
 # only including points that actually reached each canopy layer
 
-effStories <- function(cloud, maxHeight){# Cloud is a vector of heights
+fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
+  
+  #cloud <- Normalized_gaps[[2]]@data$Z
   # Calculate the LAD profile of the height vector
-  ladDF <- LAD(cloud, dz = 2, z0 = 1, k = 0.3)
+  ladDF <- LAD(cloud, dz = 1, z0 = 1)
   
   # Filter out any NA or zero LAD values to avoid log(0)
   ladDF <- ladDF[ladDF$lad > 0, ]
+  if(nrow(ladDF) == 0) {return(0)}
+     else{
+  # Bin heights into strata
+  ladDF$stratum <- cut(
+    ladDF$z,
+    breaks = strata,
+    include.lowest = TRUE,
+    right = FALSE
+  )
   
+  # Aggregate LAD within each stratum
+  aggLAD <- ladDF |> group_by(stratum) |>
+    summarise(lad = sum(lad))
+                      
   # Proportional LAD in each layer
-  ladDF$prop <- (ladDF$lad / sum(ladDF$lad)) |> round(6)
+  aggLAD$prop <- aggLAD$lad / sum(aggLAD$lad)
 
   # Shannon entropy
-  H <- -sum(ladDF$prop * log(ladDF$prop))
+  H <- -sum(aggLAD$prop * log(aggLAD$prop))
+  
   Hexp <- exp(H) |> round(2)
-  # Maximum possible entropy (uniform distribution)
-  #Hmax <- log(length(seq(2, max(cloud), by = 2)))
-  
-  # Shannon's eveness
-  E <- H / Hmax
-  
-  return(E)
+  return(Hexp)
+     }
 }

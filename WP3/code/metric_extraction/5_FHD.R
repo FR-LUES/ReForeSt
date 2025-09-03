@@ -5,8 +5,8 @@
 
 # Now run in execution script ---- !#
 # Preamble
-# source("code/0_setup.R")
-# source("code/1_Functions.R")
+#source("code/0_setup.R")
+#source("code/1_Functions.R")
 #source("WP3/code/metric_extraction/0_setup.R")
 #source("WP3/code/metric_extraction/1_Functions.R")
 # # Load in data ---- !#
@@ -47,7 +47,7 @@ Normalized_gapless <- clip_roi(pointsNormalized, shapesGapless)
 
 # Exract FHD metrics including gaps
 # Extract site level canopy layering ---- !# 
-siteLayers_gaps <- map(clipRange, .f = function(x) canopyEntropy(Normalized_gaps[[x]]@data$Z,
+siteLayers_gaps <- map(clipRange, .f = function(x) fhdFunction(Normalized_gaps[[x]]@data$Z,
                                                             strata = strata) |> round(2))
 
 
@@ -56,11 +56,11 @@ siteLayers_gaps <- map(clipRange, .f = function(x) canopyEntropy(Normalized_gaps
 # Create the rasters
 # 30 m 
 effLayers30M_gaps <- map(clipRange, .f = function(x) pixel_metrics(Normalized_gaps[[x]],
-                                                              func = ~canopyEntropy(Z, strata),
+                                                              func = ~fhdFunction(Z, strata),
                                                               res = 30))
 # 10 m
 effLayers10M_gaps <- map(clipRange, .f = function(x) pixel_metrics(Normalized_gaps[[x]],
-                                                              func = ~canopyEntropy(Z, strata),
+                                                              func = ~fhdFunction(Z, strata),
                                                               res = 10))
 
 # Save rasters in outputs
@@ -88,7 +88,7 @@ map(clipRange, .f = function(x) writeRaster(effLayers10M_gaps[[x]],
 
 # Extract FHD metrics without gaps ---- !#
 # Extract site level canopy layering ---- !# 
-siteLayers_gapless <- map(clipRange, .f = function(x) canopyEntropy(Normalized_gapless[[x]]@data$Z,
+siteLayers_gapless <- map(clipRange, .f = function(x) fhdFunction(Normalized_gapless[[x]]@data$Z,
                                                                  strata = strata) |> round(2))
 
 
@@ -97,11 +97,11 @@ siteLayers_gapless <- map(clipRange, .f = function(x) canopyEntropy(Normalized_g
 # Create the rasters
 # 30 m 
 effLayers30M_gapless <- map(clipRange, .f = function(x) pixel_metrics(Normalized_gapless[[x]],
-                                                                   func = ~canopyEntropy(Z, strata),
+                                                                   func = ~fhdFunction(Z, strata),
                                                                    res = 30))
 # 10 m
 effLayers10M_gapless <- map(clipRange, .f = function(x) pixel_metrics(Normalized_gapless[[x]],
-                                                                   func = ~canopyEntropy(Z, strata),
+                                                                   func = ~fhdFunction(Z, strata),
                                                                    res = 10))
 
 # Save rasters in outputs
