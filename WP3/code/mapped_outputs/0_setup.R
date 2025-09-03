@@ -4,19 +4,18 @@ library(future)
 library(furrr)
 library(common) # For file find
 library(terra)
+library(fs)
 library(lidR)
 library(tidyverse)
 library(sf)
 
 
-
-
 # Set up futures session ---- !#
-plan(multisession, workers = 10L)
+plan(multisession, workers = 7L)
 set_lidr_threads(2L)
 
 
-is.parallelised(pixel_metrics())
+
 
 
 
@@ -29,12 +28,13 @@ is.parallelised(pixel_metrics())
 wpPath <- "WP3/" # Work package path
 dataPath <- paste0(wpPath, "data/")# Path to data
 shapesPath <- paste0(dataPath, "shapefiles/") # Path to shapefiles
-catalogPath <- paste0(shapesPath, "nlpCat.shp") # Path to NLP catalog
-sharePath <- "//forestresearch.gov.uk/CESB/Land Use and Ecosystem Service/GIS_Data/EA_Data/"
+# z drive paths
+sharePath <- "Z:/CESB/Land Use and Ecosystem Service/GIS_Data/EA_Data/"
 nlpPath <- paste0(sharePath, "EA_Lidar_NP1m_Point_Cloud")
+catalogPath <- paste0(sharePath, "nlp_catalog_shapefile/nlpCat.shp") # Path to NLP catalog
 
 # Output paths
-fhdOutPath <- "//forestresearch.gov.uk/projects/FRD_Programme/FRD_20/ReForeSt/fhd_map/"
+fhdOutPath <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/"
 
 
 
@@ -47,49 +47,74 @@ fhdOutPath <- "//forestresearch.gov.uk/projects/FRD_Programme/FRD_20/ReForeSt/fh
 
 
 
-# Constants
+# Constants ---- !#
 strata <- c(0, 1, 2, 5, 8, 20, 100)
 
-# Find collection of tiles to map over ---- !#
-# This is run once and takes about a day. Afterwards the list is saved as an rds to be read in.
 
-# Read in nlp catalog
-#nlpCat <- st_read(catalogPath)
-# glimpse(nlpCat)
+
+
+
+
+
+
+
+#Find collection of tiles to map over ---- !#
+#This is run once and takes about a day. Afterwards the list is saved as an rds to be read in.
+
+# #Read in nlp catalog
+# nlpCat <- st_read(catalogPath)
+# 
+# 
 # # Extract tile IDs
-# tileIds <- unique(nlpCat$TILENAME)
-# # Set up years in search order (newest first)
-# year_folders <- c("2021_2022", "2020_2021", "2019_2020")
-# Find the most recent laz file for each tile
-
-# tileFolders <- future_map(tileIds, function(id) {
-#   # Look in each year until we find a match
-#   for (yr in year_folders) {
-#     search_path <- file.path(nlpPath, "/", yr)
-#     #print(search_path)
+# fileIds <- unique(paste0(nlpCat$TILENAME, "_", nlpCat$POLYGON_ID))
+# 
+# # Find the most recent laz file for each tile
+# years <- c("2021_2022", "2020_2021", "2019_2020", "2018_2019", "2017_2018")
+# 
+# # Loop over each year and collect all .laz files that match any tile
+# for (yr in years) {
+#   #yr <- years[[1]]
+#   search_path <- file.path(nlpPath, yr)
+#   
+#   # For each tile, find matching files
+#   tileFiles <- future_map(fileIds, function(id) {
+#     # Escape special characters in id for regex
+#     #id <- fileIds[[1]]
+#     
 #     found <- dir_ls(
-#       path   = search_path,
-#       regexp = paste0(id, ".*\\.laz$"),
+#       path    = search_path,
+#       regexp  = paste0(id, ".*\\.laz$"),
 #       recurse = TRUE
 #     )
 #     
-#     if (length(found) > 0) {
-#       return(found[1])  # return the first match and stop
-#     }
-#   }
-#   return(NA_character_)  # if nothing found in any year
-# }, .progress = TRUE)
+#     if (length(found) == 0) return(NA_character_)
+#     return(found)
+#   }, .progress = TRUE)
+#   
+#   names(tileFiles) <- fileIds
+#   
+#   # Save RDS for this year
+#   saveRDS(tileFiles, file.path(sharePath, paste0("nlp_file_list_", yr, ".rds")))
+#   
+#   message("Saved file list for year ", yr)
+# }
 
-# Save the list of files as rds file
-#saveRDS(tileFolders, paste0(sharePath, "nlp_file_list.rds"))
 detach("package:common", unload = TRUE)
 
-
-
 # Read in las catalog ---- !#
-tileFolders <- read_rds(paste0(sharePath, "nlp_file_list.rds"))
-testFiles <- unlist(tileFolders[1:3])
-ctg <- readLAScatalog(testFiles)
-rm(tileFolders)
+# List the per-year RDS files
+year_files <- dir_ls(sharePath, regexp = "nlp_file_list_.*\\.rds$")
 
-   
+# Extract LAZ lists for each year
+tileFiles <- map(year_files, function(rds){
+  read_rds(rds) |>
+  unlist() |>
+  na.omit() |> # remove NAs
+  unique()})
+names(tileFiles) <- basename(year_files) |> tools::file_path_sans_ext()
+
+# Read in the catalogs
+ctgs <- map(tileFiles, function(laz){
+  readLAScatalog(laz, select = "xyzc")
+})
+names(ctgs) <- names(tileFiles)

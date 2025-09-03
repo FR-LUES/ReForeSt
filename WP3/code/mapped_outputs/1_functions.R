@@ -31,4 +31,27 @@ fhdMap_function <- function(chunk) {
   return(fhdRast)
 }
 
-is.parallelised(pixel_metrics(ctg, ~fhdFunction(Z, strata), res = 30))
+
+
+
+
+
+
+
+
+
+
+# Mosaicing functions ---- !#
+# This function will reference every .tif file in a directory, merge them, and save the merge to file
+
+mosaicFunction <- function(directory, outPath) {
+  #directory <- paste0(fhdOutPath, "/2017_2018_30m/")
+  #outPath <- paste0(fhdOutPath, "/2017_2018_FHD_30mFULL.tif")
+  VRT <- list.files(directory, pattern = ".vrt")[[1]]
+  #VRT <- paste0(fhdOutPath, "/2017_2018_30m/2017_2018_FHD_30m.vrt")
+  #outPath <- paste0(fhdOutPath, "/2017_2018_FHD_30mFULL.tif")
+  vRast <- vrt(paste0(directory, VRT))
+  writeRaster(vRast, outPath)
+
+  
+}
