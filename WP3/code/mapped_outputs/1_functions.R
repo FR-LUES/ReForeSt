@@ -3,22 +3,38 @@
 # FHD here is defined as the effective number of canopy layers - the exponent of shannon's eveness.
 # This is calculated for the whole of england as its quicker than clipping las files to woodlands.
 # Entropy function to operate at varying resolutions
-fhdFunction <- function(heights, strata){
-  # Tidy some ground heights
-  heights[heights < 0] <- 0
-  heights <- heights[!is.na(heights)]
-  # Bin Heights into stratas
-  bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
-  # find frequency of values in each bin
-  freqs <- table(factor(bins, levels = 1:(length(strata)-1)))
-  # Calculate effective canopy layers
-  total_values <- sum(freqs)
-  proportions <- freqs/total_values
-  shannon_index <- -1*sum(proportions * log(proportions), na.rm = TRUE)
-  effectiveCanopyLayers <- exp(shannon_index) |> round(2)
-  return(effectiveCanopyLayers)
+fhdFunction<- function(cloud, strata){# Cloud is a vector of heights
+  
+  #cloud <- Normalized_gaps[[2]]@data$Z
+  # Calculate the LAD profile of the height vector
+  ladDF <- LAD(cloud, dz = 1, z0 = 1)
+  
+  # Filter out any NA or zero LAD values to avoid log(0)
+  ladDF <- ladDF[ladDF$lad > 0, ]
+  if(nrow(ladDF) == 0) {return(0)}# if there are no values then fhd is 0
+  else{
+    # Bin heights into strata
+    ladDF$stratum <- cut(
+      ladDF$z,
+      breaks = strata,
+      include.lowest = TRUE,
+      right = FALSE
+    )
+    
+    # Aggregate LAD within each stratum
+    aggLAD <- ladDF |> group_by(stratum) |>
+      summarise(lad = sum(lad))
+    
+    # Proportional LAD in each layer
+    aggLAD$prop <- aggLAD$lad / sum(aggLAD$lad)
+    
+    # Shannon entropy
+    H <- -sum(aggLAD$prop * log(aggLAD$prop))
+    
+    Hexp <- exp(H) |> round(2)
+    return(Hexp)
+  }
 }
-
 
 
 

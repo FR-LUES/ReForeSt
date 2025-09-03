@@ -195,7 +195,7 @@ fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
   
   # Filter out any NA or zero LAD values to avoid log(0)
   ladDF <- ladDF[ladDF$lad > 0, ]
-  if(nrow(ladDF) == 0) {return(0)}
+  if(nrow(ladDF) == 0) {return(0)}# if there are no values then fhd is 0
      else{
   # Bin heights into strata
   ladDF$stratum <- cut(
