@@ -21,5 +21,34 @@ gapsToRast = A function to identify gaps within a CHM and returns a raster where
 
 gap_clip = A function that uses gapsToRast to remove areas defined as gaps from sf polygons.
 
+canopyEntropy = A function to extract the effective number of top canopy layers (uses CHMs and does not look at sub-canopy returns). Effective layers are based on user defined strata and the exponential of shannon's diversity of how the canopy is distributed across these strata.
 
+effCanopyLayer = A function which takes the canopyEntropy function and runs it over a CHM. The CHM is cropped by a corresponded woodland polygon to avoid edge effects. One value is returned per CHM
+
+zonal_effCanopyLayer = A function that runs canopyEntropy zonally over a raster at a user defined resolution. A raster is returned where each value is the effective number of top canopy layers.
+
+fhdFunction = Similar to canopyEntropy by is designed to operate on a vector of point heights from a point cloud and returned the effective number of foliage layers across user defined strata. First creates a leaf area density profile at high height bin resolution (1 m bins). Leaf area density is calculated as the number of points returned from a height bin as a proportion of the total number of points to actually reach that height bin. The function then calculates how these densities are distributed across user defined 
+
+### 2_CHMS.R
+This script takes NLP point clouds, clips them to a set of polygons, creates digital terrain models, digital surface models and in turn CHMS. It also cleans and normalizes point clouds so that each point reflects height above ground and not elevation. CHMs and Normalized point clouds are saved to file.
+
+### 3_canopyHeightVariation.R
+
+This script calculates the top canopy height diversity of each woodland based on the canopyEntropy function. It returns a total value for each chm as well as a mean value across zonal_effCanopyLayer rasters at 10 m and 30 m resolution. Dataframes are saved to file as well as the zonal rasters.
+
+### 4_gap_analysis.R
+
+This script detects gaps in each chm and calculates a range of metrics relating to them. We are primarily interested in the area of gaps in each woodland and in turn the gap fraction. These metrics are saved to file as a dataframe.
+
+### 5_ FHD.R
+
+This script calculates the effective number of foliages layers including subcanopy-returns and not just top canopy CHM values. We calculate this on point clouds where gaps have been removed - to make it completely independent of gap area metrics - and without gaps removed - just for completion. Like canopyHeightVariation.R we calculate values for the whole site and zonal values for 10 m and 30 m rasters. All metrics are saved to file.
+
+### 6_Tree_detection.R
+
+This script detections tree tops from las files and from chms and saves both detections to file. This is based on local maxima within a moving window. 
+
+### 7_execution.R
+
+This script runs all the scripts in order and then combines their dataframes into a final master metrics csv output.
 
