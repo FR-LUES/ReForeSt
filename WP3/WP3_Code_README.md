@@ -52,3 +52,53 @@ This script detections tree tops from las files and from chms and saves both det
 
 This script runs all the scripts in order and then combines their dataframes into a final master metrics csv output.
 
+
+
+## Analysis
+
+This code area relates LiDAR and field metrics to biodiversity outcomes.
+
+
+## Mapped_outputs
+This code area maps key structural metrics across england. 
+
+### Setup.R
+
+This is a heavy setup file that defines constants and paths for the mapping process. 
+
+planMultisession = Setting up for parrallel processing. This will need to be edited based on computer capabilities.
+
+strata = Canopy stratification values for calculating FHD
+
+#Find collection of tiles to map over ---- !# = This section is commented out because it only needs to be done once. It looks through the directory where the NLP is saved and finds all the file paths relating to las files for each year of the NLP. This takes a long time and so a list of file paths per year are saved to file and reread in as tileFiles.
+
+ctgs = Using the file path lists for each year we create las catalogs. Reading in all las files at once would be impossible and so lascatalogs offer a way of referencing each lasfile and only reading in what is needed as you process. We make a list of ctgs (one for each nlp year) and only read in x, y, z, and classification information when needed (xyzc). 
+
+### setupMosaic.R
+
+This is a light set up and provied all the paths and constants of the heavy setup but without reading in las catalogs (which takes a long time).
+
+### 1_functions.R
+
+fhdFunction = the same fhdFunction as described in metric extraction functions.
+
+fhdMap_function = a function to perform the fhdFunction over a las catalog. First a dtm is created for the loaded chunk to normalize the point cloud (Each point represents height above ground). Then the FHD function is calculated over 30 m resolution cells and a raster is returned. 
+
+### 2_FHD_map.R
+
+This script executes the functions defined above over the las catalog.
+
+ctg = A las catalog taking from our full list of catalogs
+
+chunk options = read in 3000 m square chunks with a buffer of 50 m to avoid edge artefacts. 
+opt = we tell the las catalog that we are going to create rasters of 30 m resolution and ask it to automerge the returned rasters into a VRT file.
+
+opt_output_files = where we want all the rasters to be saved
+
+catalog_map = a function to map out user defined function (fhdMap_function) over a catalog.
+
+###3_FHD_mosaic.R
+
+This script reads in resulting VRT files and combines them into a full .tif file.
+
+
