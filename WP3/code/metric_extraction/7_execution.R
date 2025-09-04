@@ -26,17 +26,14 @@ shapes <- chmMatch(path_data_chm, shapes) # Order shapefiles to match chms
 # Run metric extraction scripts ---- !#
 source("WP3/code/metric_extraction/3_canopyHeightVariation.R")
 source("WP3/code/metric_extraction/4_gap_analysis.R")
-source("WP3/code/metric_extraction/5_texture.R")
-source("WP3/code/metric_extraction/6_FHD.R")
-source("WP3/code/metric_extraction/7_Tree_detection.R")
+source("WP3/code/metric_extraction/5_FHD.R")
+source("WP3/code/metric_extraction/6_Tree_detection.R")
 
 # Combine dataframe ---- !#
 master_metrics_df <-
   effCanDF |>
   left_join(df_l_metrics_all %>% select(-level),
             by = c("ID" = "site_id")) |>
-  left_join(textureMetrics_df,
-            by = "ID") |>
   left_join(fhdDF,
             by = "ID") |>
   left_join(df_ttops_all,
