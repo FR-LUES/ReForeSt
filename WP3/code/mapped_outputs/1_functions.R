@@ -5,14 +5,18 @@
 # Entropy function to operate at varying resolutions
 fhdFunction<- function(cloud, strata){# Cloud is a vector of heights
   
+  #centroid <- st_centroid(ctg@data) |> st_buffer(100)
+  #cloudFull <- clip_roi(ctg, centroid)
+  #cloud <- normalized_chunk@data$Z
   #cloud <- Normalized_gaps[[2]]@data$Z
   # Calculate the LAD profile of the height vector
   ladDF <- LAD(cloud, dz = 1, z0 = 1)
   
   # Filter out any NA or zero LAD values to avoid log(0)
   ladDF <- ladDF[ladDF$lad > 0, ]
-  if(nrow(ladDF) == 0) {return(0)}# if there are no values then fhd is 0
-  else{
+  
+  if(nrow(ladDF) == 0){
+    return(0)} else{
     # Bin heights into strata
     ladDF$stratum <- cut(
       ladDF$z,
@@ -41,12 +45,21 @@ fhdFunction<- function(cloud, strata){# Cloud is a vector of heights
 
 # This function will map the FHD function across a las catalog using catalog_map
 fhdMap_function <- function(chunk) {
+  
+  # Count ground points (ASPRS class 2)
+  n_ground <- sum(chunk@data$Classification == 2, na.rm = TRUE)
+  
+  if (n_ground < 50) {
+    return(NULL)
+  } else{
+  
   dtm <- rasterize_terrain(chunk, res = 1, algorithm = tin())
-  normalized_chunk <- chunk - dtm
-  fhdRast <- pixel_metrics(chunk, ~fhdFunction(Z, strata), res = 30)
+  normalized_chunk <- chunk - dtm 
+  fhdRast <- pixel_metrics(normalized_chunk, ~fhdFunction(Z, strata), res = 30)
+  gc()
   return(fhdRast)
+  }
 }
-
 
 
 
@@ -66,8 +79,14 @@ mosaicFunction <- function(directory, outPath) {
   VRT <- list.files(directory, pattern = ".vrt")[[1]]
   #VRT <- paste0(fhdOutPath, "/2017_2018_30m/2017_2018_FHD_30m.vrt")
   #outPath <- paste0(fhdOutPath, "/2017_2018_FHD_30mFULL.tif")
-  vRast <- vrt(paste0(directory, VRT))
-  writeRaster(vRast, outPath)
-
   
+  
+  for(i in 1:length(VRT)){  
+    
+    vRast <- vrt(paste0(directory, VRT[[i]]))
+    
+    # use letters instead of numbers
+    suffix <- letters[i]
+    writeRaster(vRast, paste0(outPath, "_FULL_", suffix, ".tif" ))
+  }
 }

@@ -11,8 +11,8 @@ library(sf)
 
 
 # Set up futures session ---- !#
-plan(multisession, workers = 7L)
-set_lidr_threads(2L)
+plan(multisession, workers = 6L)
+set_lidr_threads(1L)
 
 
 
@@ -99,7 +99,7 @@ strata <- c(0, 1, 2, 5, 8, 20, 100)
 #   message("Saved file list for year ", yr)
 # }
 
-detach("package:common", unload = TRUE)
+
 
 # Read in las catalog ---- !#
 # List the per-year RDS files
@@ -114,7 +114,7 @@ tileFiles <- map(year_files, function(rds){
 names(tileFiles) <- basename(year_files) |> tools::file_path_sans_ext()
 
 # Read in the catalogs
-ctgs <- map(tileFiles, function(laz){
+ctgs <- future_map(tileFiles, function(laz){
   readLAScatalog(laz, select = "xyzc")
 })
 names(ctgs) <- names(tileFiles)

@@ -10,8 +10,19 @@ yearNames <- c("2017_2018_30M",
                "2020_2021_30M", 
                "2021_2022_30M")
 
-map(1:length(years), .f = function(x) {
-  mosaicFunction(paste0(years[[1]], "/"),
-                 paste0(fhdOutPath, "/", yearNames[[1]], "FULL.tif"))
-  })
+# Create vrt for each year
+#map(5, .f = function(x) {
+  tifs <- list.files(paste0(years[[5]]), full.names = TRUE)
+  vrt <- vrt(tifs, paste0(years[[5]], "/", yearNames[[5]], ".vrt"), overwrite = TRUE)
+  #vrt(vrt, paste0(fhdOutPath, years[[5]], "/", yearNames[[5]], ".vrt"))
+  #}
+  )
+
+# Mosaic as vrt
+map(5, .f = function(x) {
+  mosaicFunction(paste0(years[[x]], "/"),
+                 paste0(fhdOutPath, yearNames[[x]]))
+  }
+  )
+
 
