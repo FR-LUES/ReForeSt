@@ -11,15 +11,15 @@ yearNames <- c("2017_2018_30M",
                "2021_2022_30M")
 
 # Create vrt for each year
-#map(5, .f = function(x) {
-  tifs <- list.files(paste0(years[[5]]), full.names = TRUE)
-  vrt <- vrt(tifs, paste0(years[[5]], "/", yearNames[[5]], ".vrt"), overwrite = TRUE)
-  #vrt(vrt, paste0(fhdOutPath, years[[5]], "/", yearNames[[5]], ".vrt"))
-  #}
+map(4, .f = function(x) {
+  tifs <- list.files(paste0(years[[4]]), full.names = TRUE)
+  vrt <- vrt(tifs, paste0(years[[4]], "/", yearNames[[4]], ".vrt"), overwrite = TRUE)
+  #vrt(vrt, paste0(fhdOutPath, years[[4]], "/", yearNames[[4]], ".vrt")) # Not needed
+  }
   )
 
 # Mosaic as vrt
-map(5, .f = function(x) {
+map(4, .f = function(x) {
   mosaicFunction(paste0(years[[x]], "/"),
                  paste0(fhdOutPath, yearNames[[x]]))
   }
