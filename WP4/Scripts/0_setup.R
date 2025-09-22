@@ -6,8 +6,8 @@ library(landscapemetrics)
 library(ggthemes)
 #library(ggpmisc)
 library(broom)
-
-
+library(tidyterra)
+library(rnaturalearth)
 
 
 
@@ -38,3 +38,19 @@ strata <- c(0, 1, 2, 10, 20, 50)
 # Gap metrics
 l_metrics = c("lsm_l_np", # Number of gap
               "lsm_l_ta") # Total gap Area)
+
+
+
+
+
+
+# Get England Basemap for plotting ---- !#
+# Get UK countries
+uk <- ne_countries(scale = "medium", country = "United Kingdom", returnclass = "sf")
+
+# Get subnational units (England, Scotland, Wales, NI)
+uk_sub <- ne_states(country = "United Kingdom", returnclass = "sf")
+
+england <- uk_sub[uk_sub$geonunit == "England", ] |> st_union()
+
+
