@@ -27,3 +27,8 @@ We take LiDAR derived metrics found to be important in the above work area and p
 Seperate to this project, synthetic Canopy Height Models (sCHMs) are being produced for England by training aerial imagery on LiDAR derived CHMs. Results are promising and this gives us the opportunity to derive higher order structural metrics from these sCHMs which can be updated on a yearly basis. This will be useful for tracking structural diversity through time which can not be done with the NLP. Of course, these sCHMs cannot give any sub-canopy information and so they can only be used for tracking top canopy metrics such as gap fraction and the diversity of top canopy height. 
 
 In WP4 we compare how sCHM derived metrics compare to LiDAR derived metrics. We were provided with around 30 tiles of sCHMs across England. We clip these to wooded NFI areas and extract gap fraction metrics and top canopy diversity metrics. We do the same for the corresponding LiDAR derived CHMs and compare the outputs.
+
+## WP5
+[WP5 code description]
+### Change over time Forest of Dean
+Here we process two las catalogs, one from 2017 and one from 2024, covering the forest of Dean. We have also collated management information per subcompartment (polygon form) across the whole region. This management information tells us of the forestry prescript, last thinning date, and management objective for each sub-compartment. We can use this to view how different structural metrics, extracted from LiDAR data, change over time under different management prescriptions. 
