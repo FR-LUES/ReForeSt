@@ -1,6 +1,8 @@
 source("WP5/Scripts/0_setup.R")
 source("WP5/Scripts/1_functions.R")
 
+future::plan(sequential)
+
 # DO NOT JUST RUN THIS WHOLE SCRIPT, THIS SCRIPT HAS MANY SECTIONS OF PROCESSING AND YOU SHOULD PICK AND CHOOSE WHICH YOU NEED.
 # E.G. IF YOU ALREADY HAVE DTMS. DO NOT RECREATE THEM HERE
 #plan(multisession(workers = 5))
@@ -76,17 +78,29 @@ opt_chunk_size(norm_2024) <- 3000
 opt_output_files(norm_2024) <- paste0(path_chmOut, "2024/{XCENTER}_{YCENTER}_chm")
 
 # rasterize them
-opt_restart(norm_2017) <- 1
-norm_2017@output_options$drivers$SpatRaster$param$overwrite <- TRUE# Overwrite existing rasters
-catalog_map(norm_2017, rasterize_canopy, algorithm = dsmtin(), res = 1, .options = opt)
-catalog_map(norm_2024, rasterize_canopy, algorithm = dsmtin(), res = 1, .options = opt)
+# opt_restart(norm_2017) <- 1
+# norm_2017@output_options$drivers$SpatRaster$param$overwrite <- TRUE# Overwrite existing rasters
+catalog_map(norm_2017, rasterize_canopy, algorithm = dsmtin(highest = FALSE), res = 1, .options = opt)
+catalog_map(norm_2024, rasterize_canopy, algorithm = dsmtin(highes = FALSE), res = 1, .options = opt)
 
+# create vrts if needed
+vrt(list.files(paste0(path_chmOut, "/2017/"), full.names = TRUE), paste0(path_chmOut, "/2017/chm_2017.vrt"))
 vrt(list.files(paste0(path_chmOut, "/2024/"), full.names = TRUE), paste0(path_chmOut, "/2024/chm_2024.vrt"))
 
 # Convert to tifs
 chm2017 <- rast(paste0(path_chmOut, "/2017/chm_2017.vrt"))
 writeRaster(chm2017, paste0(path_chmOut, "/2017/chm_2017.tif"))
 
+chm2024 <- rast(paste0(path_chmOut, "/2024/chm_2024.vrt"))
+writeRaster(chm2024, paste0(path_chmOut, "/2024/chm_2024.tif"))
+
+# SMooth rasters to fill pits and make them more comparable
+chm2017 <- rast(paste0(path_chmOut, "/2017/chm_2017.tif"))
+chm2017Smooth <- focal(chm2017, ws = 3, fun = "mean", na.rm = TRUE)
+writeRaster(chm2017Smooth, paste0(path_chmOut, "/2017/chm_smooth_2017.tif"), overwrite = TRUE)
+chm2024 <- rast(paste0(path_chmOut, "/2024/chm_2024.tif"))
+chm2024Smooth <- focal(chm2024, ws = 3, fun = "mean", na.rm = TRUE)
+writeRaster(chm2024Smooth, paste0(path_chmOut, "/2024/chm_smooth_2024.tif"), overwrite = TRUE)
 
 
 
@@ -99,9 +113,8 @@ writeRaster(chm2017, paste0(path_chmOut, "/2017/chm_2017.tif"))
 
 # Inspect canopy height models ---- !#
 #2024
-chm2024 <- rast(paste0(path_chmOut, "/2024/chm_2024.tif"))
-chm2024 <- aggregate(chm2024, factor = 5) # aggregate for plotting
-chm2024 <- classify(chm2024, cbind(71, Inf, NA)) # Remove birds lol
+chm2024 <- rast(paste0(path_chmOut, "/2024/chm_smooth_2024.tif"))
+chm2024 <- classify(chm2024, cbind(60, Inf, NA)) # Remove birds lol
 
 # Plot in tmap
 ggplot()+
@@ -111,9 +124,9 @@ ggplot()+
   theme_minimal()
 
 
-chm2017 <- rast(paste0(path_chmOut, "/2017/chm_2017.tif"))
-chm2017 <- aggregate(chm2017, factor = 5) # aggregate for plotting
-chm2017 <- classify(chm2017, cbind(71, Inf, NA)) # Remove birds lol
+chm2017 <- rast(paste0(path_chmOut, "/2017/chm_smooth_2017.tif"))
+
+chm2017 <- classify(chm2017, cbind(60, Inf, NA)) # Remove birds lol
 
 # Plot in tmap
 ggplot()+

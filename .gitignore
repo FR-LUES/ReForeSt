@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+WP3/data/LiDAR
+WP3/data/lidar_spin
+WP3/data/chms
+WP3/outputs/figures
+WP3/outputs/lidar_spin
+WP5/Shapes
+WP4/Shapes
+WP4/Image_data
+WP5/LiDAR
+WP4/Figures
+ReForest.Rproj
+token.txt

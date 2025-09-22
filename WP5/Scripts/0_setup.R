@@ -6,6 +6,9 @@ library(terra)
 library(tmap)
 library(tidyterra)
 library(viridis)
+library(lidaRtRee)
+library(future)
+library(furrr)
 
 #lidR# Folder paths ---- !#
 pathWP5 <- "WP5/"
@@ -47,3 +50,15 @@ comp <- read.csv(paste0(path_managementShapes, "deanComponents.csv"))# read in c
 #st_write(deanSub, paste0(path_managementShapes, "dean_subcompartment_merged.gpkg"))
 deanSub <- st_read(paste0(path_managementShapes, "dean_subcompartment_merged.gpkg"))
 
+
+
+
+
+
+
+
+
+
+
+# constants ---- !#
+gapHeight = 2; gapSize = 10 # detect gap constants

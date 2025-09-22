@@ -16,7 +16,6 @@ nfi <- st_intersection(nfi, st_union(sCHMs)) # Clip NFI to CHM area
 
 
 
-
 # Clip and raster data to NFI polygons and save to file ---- !#
 sCHM_clip <- clip_aoiRast(nfi, sCHMs)
 lCHM_clip <- clip_aoiRast(nfi, CHMs)

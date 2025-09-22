@@ -11,8 +11,8 @@ library(sf)
 
 
 # Set up futures session ---- !#
-plan(multisession, workers = 6L)
-set_lidr_threads(1L)
+plan(multisession, workers = 5)
+
 
 
 
