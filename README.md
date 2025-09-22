@@ -10,6 +10,7 @@ Each work package has its own set of scripts and these can all be found in the c
 
 ## WP3:
 [WP3 code description](https://github.com/FR-LUES/ReForeSt/blob/main/WP3/WP3_Code_README.md)
+
 ### Linking LiDAR to biodiversity
 Here, we collate biodiversity surveys from past Forest Research projects into a larger database. The back-bone of these data is the [WrEN project](https://www.wren-project.com/) which surveyed ~ 100 broadleaved forests across England and Scotland for a range of taxanomic groups. However this project could only use the English WrEN data as this is what the NLP is limited to, as such the WrEN data are supplemented by other similar projects to increase sample sizes. All surveys included field-based structural measurements which were subsequently shown to explain variation in biodiversity. We focus on three taxanomic groups as these were well surveyed across all study sites: understory plants, ground-crawling invertebrates (spiders and beetles), and flying invertebrates (hoverflies and craneflies). 
 
@@ -29,6 +30,7 @@ Seperate to this project, synthetic Canopy Height Models (sCHMs) are being produ
 In WP4 we compare how sCHM derived metrics compare to LiDAR derived metrics. We were provided with around 30 tiles of sCHMs across England. We clip these to wooded NFI areas and extract gap fraction metrics and top canopy diversity metrics. We do the same for the corresponding LiDAR derived CHMs and compare the outputs.
 
 ## WP5
-[WP5 code description]
+[WP5 code description](https://github.com/FR-LUES/ReForeSt/blob/main/WP5/WP5_code_description.md)
+
 ### Change over time Forest of Dean
-Here we process two las catalogs, one from 2017 and one from 2024, covering the forest of Dean. We have also collated management information per subcompartment (polygon form) across the whole region. This management information tells us of the forestry prescript, last thinning date, and management objective for each sub-compartment. We can use this to view how different structural metrics, extracted from LiDAR data, change over time under different management prescriptions. 
+Here we process two las catalogs, one from 2017 and one from 2024, covering the forest of Dean. We have also collated management information per subcompartment (polygon form) across the whole region. This management information tells us of the forestry prescript, last thinning date, and management objective for each sub-compartment. We can use this to view how different structural metrics, extracted from LiDAR data, change over time under different management prescriptions. We process las tiles into CHMs before extracting metrics as this is more robust from extracting metrics from lasfiles with different point densities. This means we can not extract any sub-canopy information. However, most changes should be observable from above the canopy.
