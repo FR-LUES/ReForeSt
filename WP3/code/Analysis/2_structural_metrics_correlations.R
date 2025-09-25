@@ -9,6 +9,6 @@ plants |>
   theme_calc()
 
 structure |>
-  select(mean30mFHD_gapless, mean30mFHD_gaps, ttops_den_las, gap_prop) |>
+  select(mean30mFHD_gapless, mean30mFHD_gaps, ttops_den, gap_prop) |>
   ggpairs()
 glimpse(structure)
