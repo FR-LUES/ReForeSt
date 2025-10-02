@@ -1,5 +1,5 @@
-source("Scripts/0_setup.R")
-source("Scripts/0_functions.R")
+source("WP4/Scripts/0_setup.R")
+source("WP4/Scripts/0_functions.R")
 
 
 # Read in Data ---- !#
@@ -54,6 +54,20 @@ sEffCandf <- data.frame(source = "Imagery", mean30mEffCan = unlist(sMean30mEffCa
 lMean30mEffCan <- map(range, function(x) mean(values(lEffCan30M[[x]]), na.rm = TRUE) |> round(2))
 lEffCandf <- data.frame(source = "LiDAR", mean30mEffCan = unlist(lMean30mEffCan), OBJECTID = nfi$OBJECTID)
 meanEffCanDF <- rbind(sEffCandf, lEffCandf)
+
+
+# count tree tops
+sttops_list <- map(range, function(x) count_ttops(sCHMs[[x]], nfi[x,]))
+lttops_list <- map(range, function(x) count_ttops(lCHMs[[x]], nfi[x,])) # lCHMs in wrong crs
+
+df_ttops <- rbind(
+  data.frame(ID = nfi$OBJECTID,
+             ttops = unlist(sttops_list),
+             source = "Imagery"),
+  data.frame(ID = nfi$OBJECTID,
+             ttops = unlist(lttops_list),
+             source = "LiDAR")
+  )
 
 
 # Combine metrics ---- !#
