@@ -8,8 +8,8 @@ library(fs)
 library(lidR)
 library(tidyverse)
 library(sf)
-
-
+library(tidyterra)
+library(viridis)
 # Set up futures session ---- !#
 plan(multisession, workers = 3L)
 

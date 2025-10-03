@@ -54,7 +54,7 @@ map(bestMods, ~plot(.x))
 
 # Plot results ---- !#
 # Define  structural variables
-struct_vars <- c("stemDensity", "gap_prop", "mean30mEffStories")
+struct_vars <- c("stemDensity", "gap_prop", "mean30mFHD_gaps", "ttops_den_las")
 response <- c("q0Log", "q1Log", "q2Log", "logAbund")
 plotList <- map(1:length(bestMods),
                 .f = function(x) plot_struct_effects(bestMods[[x]],

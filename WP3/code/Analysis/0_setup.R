@@ -47,7 +47,7 @@ structure_path <- paste0(path_output, "masterMetrics_df.csv")
 # Read in and tidy the data ---- !#
 # Structural data (dbh is already merged with species data)
 structure <- read.csv(structure_path) |>
-  select(ID, mean30mFHD_gapless, gap_prop, ttops_den_las)
+  select(ID, mean30mFHD_gaps, gap_prop, ttops_den_las)
 # Landscape variables
 landscape <- st_read(shapes_path) |> 
   select(ID, bl500_m, aw500_m,
@@ -113,7 +113,7 @@ flies <- read.csv(flyer_path) |>
 # Create model combinations ---- !#
 # Define predictors
 lid1 <- " gap_prop "
-lid2 <- " mean30mFHD_gapless "
+lid2 <- " mean30mFHD_gaps "
 lid3 <- " ttops_den_las "
 
 field1 <- " dbhSD "

@@ -118,7 +118,7 @@ responseLabel_function <- function(response) {
 
 
 
-plot_struct_effects <- function(model, data, response_name, struct_vars, taxa) {
+plot_struct_effects <- function(model, data, response_name, struct_vars, struct_labs, taxa) {
   
    #model <- bestMods[[1]]
    #data <- crawlData
@@ -127,9 +127,19 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, taxa) {
   # Identify included structural terms in the model
   included_terms <- get_struct_terms(model, struct_vars)
   response_Lab <- responseLabel_function(response_name)
+  
   # For each included structural term, get predicted values and plot
   plots <- map(included_terms, function(var) {
-    #var <- "stemDensity"
+    
+  # Re name predictors
+  predictor_lab <- case_when(var == "dbhSD" ~ "sd DBH",
+                               var == "gap_prop" ~ "Gap fraction",
+                               var == "mean30mFHD_gapless" ~ "Effective # canopy layers",
+                               var == "mean30mFHD_gaps" ~ "Effective # canopy layers",
+                               var == "ttops_den_las" ~ "Tree density las",
+                               var == "stemDensity" ~ "Tree density field",
+                               .default = var)
+    
     pval <- broom::tidy(model) |> filter(term == var) |> pull(p.value) |> round(3)
     
     pval_label <- paste0("p = ", signif(pval, 3))
@@ -141,12 +151,13 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, taxa) {
     
     # Plot points (raw data), prediction line, ribbon for CI
     ggplot() +
-      geom_rug(data = data, aes(x = !!sym(var)), sides = "b", alpha = 0.4) + 
+      geom_point(data = data, aes(x = !!sym(var),  y = !!sym(response_name)), alpha = 0.1, size = 3) + 
       geom_line(data = pred_df, aes(x = x, y = predicted), linewidth = 1) +
-      geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.2) +
-      labs(y = paste0(taxa," ", response_Lab)) +
+      geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.1) +
+      labs(y = paste0(taxa," ", response_Lab), x = predictor_lab) +
       annotate("text", x = Inf, y = Inf, label = pval_label, hjust = 1.1, vjust = 1.5, size = 5) +
-      theme_gdocs()
+      theme_gdocs()+
+      theme(text = element_text(size = 20))
   })
   
   # Return list of plots for that model

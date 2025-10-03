@@ -1,7 +1,9 @@
 source("WP3/code/mapped_outputs/0_setup.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
-ctg <- ctgs[[4]]
+ctg <- ctgs[[1]]
+#lidR::catalog_laxindex(ctg) # create lax index to speed up processing
+
 
 # Set catalog options
 opt_chunk_size(ctg) <- 2000       # in meters, adjust to tile size
@@ -14,10 +16,10 @@ opt  <- list(raster_alignment = 30, # catalog_apply will adjust the chunks if re
 
 
 # Set where results will be written
-opt_output_files(ctg) <- paste0(fhdOutPath, "2020_2021_30m/2020_2021_{XCENTER}_{YCENTER}_FHD_30m")
+opt_output_files(ctg) <- paste0(fhdOutPath, "2017_2018_30m/2017_2018_{XCENTER}_{YCENTER}_FHD_30m")
 
 
-opt_restart(ctg) <- 4975 # For restarting from errors.
+opt_restart(ctg) <- 1 # For restarting from errors.
 
 # Apply pixel metrics to catalog (this will write rasters to disk, not memory)
 start_time <- Sys.time()

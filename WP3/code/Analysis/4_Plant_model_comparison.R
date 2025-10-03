@@ -29,11 +29,6 @@ bestMods <- list(sppMod, woodMod, specMod)
 
 
 
-
-
-
-
-
 # View model summaries ---- !#
 map(bestMods, ~sumFun(.x))
 
@@ -53,7 +48,7 @@ map(bestMods, ~sumFun(.x))
 
 # Plot results ---- !#
 # Define  structural variables
-struct_vars <- c("dbhSD", "gap_prop", "mean30mEffStories")
+struct_vars <- c("dbhSD", "gap_prop", "mean30mFHD_gaps")
 response <- c("spp", "sppWoodland", "sppSpecialist")
 plotList <- map(1:length(bestMods),
                 .f = function(x) plot_struct_effects(bestMods[[x]],
