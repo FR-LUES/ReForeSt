@@ -1,5 +1,5 @@
-source("Scripts/0_setup.R")
-source("Scripts/0_functions.R")
+source("WP4/Scripts/0_setup.R")
+source("WP4/Scripts/0_functions.R")
 
 
 # Read in Data ---- !#
@@ -9,10 +9,15 @@ sCHMs <-  map(dir(sCHMclipPath), function(x)
 sCHMs <- map(sCHMs, .f = function(x) aggregate(x, fact = 4, fun = "mean")) 
 lCHMs <- map(dir(lCHMclipPath), function(x)
   rast(paste0(lCHMclipPath, x))) # read lCHM
+
+# JB added line below as lCHMs in wrong CRS
+lCHMs <- lapply(lCHMs, function(r) project(r, "EPSG:27700"))
+
 nfi <- st_read(NFIsamplePath)# read in NFI
 nfi <- chmMatch(sCHMclipPath, nfi) # Order shapefiles to match chms
 #set range for map function
 range <- 1:length(sCHMs)
+
 
 
 # Calculate gap fraction ---- !# 
@@ -56,10 +61,24 @@ lEffCandf <- data.frame(source = "LiDAR", mean30mEffCan = unlist(lMean30mEffCan)
 meanEffCanDF <- rbind(sEffCandf, lEffCandf)
 
 
-# Combine metrics ---- !#
-comparisonMetrics <- left_join(gap_metrics, meanEffCanDF, by = c("OBJECTID" = "OBJECTID",
-                                                                 "source" = "source"))
+# count tree tops
+sttops_list <- map(range, function(x) count_ttops(sCHMs[[x]], nfi[x,]))
+lttops_list <- map(range, function(x) count_ttops(lCHMs[[x]], nfi[x,]))
 
+df_ttops <- rbind(
+  data.frame(OBJECTID = nfi$OBJECTID,
+             ttops = unlist(sttops_list),
+             source = "Imagery"),
+  data.frame(OBJECTID = nfi$OBJECTID,
+             ttops = unlist(lttops_list),
+             source = "LiDAR")
+  )
+
+# Combine metrics ---- !#
+comparisonMetrics <-
+  gap_metrics %>% 
+  left_join(meanEffCanDF, by = c("OBJECTID" = "OBJECTID", "source" = "source")) %>% 
+  left_join(df_ttops, by = c("OBJECTID" = "OBJECTID", "source" = "source"))
 
 comparisonMetrics$area <- rep(st_area(nfi), 2) |> round(0)
 write.csv(comparisonMetrics, paste0(dataPath, "comparison_metrics.csv"))

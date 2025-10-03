@@ -38,7 +38,6 @@ master_metrics_df <-
             by = "ID") |>
   left_join(df_ttops_all,
             by = "ID") %>% 
-  mutate(ttops_den_chm = ttops_chm / (site_area - ta), # add ttop density metrics
-         ttops_den_las = ttops_las / (site_area - ta))
+  mutate(ttops_den = ttops / (site_area - ta)) # add ttop density metrics
 
 write_csv(master_metrics_df, paste0(path_outputs, "masterMetrics_df.csv"))
