@@ -1,6 +1,7 @@
 library(tidyverse)
 library(terra)
 library(sf)
+library(lidR)
 library(lidaRtRee)
 library(landscapemetrics)
 library(ggthemes)

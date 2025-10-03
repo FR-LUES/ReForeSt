@@ -26,9 +26,9 @@ plot_data <- metricsWide |>
   left_join(r2_results, by = "Variable") |>
   mutate(label = paste0("R² = ", round(r2, 2)),
          Variable = factor(Variable,
-                           levels = c("mean30mEffCan", "gap_prop", "np", "ta"),
+                           levels = c("mean30mEffCan", "gap_prop", "np", "ta", "ttops"),
                            labels = c("Effective # top canopy layers",
-                                      "Gap proportion", "# Gaps", "Gap area")))
+                                      "Gap proportion", "# Gaps", "Gap area", "Tree tops")))
 
 #glimpse(metrics)
 # Plot comparisons ---- !#

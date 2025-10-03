@@ -219,3 +219,17 @@ fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
   return(Hexp)
      }
 }
+
+
+
+# ttop detection
+
+count_ttops <- function(chm, shape){
+  
+  ttops_chm <-
+    locate_trees(las = chm, algorithm = lmf(ws = 10)) %>% 
+    st_filter(shape)
+  
+  return(nrow(ttops_chm))
+}
+
