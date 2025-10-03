@@ -3,6 +3,8 @@
 .RData
 .Ruserdata
 WP3/data/LiDAR
+WP3/data/testLas.las
+WP3/data/shapefiles/testShape.gpkg
 WP3/data/lidar_spin
 WP3/data/chms
 WP3/outputs/figures
@@ -11,6 +13,9 @@ WP5/Shapes
 WP4/Shapes
 WP4/Image_data
 WP5/LiDAR
-WP4/Figures
+WP5/Figures/
+WP4/Figures/
+WP5/Shapes
+WP5/LiDAR
 ReForest.Rproj
 token.txt
