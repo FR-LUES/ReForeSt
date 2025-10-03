@@ -61,8 +61,9 @@ dtm_function <- function(chunk) {
 # Shape is the corresponding SF object for the chm
 gapsToRast <- function(chm, Shape){
   
-  chm <- chms[[1]]
-  #Shape <- shapes[1,]
+  #chm <- chm2017_crop[[2]]
+  #Shape <- deanSub_og[2,]
+  
   # Restrict CHM to inside polygon
   
   # Gap detection algorithm based on max height within gaps and a minimal surface area
@@ -70,7 +71,7 @@ gapsToRast <- function(chm, Shape){
                          res = 1,
                          gap_max_height = gapHeight,
                          min_gap_surface = gapSize)
-  
+  #View(gap_detection)
   # Areas external to the woodland are considered gaps to fill out raster
   # These areas are removed below
   gapMask <- mask(gapSF, buffer(vect(Shape), -1.5))# remove external area by masking by site
@@ -85,4 +86,60 @@ gapsToRast <- function(chm, Shape){
   return(gaps)
 }
 
+
+
+
+
+
+# FHD function ---- !#
+# Entropy function to operate at varying resolutions
+canopyEntropy <- function(heights, strata){
+  # Tidy some ground heights
+  heights[heights < 0] <- 0
+  heights[heights > 60] <- NA # remove birds
+  heights <- heights[!is.na(heights)]
+  # Bin Heights into stratas
+  bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
+  # find frequency of values in each bin
+  freqs <- table(factor(bins, levels = 1:(length(strata)-1)))
+  
+  # Calculate effective canopy layers
+  total_values <- sum(freqs)
+  proportions <- freqs/total_values
+  shannon_index <- -1*sum(proportions * log(proportions), na.rm = TRUE)
+  effectiveCanopyLayers <- exp(shannon_index) |> round(2)
+  return(effectiveCanopyLayers)
+}
+
+# Zonal eff Canopy layer function ---- !#
+# This function is for computing effective canopy layers zonally at varying cell resolutions
+zonal_effCanopyLayer <- function(chm, shape, res, strata){
+  # Remove edge effects
+  chm <- mask(chm, st_buffer(shape, 10))
+  effCanopyRaster <- raster_metrics(chm,
+                                    fun = function(x)
+                                      data.frame(effCanopy = canopyEntropy(x, strata = strata)),
+                                    res = res
+  )
+  return(effCanopyRaster)  
+}
+
+
+
+
+
+
+
+
+
+
+
+# stem density function ---- !#
+# return ttops points
+ttopsFunction <- function(site_chm, site_boundary){
+ttops_chm <-
+  locate_trees(site_chm, algorithm = lmf(ws = 10)) |> 
+  st_filter(site_boundary)
+return(ttops_chm)
+}
 
