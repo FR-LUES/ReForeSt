@@ -82,7 +82,7 @@ mosaicFunction <- function(directory, outPath) {
   
   
   for(i in 1:length(VRT)){  
-    
+    #i <- 1
     vRast <- vrt(paste0(directory, VRT[[i]]))
     
     # use letters instead of numbers

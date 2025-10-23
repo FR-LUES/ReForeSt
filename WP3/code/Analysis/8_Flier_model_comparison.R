@@ -16,22 +16,17 @@ flyData <- models[[1]]$data
 
 # Extract AICs ---- !#
 aics <- map(models, .f = function(x) x$aic)
-
-# Using only LiDAR is no worse than field for species richness
-q0Mod <- models[[3]]
-# LiDAR is best for q1
-q1Mod <- models[[5]]
-# LiDAR is best for q2
-q2Mod <- models[[8]]
-# Field is best for abundance
-abundMod <- models[[12]]
-bestMods <- list(q0Mod, q1Mod, q2Mod, abundMod)
+hoverflyModel <- models[1]
+craneflyModel <- models[6]
+sppModel <- models[7]
+bestMods <- c(hoverflyModel, craneflyModel, sppModel)
 
 
 
 
 
 
+# View model summaries ---- !#
 # View model summaries ---- !#
 map(bestMods, ~sumFun(.x))
 
@@ -51,14 +46,16 @@ map(bestMods, ~plot(.x))
 
 # Plot results ---- !#
 # Define  structural variables
-struct_vars <- c("dbhSD", "understoryCover", "gap_prop", "mean30mFHD_gaps")
-response <- c("q0Log", "q1Log", "q2Log", "logAbund")
+struct_vars <- c("dbhSD", "gap_prop", "mean30mFHD_gapless")
+response <- c("Hoverflyrichness", "Cranefliesrichness", "Flyinginvertrichness")
+
+
 plotList <- map(1:length(bestMods),
                 .f = function(x) plot_struct_effects(bestMods[[x]],
                                                      flyData,
                                                      response_name = response[[x]],
                                                      struct_vars = struct_vars,
-                                                     taxa = "Flying invert"))
+                                                     taxa = ""))
 
 ## Save plots
 # Create a new PowerPoint

@@ -19,7 +19,7 @@ thinOnly <- metrics |>
 ggplot(data = metrics, aes(x = last_thinned, y = stemChange))+
   geom_boxplot(alpha = 0.3)+
   geom_jitter(alpha = 0.5)+
-  labs(x = "Last thinning petriod", y = "Change in # tree's detected (2017-2024)")+
+  labs(x = "Last thinning period", y = "Change in # tree's detected (2017-2024)")+
   scale_x_discrete(labels = c("< 2010", "2017 < 2024"))+
   theme_classic()
 
@@ -27,25 +27,27 @@ ggplot(data = metrics, aes(x = last_thinned, y = stemChange))+
 ggplot(data = metrics, aes(x = last_thinned, y = gapChange))+
   geom_boxplot(alpha = 0.3)+
   geom_jitter(alpha = 0.5)+
-  labs(x = "Last thinning petriod", y = "Log Change in gap area (2017-2024)")+
+  labs(x = "Last thinning period", y = "Log Change in gap area (2017-2024)")+
   scale_x_discrete(labels = c("< 2010", "2017 < 2024"))+
   theme_classic()+
   ylim(-1000, 1000)
 
 # height
-ggplot(data = metrics, aes(x = last_thinned, y = heightChange))+
-  geom_boxplot(alpha = 0.3)+
-  geom_jitter(alpha = 0.5)+
-  labs(x = "Last thinning petriod", y = "Change in mean height (2017-2024)")+
-  scale_x_discrete(labels = c("< 2010", "2017 < 2024"))+
+ggplot(data = metrics, aes(x = last_thinned, y = heightChange, fill = last_thinned))+
+  geom_boxplot(width = 0.1, colour = "black")+
+  geom_violin(alpha = 0.3)+
+  labs(x = "Last thinning period", y = "Change in mean height (2017-2024)")+
+  scale_fill_manual(values = c("yellow", "pink"), guide = "none")+
+  scale_x_discrete(labels = c("< 2016", "2017 < 2024"))+
   theme_classic()
 
 # fhd
-ggplot(data = metrics, aes(x = last_thinned, y = fhdChange))+
-  geom_boxplot(alpha = 0.3)+
-  geom_jitter(alpha = 0.5)+
-  labs(x = "Last thinning petriod", y = "Change in effective layers (2017-2024)")+
-  scale_x_discrete(labels = c("< 2010", "2017 < 2024"))+
+ggplot(data = metrics, aes(x = last_thinned, y = fhdChange, fill = last_thinned))+
+  geom_boxplot(width = 0.1, colour = "black")+
+  geom_violin(alpha = 0.3)+
+  labs(x = "Last thinning period", y = "Change in # effective canopy layers(2017-2024)")+
+  scale_fill_manual(values = c("yellow", "pink"), guide = "none")+
+  scale_x_discrete(labels = c("< 2016", "2017 < 2024"))+
   theme_classic()
 
 

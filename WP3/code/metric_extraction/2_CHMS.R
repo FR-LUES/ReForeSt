@@ -8,7 +8,7 @@
 # # Load in data ---- !#
 # clipped <- readLAScatalog(path_test_lasClipped)# Read in LiDAR data
 # # read in shapefiles
-# shapes <- st_read(paste0(path_test_data_shp, "testShapes_buffered.gpkg"))
+# shapes_buffered <- st_read(paste0(path_test_data_shp, "testShapes_buffered.gpkg"))
 # ---- !#
 
 

@@ -7,7 +7,9 @@ plantData <- models[[1]]$data
 
 
 
-
+ggplot(data = plantData, aes(x = mean30mFHD_gapless, y = sppSpecialist+1))+
+  geom_smooth(method = "glm", method.args = list(family = "poisson"))+
+  geom_point()
 
 
 
@@ -30,7 +32,7 @@ bestMods <- list(sppMod, woodMod, specMod)
 
 
 # View model summaries ---- !#
-map(bestMods, ~sumFun(.x))
+map(models, ~sumFun(.x))
 
 
 

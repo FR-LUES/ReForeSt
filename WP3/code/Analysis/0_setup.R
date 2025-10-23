@@ -47,7 +47,7 @@ structure_path <- paste0(path_output, "masterMetrics_df.csv")
 # Read in and tidy the data ---- !#
 # Structural data (dbh is already merged with species data)
 structure <- read.csv(structure_path) |>
-  select(ID, mean30mFHD_gaps, gap_prop, ttops_den_las)
+  select(ID, mean30mFHD_gapless, gap_prop, ttops_den_las)
 # Landscape variables
 landscape <- st_read(shapes_path) |> 
   select(ID, bl500_m, aw500_m,
@@ -85,24 +85,22 @@ crawler <- read.csv(crawler_path) |>
          q2Log = log(q2 +1),
          logAbund = log(abund+1))
 
-# Flying inverts (Hove and crane flies only)
+# Flying inverts (Hover and crane flies only)
 flies <- read.csv(flyer_path) |>
-  na.omit(Count) |>
   group_by(ID) |>
   summarise(q1 = hill_number(Count, 1),
             q0 = hill_number(Count, 0),# calculate hill numbers
             q2 = hill_number(Count, 2),
             abund = hill_number(Count, "abund"),
+            stemDensity = mean(stemDensityHA, na.rm = TRUE),
             dbhSD = mean(dbhSD, na.rm = TRUE),
-            understoryCover = mean(meanUnderstoryCover, na.rm = TRUE)) |>
+            meanUnderstoryCover = mean(meanUnderstoryCover, na.rm = TRUE)) |>
   left_join(structure, by = "ID") |>
-  left_join(landscape[, c("ID", "area_ha")], by = "ID") |>
-  left_join(plants[, c("ID", "Age")], by = "ID") |>
+  left_join(plants[, c("ID", "dbhSD", "Type")], by = "ID") |>
   mutate(q0Log = log(q0+1),
-         q1Log = log(q1+1),
-         q2Log = log(q2 +1),
-         logAbund = log(abund+1))
-
+        q1Log = log(q1+1),
+        q2Log = log(q2 +1),
+        logAbund = log(abund+1))
 
 
 
@@ -113,12 +111,12 @@ flies <- read.csv(flyer_path) |>
 # Create model combinations ---- !#
 # Define predictors
 lid1 <- " gap_prop "
-lid2 <- " mean30mFHD_gaps "
+lid2 <- " mean30mFHD_gapless "
 lid3 <- " ttops_den_las "
 
 field1 <- " dbhSD "
 field2 <- " stemDensity "
-field3 <- " understoryCover "
+#field3 <- " understoryCover "
 # plant models
 plantModel1 <- paste0(c(field1, lid1, lid2), collapse = "+")
 plantModel2 <- paste0(c(lid1, lid2), collapse = "+")
@@ -133,9 +131,9 @@ crawlModel3 <- paste0(field2)
 crawlModelVariants <- c(crawlModel1, crawlModel2, crawlModel3)
 
 # Fly models
-flyModel1 <- paste0(c(field1, field3, lid1, lid2), collapse = "+")
+flyModel1 <- paste0(c(field1, lid1, lid2), collapse = "+")
 flyModel2 <- paste0(c(lid1, lid2), collapse = "+")
-flyModel3 <- paste0(c(field1, field3), collapse = "+")
+flyModel3 <- paste0(c(field1), collapse = "+")
 flyModelVariants <- c(flyModel1, flyModel2, flyModel3)
 
 

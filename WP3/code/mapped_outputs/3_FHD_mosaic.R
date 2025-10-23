@@ -18,7 +18,7 @@ map(1, .f = function(x) {
   }
   )
 
-# Mosaic as vrt
+# Mosaic from vrt
 map(1, .f = function(x) {
   mosaicFunction(paste0(years[[x]], "/"),
                  paste0(fhdOutPath, yearNames[[x]]))
@@ -34,7 +34,7 @@ ras_list <- sprc(rev(tif_files))
 
 # Mosaic them into a single raster
 mosaic_ras <- mosaic(ras_list, fun = "last")
-
+writeRaster(mosaic_ras, paste0(fhdOutPath, "/FHD_full_30m.tif"))
 # plot to check
 ggplot()+
   geom_spatraster(data = mosaic_ras)+

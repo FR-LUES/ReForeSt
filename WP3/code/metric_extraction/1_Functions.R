@@ -2,7 +2,7 @@
 # 
 # 
 # # # Read in constants
-# source("code/0_setup.R")
+#source("code/0_setup.R")
 # # 
 # # # Read in test data and reorder shapefiles
 # shapes <- st_read(paste0(path_test_data_shp, "testShapes.gpkg"))
@@ -188,8 +188,8 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
 # only including points that actually reached each canopy layer
 
 fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
-  
-  #cloud <- Normalized_gaps[[2]]@data$Z
+  #strata <-  c(0, 1, 2, 8, 20, Inf)
+  #cloud <- Normalized_gapless[[3]]@data$Z
   # Calculate the LAD profile of the height vector
   ladDF <- LAD(cloud, dz = 1, z0 = 1)
   
@@ -207,7 +207,7 @@ fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
   
   # Aggregate LAD within each stratum
   aggLAD <- ladDF |> group_by(stratum) |>
-    summarise(lad = sum(lad))
+    summarise(lad = mean(lad))
                       
   # Proportional LAD in each layer
   aggLAD$prop <- aggLAD$lad / sum(aggLAD$lad)

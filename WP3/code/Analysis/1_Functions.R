@@ -112,6 +112,9 @@ responseLabel_function <- function(response) {
     response == "q1Log"         ~ "Shannon's effective species",
     response == "q2Log"         ~ "Simpson's effective species",
     response == "logAbund"      ~ "abundance",
+    response == "Hoverflyrichness" ~ "Hoverfly richness",
+    response == "Cranefliesrichness" ~ "Cranefly richness",
+    response == "Flyinginvertrichness" ~ "Flying invert richness",
     TRUE                        ~ response
   )
 }
@@ -121,15 +124,17 @@ responseLabel_function <- function(response) {
 plot_struct_effects <- function(model, data, response_name, struct_vars, struct_labs, taxa) {
   
    #model <- bestMods[[1]]
-   #data <- crawlData
-   #response_name <- "q0Log"
+   #data <- flyData
+   #response_name <- "Hoverflyrichness"
    #struct_vars <- struct_vars
+   #taxa <- "Flying inverts"
   # Identify included structural terms in the model
   included_terms <- get_struct_terms(model, struct_vars)
   response_Lab <- responseLabel_function(response_name)
   
   # For each included structural term, get predicted values and plot
   plots <- map(included_terms, function(var) {
+    #var <- included_terms[1]
     
   # Re name predictors
   predictor_lab <- case_when(var == "dbhSD" ~ "sd DBH",
@@ -151,7 +156,7 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, struct_
     
     # Plot points (raw data), prediction line, ribbon for CI
     ggplot() +
-      geom_point(data = data, aes(x = !!sym(var),  y = !!sym(response_name)), alpha = 0.1, size = 3) + 
+      geom_jitter(data = data, aes(x = !!sym(var),  y = !!sym(response_name), colour = Source), alpha = 1, size = 3) + 
       geom_line(data = pred_df, aes(x = x, y = predicted), linewidth = 1) +
       geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.1) +
       labs(y = paste0(taxa," ", response_Lab), x = predictor_lab) +
@@ -163,3 +168,5 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, struct_
   # Return list of plots for that model
   return(plots)
 }
+
+
