@@ -8,12 +8,12 @@ source("WP3/code/metric_extraction/1_Functions.R")
 
 # Read in data for chm script ---- !#
 
-clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM script to process
-shapes_buffered <- st_read(paste0(path_data_shp, "ReForeSt_shapes_buffered.gpkg"))# Read in buffered shapefiles for chm processing
+#clipped <- readLAScatalog(path_DASH_lasClipped)# Read in LiDAR data for the CHM script to process
+#shapes_buffered <- st_read(paste0(path_data_shp, "ReForeSt_shapes_buffered.gpkg"))# Read in buffered shapefiles for chm processing
 
 # Run CHM script ---- !#
 
-source("WP3/code/metric_extraction/2_CHMS.R")
+#source("WP3/code/metric_extraction/2_CHMS.R")
 
 pointsNormalized <- readLAScatalog(path_DASH_lasNormalised) # Read in normalised LiDAR data 
 
@@ -36,7 +36,7 @@ master_metrics_df <-
             by = c("ID" = "site_id")) |>
   left_join(fhdDF,
             by = "ID") |>
-  left_join(df_ttops_all,
+  left_join(df_ttops,
             by = "ID") %>% 
   mutate(ttops_den = ttops / (site_area - ta)) # add ttop density metrics
 
