@@ -16,11 +16,14 @@ path_supportShapes <- paste0(pathWP5, "Shapes/Support_shapes/")
 path_managementShapes <- paste0(pathWP5, "Shapes/Management_shapes/")
 path_LiDAR <- paste0(pathWP5, "LiDAR/")
 
-# Output paths
-path_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Dean_lidar/Forest_of_Dean/"
-path_dtmOut <- paste0(path_catalogs, "dtms/")
-path_chmOut <- paste0(path_catalogs, "chms/")
 
+# Output paths
+path_dean_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Dean_lidar/Forest_of_Dean/"
+path_dean_dtmOut <- paste0(path_dean_catalogs, "dtms/")
+path_dean_chmOut <- paste0(path_dean_catalogs, "chms/")
+path_private_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Private_sites_lidar/"
+path_private_lidar <- paste0(path_private_catalogs, "Fell_Site_Subsets_Lidar_Point_Cloud_Data/")
+path_private_shapes <- paste0(path_private_catalogs, "shapes/")
 
 # # Read in mangaement data and tidy ---- !#
 # # Read in and tidy shapefiles ---- !#

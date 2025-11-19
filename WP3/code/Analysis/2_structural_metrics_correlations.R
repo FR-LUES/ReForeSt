@@ -3,16 +3,11 @@ source("WP3/code/Analysis/0_setup.R")
 
 # Plot a correlation matrix ---- !#
 flies |>
-  select(mean30mFHD_gapless, understoryCover) |>
-  ggplot(aes(x = understoryCover, y = mean30mFHD_gapless))+
+  select(sd30mFHD_gapless, Cranefliesrichness) |>
+  ggplot(aes(x = sd30mFHD_gapless, y = Cranefliesrichness))+
   geom_point()+
   geom_smooth(method = "lm")+
-  labs(x = "Log of sd DBH", y = "Effective # canopy layers")+
+  labs(x = "sd30mFHD_gapless", y = "spp")+
   theme_calc()
 
 
-glimpse(flies)
-structure |>
-  select(mean30mFHD_gapless, mean30mFHD_gaps, ttops_den, gap_prop) |>
-  ggpairs()
-glimpse(structure)

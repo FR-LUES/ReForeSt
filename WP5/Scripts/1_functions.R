@@ -102,7 +102,7 @@ canopyEntropy <- function(heights, strata){
   bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
   # find frequency of values in each bin
   freqs <- table(factor(bins, levels = 1:(length(strata)-1)))
-  
+  freqs <- freqs /  diff(strata)
   # Calculate effective canopy layers
   total_values <- sum(freqs)
   proportions <- freqs/total_values
@@ -115,7 +115,9 @@ canopyEntropy <- function(heights, strata){
 # This function is for computing effective canopy layers zonally at varying cell resolutions
 zonal_effCanopyLayer <- function(chm, shape, res, strata){
   # Remove edge effects
-  chm <- mask(chm, st_buffer(shape, 10))
+  #chm <- chms[[1]][[1]]
+  #shape <- shapeUnion
+  chm <- mask(chm, st_buffer(shape, 10) |> vect()) 
   effCanopyRaster <- raster_metrics(chm,
                                     fun = function(x)
                                       data.frame(effCanopy = canopyEntropy(x, strata = strata)),
@@ -127,6 +129,38 @@ zonal_effCanopyLayer <- function(chm, shape, res, strata){
 
 
 
+fhdFunction <- function(cloud, strata){# Cloud is a vector of heights
+  #strata <-  c(0, 1, 2, 8, 20, Inf)
+  #cloud <- Normalized_gapless[[3]]@data$Z
+  # Calculate the LAD profile of the height vector
+  ladDF <- LAD(cloud, dz = 1, z0 = 1)
+  
+  # Filter out any NA or zero LAD values to avoid log(0)
+  ladDF <- ladDF[ladDF$lad > 0, ]
+  if(nrow(ladDF) == 0) {return(0)}# if there are no values then fhd is 0
+  else{
+    # Bin heights into strata
+    ladDF$stratum <- cut(
+      ladDF$z,
+      breaks = strata,
+      include.lowest = TRUE,
+      right = FALSE
+    )
+    
+    # Aggregate LAD within each stratum
+    aggLAD <- ladDF |> group_by(stratum) |>
+      summarise(lad = mean(lad))
+    
+    # Proportional LAD in each layer
+    aggLAD$prop <- aggLAD$lad / sum(aggLAD$lad)
+    
+    # Shannon entropy
+    H <- -sum(aggLAD$prop * log(aggLAD$prop))
+    
+    Hexp <- exp(H) |> round(2)
+    return(Hexp)
+  }
+}
 
 
 
@@ -142,4 +176,7 @@ ttops_chm <-
   st_filter(site_boundary)
 return(ttops_chm)
 }
+
+
+
 

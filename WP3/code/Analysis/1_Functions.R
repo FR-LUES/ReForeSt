@@ -105,21 +105,25 @@ get_struct_terms <- function(model, struct_vars) {
 # Labelling function
 responseLabel_function <- function(response) {
   dplyr::case_when(
-    response == "spp"           ~ "total species richness",
-    response == "sppWoodland"   ~ "woodland species richness",
-    response == "sppSpecialist" ~ "woodland specialist species richness",
-    response == "q0Log"         ~ "species richness",
-    response == "q1Log"         ~ "Shannon's effective species",
-    response == "q2Log"         ~ "Simpson's effective species",
-    response == "logAbund"      ~ "abundance",
-    response == "Hoverflyrichness" ~ "Hoverfly richness",
-    response == "Cranefliesrichness" ~ "Cranefly richness",
-    response == "Flyinginvertrichness" ~ "Flying invert richness",
+    response == "spp"           ~ "Total ground flora species richness",
+    response == "sppWoodland"   ~ "Woodland ground flora species richness",
+    response == "sppSpecialist" ~ "woodland ground flora specialist species richness",
+    response == "spiderSpp" ~ "Spider species richness",
+    response == "beetleSpp" ~ "Beetle species richness",
+    response == "crawlerSpp" ~ "Crawling invert species richness",
+    response == "Hoverflyrichness" ~ "Hoverfly species richness",
+    response == "Cranefliesrichness" ~ "Cranefly species richness",
+    response == "Flyinginvertrichness" ~ "Flying invert species richness",
     TRUE                        ~ response
   )
 }
 
-
+# Define consistent colours for all possible Source levels
+source_colors <- c(
+  "WrEN" = "#1b9e77",  # greenish
+  "FTC"  = "#d95f02",  # orange
+  "NC"   = "#7570b3"   # purple
+)
 
 plot_struct_effects <- function(model, data, response_name, struct_vars, struct_labs, taxa) {
   
@@ -156,11 +160,22 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, struct_
     
     # Plot points (raw data), prediction line, ribbon for CI
     ggplot() +
-      geom_jitter(data = data, aes(x = !!sym(var),  y = !!sym(response_name), colour = Source), alpha = 1, size = 3) + 
-      geom_line(data = pred_df, aes(x = x, y = predicted), linewidth = 1) +
-      geom_ribbon(data = pred_df, aes(x = x, ymin = conf.low, ymax = conf.high), alpha = 0.1) +
-      labs(y = paste0(taxa," ", response_Lab), x = predictor_lab) +
-      annotate("text", x = Inf, y = Inf, label = pval_label, hjust = 1.1, vjust = 1.5, size = 5) +
+      geom_jitter(data = data, aes(x = !!sym(var),
+                                   y = !!sym(response_name),
+                                   colour = Source), alpha = 1, size = 3) + 
+      geom_line(data = pred_df,
+                aes(x = x, y = predicted),
+                linewidth = 1) +
+      geom_ribbon(data = pred_df,
+                  aes(x = x, ymin = conf.low, ymax = conf.high),
+                  alpha = 0.1) +
+      labs(y = paste0(response_Lab),
+           x = predictor_lab) +
+      scale_colour_manual(values = source_colors, drop = FALSE) +  # <- this fixes consistency
+      labs(y = response_Lab, x = predictor_lab) +
+      annotate("text", x = Inf,
+               y = Inf, label = pval_label,
+               hjust = 1.1, vjust = 1.5, size = 5) +
       theme_gdocs()+
       theme(text = element_text(size = 20))
   })

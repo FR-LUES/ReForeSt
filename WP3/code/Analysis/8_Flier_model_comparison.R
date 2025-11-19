@@ -16,11 +16,10 @@ flyData <- models[[1]]$data
 
 # Extract AICs ---- !#
 aics <- map(models, .f = function(x) x$aic)
-hoverflyModel <- models[1]
-craneflyModel <- models[6]
-sppModel <- models[7]
-bestMods <- c(hoverflyModel, craneflyModel, sppModel)
-
+Hoverfly <- models[2]
+Cranefly <- models[4]
+total_fly <- models[7]
+bestMods <- c(Hoverfly, Cranefly, total_fly)
 
 
 
@@ -35,7 +34,7 @@ map(bestMods, ~sumFun(.x))
 
 
 # View model diagnostics, ALL MODELS LOOK GOOD
-map(bestMods, ~plot(.x))
+#map(bestMods, ~plot(.x))
 
 
 
@@ -47,7 +46,7 @@ map(bestMods, ~plot(.x))
 # Plot results ---- !#
 # Define  structural variables
 struct_vars <- c("dbhSD", "gap_prop", "mean30mFHD_gapless")
-response <- c("Hoverflyrichness", "Cranefliesrichness", "Flyinginvertrichness")
+response <- c("Hoverflyrichness", "Cranefliesrichness", "flyRichness")
 
 
 plotList <- map(1:length(bestMods),

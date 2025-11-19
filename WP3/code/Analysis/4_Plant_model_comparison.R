@@ -7,14 +7,6 @@ plantData <- models[[1]]$data
 
 
 
-ggplot(data = plantData, aes(x = mean30mFHD_gapless, y = sppSpecialist+1))+
-  geom_smooth(method = "glm", method.args = list(family = "poisson"))+
-  geom_point()
-
-
-
-
-
 
 # Extract AICs ---- !#
 aics <- map(models, .f = function(x) x$aic)
@@ -32,7 +24,7 @@ bestMods <- list(sppMod, woodMod, specMod)
 
 
 # View model summaries ---- !#
-map(models, ~sumFun(.x))
+# map(bestMods, ~sumFun(.x))
 
 
 
@@ -50,7 +42,7 @@ map(models, ~sumFun(.x))
 
 # Plot results ---- !#
 # Define  structural variables
-struct_vars <- c("dbhSD", "gap_prop", "mean30mFHD_gaps")
+struct_vars <- c("dbhSD", "gap_prop", "mean30mFHD_gapless")
 response <- c("spp", "sppWoodland", "sppSpecialist")
 plotList <- map(1:length(bestMods),
                 .f = function(x) plot_struct_effects(bestMods[[x]],

@@ -12,7 +12,7 @@ metricsWide <-  metrics |>
                values_to = "Value") |>
   pivot_wider(names_from = source, values_from = Value) |>
   mutate(LiDAR = round(LiDAR, 3),
-         Imagery = round(Imagery, 3))
+         Imagery = round(Imagery, 3)) |> filter(area >= 500)
 
 
 # Generate equations to link LiDAR and Imagery metrics ---- !#
@@ -29,7 +29,6 @@ plot_data <- metricsWide |>
                            levels = c("mean30mEffCan", "gap_prop", "np", "ta", "ttops"),
                            labels = c("Effective # top canopy layers",
                                       "Gap proportion", "# Gaps", "Gap area", "Tree tops")))
-
 #glimpse(metrics)
 # Plot comparisons ---- !#
 ggplot(data = plot_data, aes(x = LiDAR, y = Imagery))+
@@ -44,5 +43,5 @@ ggplot(data = plot_data, aes(x = LiDAR, y = Imagery))+
    labs(x = "LiDAR-derived value", y = "Imagery-derived value")+
    theme_calc()
 
-
+View(plot_data)
 

@@ -17,7 +17,9 @@ nfi <- st_read(NFIsamplePath)# read in NFI
 nfi <- chmMatch(sCHMclipPath, nfi) # Order shapefiles to match chms
 #set range for map function
 range <- 1:length(sCHMs)
+nfi[nfi$OBJECTID == 78117,] |> st_area()
 
+plot(sCHMs[names(sCHMs) == "78117"])
 
 
 # Calculate gap fraction ---- !# 
@@ -33,9 +35,7 @@ gap_metrics <- rbind(sGap_metrics, lGap_metrics) |>
 gap_metrics$taM <- gap_metrics$ta * 10000 # Convert gap area to m^2
 gap_metrics$gap_prop <- gap_metrics$taM / st_area(nfi) # Calculate gap_proportion
 
-# Examples of errors over small areas make a big difference
-plot(sCHMs[[27]])
-plot(lCHMs[[27]])
+
 
 
 # Effective top canopy layers ---- !#

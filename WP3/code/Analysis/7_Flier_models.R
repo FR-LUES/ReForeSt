@@ -1,3 +1,4 @@
+
 source("WP3/code/Analysis/0_setup.R")
 
 
@@ -6,17 +7,15 @@ source("WP3/code/Analysis/0_setup.R")
 
 # Create model combinations ---- !#
 # Group response models
-responses <- c("q0Log",
-               "q1Log",
-               "q2Log",
-               "logAbund"
+responses <- c("Hoverflyrichness",
+               "Cranefliesrichness",
+               "flyRichness"
 )
-
 
 # Find all possible model combinations
 combos <- expand_grid(resp = responses,
                       med = flyModelVariants,# same model varients as plants
-                      constants  = paste(c("Age", "Source", "Type"),
+                      constants  = paste(c("Age"),
                                          collapse = " + "))
 # Extract model names
 modelNames <- map(1:nrow(combos),
@@ -36,7 +35,7 @@ flyModels <-  map(1:nrow(combos), function(x) {
   responseF <- as.formula(paste0(resp_name, "~", med_name, "+", combos$constants[x]))
   
   # Run model
-  glm(responseF, data = flies, family = poisson())
+  glm(responseF, data = flies, family = poisson(link = "log"))
   
 })
 

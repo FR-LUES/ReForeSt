@@ -30,7 +30,8 @@ CHMPath <- paste0(rastPath, "/LiDAR_CHMs/")
 sCHMclipPath <- paste0(rastPath, "/sCHM_clip/")
 lCHMclipPath <- paste0(rastPath, "/lCHM_clip/")
 
-
+effCanPath <- paste0(rastPath, "/30m_effCanopy_sCHM/")
+gapPath <- paste0(rastPath, "/gaps_sCHM/")
 
 # Constants ---- !#
 gapHeight <- 2; gapSize <- 5;

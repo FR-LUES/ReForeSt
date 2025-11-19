@@ -164,16 +164,20 @@ calculate_gap_metrics = function(gap_rasters, site_IDs) {
 # Entropy function to operate at varying resolutions
 canopyEntropy <- function(heights, strata){
   # Tidy some ground heights
+  #heights <- sCHMs[[1]] |> values()
   heights[heights < 0] <- 0
   heights <- heights[!is.na(heights)]
+  #plot(sCHMs[[1]])
   # Bin Heights into stratas
   bins <- cut(heights, strata, labels = FALSE, include.lowest = TRUE)
   # find frequency of values in each bin
   freqs <- table(factor(bins, levels = 1:(length(strata)-1)))
-  
+  # Normalize freqs by bin width
+  bin_widths <- diff(strata)
+  freqs_normalised <- freqs / bin_widths
   # Calculate effective canopy layers
-  total_values <- sum(freqs)
-  proportions <- freqs/total_values
+  total_values <- sum(freqs_normalised)
+  proportions <- freqs_normalised/total_values
   shannon_index <- -1*sum(proportions * log(proportions), na.rm = TRUE)
   effectiveCanopyLayers <- exp(shannon_index) |> round(2)
   return(effectiveCanopyLayers)
@@ -217,7 +221,6 @@ get_r2 <- function(df) {
 
 
 # ttop detection
-
 count_ttops <- function(chm, shape){
   
   ttops_chm <-

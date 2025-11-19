@@ -7,10 +7,9 @@ source("WP3/code/Analysis/0_setup.R")
 # Create model combinations ---- !#
 # Group response models
 responses <- c(
-  "q0Log",
-  "q1Log",
-  "q2Log",
-  "logAbund"
+  "spiderSpp",
+  "beetleSpp",
+  "crawlerSpp"
 )
 
 
@@ -37,7 +36,7 @@ crawlerModels <-  map(1:nrow(combos), function(x) {
   responseF <- as.formula(paste0(resp_name, "~", med_name, "+", combos$constants[x]))
   
   # Run model
-  glm(responseF, data = crawler)
+  glm(responseF, data = crawler, family = poisson(link = "log"))
   
 })
 
