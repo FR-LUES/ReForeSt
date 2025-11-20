@@ -135,8 +135,8 @@ mosaicFunction <- function(directory, outPath) {
 # Shape is the corresponding SF object for the chm
 gapsToRast <- function(chm, Shape){
   
-  #chm <- vomForest
-  #Shape <- shapes[1,]
+   # chm <- rast_chunk
+   # Shape <- nfiTile
   # Gap detection algorithm based on max height within gaps and a minimal surface area
   gapSF <- gap_detection(chm,
                          res = 1,
@@ -163,10 +163,10 @@ gapsToRast <- function(chm, Shape){
 
 # Function to process gap detection in tiles
 process_tile <- function(rast_full, tile_sf, bufferVal, gapMask) {
-  # rast_full = vomForest
-  # tile_sf   = tiles[k,]
-  # gapMask = nfiTile
-  # bufferVal = 20
+   # rast_full = vomForest
+   # tile_sf   = tiles[k,]
+   # gapMask = nfiTile
+   # bufferVal = 20
   # Unbuffered tile extent
   
   buff_ext <- buffer(tile_sf, bufferVal)
@@ -179,11 +179,15 @@ process_tile <- function(rast_full, tile_sf, bufferVal, gapMask) {
   
   # Run your existing gap logic
   gaps_chunk <- gapsToRast(rast_chunk, gapMask)
- 
+  gaps_chunk <- gaps_chunk$gap_id
   # Clip gap polygons back to original (unbuffered) tile extent
-  gaps_clean <- terra::intersect(gaps_chunk, tile_sf)
+  gaps_clean <- crop(gaps_chunk, ext(tile_sf))
   
+  # make gaps binary
+  gaps_clean <- classify(gaps_clean, rcl <- matrix(c(
+    -Inf, 0.05, 0,
+    0.05, Inf, 1
+  ), ncol = 3, byrow = TRUE))
+  plot(gaps_clean)
   return(gaps_clean)
 }
-
-
