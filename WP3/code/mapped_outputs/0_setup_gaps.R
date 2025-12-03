@@ -17,6 +17,7 @@ path_Vom <- paste0(path_lues, "EA_VOM/EA_VOM/")
 path_VOM_catalog <- paste0(path_Vom, "VOM_TILES.gpkg")
 path_NFI <- paste0(path_lues, "NFI_data/TimeSeriesWoodlandMaps.gdb")
 
+path_export <- "WP3/data/gap_map/VOM_tiles/"
 
 # Gap params ---- !#
 gapHeight <- 2

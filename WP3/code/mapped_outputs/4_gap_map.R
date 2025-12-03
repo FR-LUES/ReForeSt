@@ -40,7 +40,20 @@ for (i in seq_along(vomShapes$location)) {
   }
   
   # Merge all cleaned gaps per VOM tile
-  gaps_all[[i]] <- do.call(rbind, gap_list)
+  gap_tile <- do.call(mosaic, gap_list)
   
-  # Do something with gaps_all (save, export, etc.)
+  # Export gap raster for this VOM tile
+  exportFilename <- str_replace_all(tileName, ".tif", "_gaps.tif")
+  exportPath <- paste0(path_export, exportFilename)
+  
+  writeRaster(gap_tile, exportPath, overwrite = T)
+  
+  # Add tile to main list (now redundant?)
+  #gaps_all[[i]] <- gap_tile
+  
+  gc()
+  
 }
+
+# Next is to read in gap tiles, merge and export as single master raster
+# taking the approach to write out tiles as we go in case the script crashes
