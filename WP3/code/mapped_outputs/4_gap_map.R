@@ -1,5 +1,6 @@
 source("WP3/code/mapped_outputs/0_setup_gaps.R")
 source("WP3/code/mapped_outputs/1_functions.R")
+
 # Read in data ---- !#
 nfi <- vect(path_NFI, layer = "NFI2020_Interim_v1_WoodlandMap")
 vomShapes <- vect(path_VOM_catalog)

@@ -1,7 +1,7 @@
 source("WP3/code/mapped_outputs/0_setup.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
-ctg <- ctgs[[2]]
+ctg <- ctgs[[6]]
 #lidR::catalog_laxindex(ctg) # create lax index to speed up processing
 
 # Set catalog options
@@ -15,10 +15,10 @@ opt  <- list(raster_alignment = 30, # catalog_apply will adjust the chunks if re
 
 
 # Set where results will be written
-opt_output_files(ctg) <- paste0(fhdOutPath, "2018_2019_30m/2018_2019_{XCENTER}_{YCENTER}_FHD_30m")
+opt_output_files(ctg) <- paste0(fhdOutPath, "2022_2023_30m/2022_2023_{XCENTER}_{YCENTER}_FHD_30m")
 
 
-opt_restart(ctg) <- 1 # For restarting from errors.
+#opt_restart(ctg) <- 1 # For restarting from errors.
 
 # Apply pixel metrics to catalog (this will write rasters to disk, not memory)
 start_time <- Sys.time()

@@ -103,22 +103,25 @@ fhdMap_function <- function(chunk) {
 # This function will reference every .tif file in a directory, merge them, and save the merge to file
 
 mosaicFunction <- function(directory, outPath) {
-  #directory <- paste0(fhdOutPath, "/2017_2018_30m/")
-  #outPath <- paste0(fhdOutPath, "/2017_2018_FHD_30mFULL.tif")
-  VRT <- list.files(directory, pattern = ".vrt")[[1]]
-  #VRT <- paste0(fhdOutPath, "/2017_2018_30m/2017_2018_FHD_30m.vrt")
-  #outPath <- paste0(fhdOutPath, "/2017_2018_FHD_30mFULL.tif")
+  # directory <- paste0(years[[x]], "/")
+  # outPath <- paste0(fhdOutPath, yearNames[[x]])
+  
+  # Remove problem tiles
+  sources <- list.files(paste0(directory), pattern = "\\.tif$", full.names = TRUE)
+  
+  # find bad sources
+  bad <- sapply(sources, function(f) {
+    print(f)
+    tryCatch({ r <- rast(f); ncell(r) == 0 }, error = function(e) TRUE)
+  })
+  
+  # Create VRT with only good tiles
+  vrt <- vrt(sources[!bad], paste0(years[[x]], "/", yearNames[[x]], ".vrt"), overwrite = TRUE)
   
   
-  for(i in 1:length(VRT)){  
-    #i <- 1
-    vRast <- vrt(paste0(directory, VRT[[i]]))
-    
-    # use letters instead of numbers
-    suffix <- letters[i]
-    writeRaster(vRast, paste0(outPath, "_FULL_", suffix, ".tif" ))
+  writeRaster(vrt, paste0(outPath, "_FULL", ".tif"), overwrite = TRUE)
   }
-}
+
 
 
 
