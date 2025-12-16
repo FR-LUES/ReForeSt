@@ -15,7 +15,7 @@ opt  <- list(raster_alignment = 30, # catalog_apply will adjust the chunks if re
 
 
 # Set where results will be written
-opt_output_files(ctg) <- paste0(fhdOutPath, "2022_2023_30m/2022_2023_{XCENTER}_{YCENTER}_FHD_30m")
+opt_output_files(ctg) <- paste0(fhdOutPath, "2020_2021_30m/2020_2021_{XCENTER}_{YCENTER}_FHD_30m")
 
 
 #opt_restart(ctg) <- 1 # For restarting from errors.

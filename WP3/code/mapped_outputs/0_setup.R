@@ -118,3 +118,17 @@ ctgs <- map(tileFiles, function(laz){
   readLAScatalog(laz, select = "xyzc")
 })
 names(ctgs) <- names(tileFiles)
+
+
+
+
+
+
+
+
+# Find missing tiles ---- !#
+# When processing the map some tiles turned out to be missing and so we find them here and reprocess in he procressing script
+ctg <- readLAScatalog(tileFiles$nlp_file_list_2020_2021[
+  grepl("P_10707", tileFiles$nlp_file_list_2020_2021)
+])
+

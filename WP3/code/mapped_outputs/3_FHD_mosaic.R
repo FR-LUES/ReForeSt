@@ -16,9 +16,10 @@ yearNames <- c("2017_2018_30M",
 
 # Mosaic from vrt
 map(1:length(yearNames), .f = function(x) {
-  
+  #x <- 3
   mosaicFunction(paste0(years[[x]], "/"),
-                 paste0(fhdOutPath, yearNames[[x]]))
+                 paste0(fhdOutPath, yearNames[[x]]),
+                 x)
   }
   )
 
@@ -31,7 +32,8 @@ ras_list <- sprc(rev(tif_files))
 
 # Mosaic them into a single raster
 mosaic_ras <- mosaic(ras_list, fun = "last")
-writeRaster(mosaic_ras, paste0(fhdOutPath, "/FHD_full_30m.tif"))
+names(mosaic_ras) <- "FHD_30m"
+writeRaster(mosaic_ras, paste0(fhdOutPath, "/FHD_full_30m.tif"), overwrite = TRUE)
 # plot to check
 ggplot()+
   geom_spatraster(data = mosaic_ras)+

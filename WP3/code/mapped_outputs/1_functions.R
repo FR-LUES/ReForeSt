@@ -102,7 +102,7 @@ fhdMap_function <- function(chunk) {
 # Mosaicing functions ---- !#
 # This function will reference every .tif file in a directory, merge them, and save the merge to file
 
-mosaicFunction <- function(directory, outPath) {
+mosaicFunction <- function(directory, outPath, x) {# X is an index to be used inside a loop for referencing years.
   # directory <- paste0(years[[x]], "/")
   # outPath <- paste0(fhdOutPath, yearNames[[x]])
   
@@ -120,7 +120,10 @@ mosaicFunction <- function(directory, outPath) {
   
   
   writeRaster(vrt, paste0(outPath, "_FULL", ".tif"), overwrite = TRUE)
-  }
+}
+
+
+
 
 
 
