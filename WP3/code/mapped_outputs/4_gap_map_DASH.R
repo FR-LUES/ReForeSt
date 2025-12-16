@@ -22,9 +22,9 @@ OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F
   
     # Build VOM for OS 10km grid square 
     tiles_paths <- list.files(path = paste0(path_Vom_DASH, OS_grid_100km, "/" ,OS_grid_10km),
-                            pattern = ".tif$",
-                            recursive = T,
-                            full.names = T)
+                              pattern = ".tif$",
+                              recursive = T,
+                              full.names = T)
 
     if (length(tiles_paths) == 0) {
       cat("No .tif files found for", OS_grid_10km, "- skipping.\n")
@@ -68,7 +68,7 @@ OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F
   
     # Export gap raster for 10km tile
     exportFilename <- paste0(OS_grid_10km, "_VOM_gaps.tif")
-    exportFolder <- paste0(path_export_DASH, OS_grid_100km, "/")
+    exportFolder <- paste0(path_export_10km_DASH, OS_grid_100km, "/")
     exportPath <- paste0(exportFolder, exportFilename) # DASH path
     dir.create(exportFolder, recursive = T, showWarnings = F)
 

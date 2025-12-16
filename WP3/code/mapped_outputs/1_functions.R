@@ -129,8 +129,30 @@ mosaicFunction <- function(directory, outPath, x) {# X is an index to be used in
 
 
 
+mosaicFunction_DASH <- function(directory, outPath, filename) {
 
+  # Remove problem tiles
+  sources <- list.files(paste0(directory), pattern = "\\.tif$", full.names = TRUE)
+  
+  # find bad sources
+  bad <- sapply(sources, function(f) {
+    #print(f)
+    tryCatch({ r <- rast(f); ncell(r) == 0 }, error = function(e) TRUE)
+  })
+  
+  # Create VRT with only good tiles
+  vrt <- vrt(sources[!bad], paste0(outPath, "/", filename, ".vrt"), overwrite = TRUE)
+  
+  # Use a local path for writing
+  localPath <- paste0("/tmp/", filename, ".tif")
+  writeRaster(vrt, localPath, overwrite = T)
 
+  # Copy to DBFS
+  file.copy(localPath, paste0(outPath, "/", filename, ".tif"))
+  file.remove(localPath)
+
+  print(filename)
+  }
 
 
 
