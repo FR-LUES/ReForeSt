@@ -40,15 +40,9 @@ path_test_data_shp <- paste0(path_test_data, "shapes/")
 path_test_data_chm <- paste0(path_test_data, "chms/")
 
 
-path_DASH_lasClipped <- "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/clipped/"
-path_DASH_lasNormalised <- "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised/"
+path_DASH_lasClipped <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/input/LiDAR/clipped/"
+path_DASH_lasNormalised <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/input/LiDAR/normalised/"
 
-
-path_test_data_shp <- paste0(path_test_data, "shapes/")
-path_test_data_chm <- paste0(path_test_data, "chms/")
-
-path_DASH_lasClipped <- "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/clipped/"
-path_DASH_lasNormalised <- "/Workspace/Users/joseph.beesley@defra.onmicrosoft.com/ReForeSt_LiDAR_data/normalised/"
 
 
 path_outputs <- paste0(wpPath, "outputs/")
