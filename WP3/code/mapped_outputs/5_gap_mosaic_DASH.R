@@ -23,7 +23,7 @@ england_VOM_gaps <- rast(paste0(path_export_eng_DASH, "england_VOM_gaps.tif"))
 england_VOM_gaps_clip <- mask(england_VOM_gaps, england)
 
 # Use a local path for writing
-localPath <- paste0("/tmp/england_VOM_gaps_clip.tif")
+localPath <- "/tmp/england_VOM_gaps_clip.tif"
 writeRaster(england_VOM_gaps_clip, localPath, overwrite = T)
 
 # Copy to DBFS
