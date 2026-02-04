@@ -1,3 +1,5 @@
+# script to reassemble gap map on FR Virtual Machine following export of tiles from DASH
+
 source("WP3/code/mapped_outputs/0_setup_gaps.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 

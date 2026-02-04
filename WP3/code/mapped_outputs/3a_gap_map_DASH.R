@@ -1,6 +1,3 @@
-source("WP3/code/mapped_outputs/0_setup_gaps.R")
-source("WP3/code/mapped_outputs/1_functions.R")
-
 # Read in NFI and filter
 nfi <- vect(path_NFI_DASH, layer = "NFI2020_Interim_v1_WoodlandMap") %>%
   filter(!IFT_IOA %in% c("Cloud \\ shadow", "Uncertain"))
@@ -68,7 +65,7 @@ OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F
   
     # Export gap raster for 10km tile
     exportFilename <- paste0(OS_grid_10km, "_VOM_gaps.tif")
-    exportFolder <- paste0(path_export_10km_DASH, OS_grid_100km, "/")
+    exportFolder <- paste0(path_gap_map_10km_DASH, OS_grid_100km, "/")
     exportPath <- paste0(exportFolder, exportFilename) # DASH path
     dir.create(exportFolder, recursive = T, showWarnings = F)
 
