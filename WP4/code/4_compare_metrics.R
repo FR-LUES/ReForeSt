@@ -1,6 +1,6 @@
-source("WP4/Scripts/0_setup.R")
-source("WP4/Scripts/0_functions.R")
-
+source("WP4/code/0_setup.R")
+source("WP4/code/1_functions.R")
+library(ggplot2); theme_set(theme_bw())
 
 # Read in the data ---- !#
 metrics <- read.csv(metricsPath) |>
@@ -21,6 +21,7 @@ r2_results <- metricsWide |>
   nest() |>
   mutate(r2 = map_dbl(data, get_r2)) |>
   select(Variable, r2)
+
 #Join R2 labels to plotting data
 plot_data <- metricsWide |>
   left_join(r2_results, by = "Variable") |>
@@ -28,20 +29,39 @@ plot_data <- metricsWide |>
          Variable = factor(Variable,
                            levels = c("mean30mEffCan", "gap_prop", "np", "ta", "ttops"),
                            labels = c("Effective # top canopy layers",
-                                      "Gap proportion", "# Gaps", "Gap area", "Tree tops")))
+                                      "Gap proportion", "Number of gaps", "Gap area", "Tree tops")))
 #glimpse(metrics)
 # Plot comparisons ---- !#
-ggplot(data = plot_data, aes(x = LiDAR, y = Imagery))+
-  geom_point(size = 2)+
-  geom_abline(colour = "black", linewidth = 1.5)+
-  geom_smooth(method = "lm", se = FALSE, colour = "red", linewidth = 1.5) +
-  facet_wrap(~Variable, scales = "free")+
-  geom_text(
-            aes(x = -Inf, y = Inf, label = label),  # top-left of each facet
+gg <- 
+  ggplot(data = plot_data,
+         aes(x = LiDAR, y = Imagery)) +
+  geom_abline(colour = "#801650",
+              linewidth = 1) +
+  geom_smooth(method = "lm",
+              se = FALSE,
+              colour = "#28A197",
+              linewidth = 1) +
+  geom_point(size = 2,
+             colour = "#12436D") +
+  facet_wrap(~Variable,
+             scales = "free") +
+  geom_text(aes(x = -Inf, y = Inf, label = label),  # top-left of each facet
             hjust = -0.3, vjust = 1.2, inherit.aes = FALSE,
             size = 4) +
-   labs(x = "LiDAR-derived value", y = "Imagery-derived value")+
-   theme_calc()
+   labs(x = "lCHM-derived value",
+        y = "sCHM-derived value") +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5),
+        strip.background = element_rect(fill = "white"),
+        text = element_text(size = 12),
+        legend.margin = margin(0, 0, 0, 0),
+        legend.box.margin = margin(0, 0, 0, 0))
 
-View(plot_data)
+
+ggsave(filename = "WP4/Figures/sCHM_lCHM_comparisons.png",
+       plot = gg,
+       dpi = 300,
+       units = "cm",
+       height = 12,
+       width = 18)
 

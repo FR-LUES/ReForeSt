@@ -25,7 +25,7 @@ copy_NLP_tiles(labShapes, path_LiDAR)
 labCatalog <- readLAScatalog(path_LiDAR)
 
 
-# Join subcompartment data to spatial data ---- 
+# Join subcompartment data to spatial data
 labSub_spatial <-
   st_as_sf(labSub, coords = c("Y", "X"), crs = st_crs(4326)) |> # make centroids into spatial object
   st_transform(crs = st_crs(27700)) |>
@@ -37,7 +37,7 @@ labShapes_complete <-
   #na.omit() # Remove entries without subcompartment data
 
 
-# Clip Point cloud data ----
+# Clip point cloud data
 opt_output_files(labCatalog) <- paste0(path_clipped_outputs, "{Property.ID}_{Compartment.Number}_{Sub.Compartment.Letter}")
 cloud_clipped <- clip_roi(labCatalog, st_buffer(labShapes_complete, 30))
 #cloud_clipped <- readLAScatalog(path_clipped_outputs)
@@ -52,4 +52,4 @@ normalised <- normalize_height(cloud_clipped, dtm = dtm, algorithm = tin())
 # Create canopy height models
 opt_output_files(normalised) <- paste0(path_chm_outputs, "{*}")
 normalised@output_options$drivers$SpatRaster$param$overwrite <- TRUE
-chms <- rasterize_canopy(normalised, res = 1, algorithm = dsmtin())
+chms <- rasterize_canopy(normalised, res = 1, algorithm = p2r(subcircle = 0.4))

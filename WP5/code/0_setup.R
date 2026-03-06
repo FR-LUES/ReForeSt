@@ -1,14 +1,16 @@
 library(tidyverse)
+library(terra)
 library(sf)
 library(lidR)
 library(future)
-library(terra)
 library(tmap)
 library(tidyterra)
 library(viridis)
 library(lidaRtRee)
 library(future)
 library(furrr)
+library(ggpubr)
+library(hablar)
 
 #lidR# Folder paths ---- !#
 pathWP5 <- "WP5/"
@@ -21,6 +23,7 @@ path_LiDAR <- paste0(pathWP5, "LiDAR/")
 path_dean_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Dean_lidar/Forest_of_Dean/"
 path_dean_dtmOut <- paste0(path_dean_catalogs, "dtms/")
 path_dean_chmOut <- paste0(path_dean_catalogs, "chms/")
+path_livinglayers <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/ForestLabs data/"
 path_private_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Private_sites_lidar/"
 path_private_lidar <- paste0(path_private_catalogs, "Fell_Site_Subsets_Lidar_Point_Cloud_Data/")
 path_private_shapes <- paste0(path_private_catalogs, "shapes/")
@@ -53,7 +56,7 @@ path_private_shapes <- paste0(path_private_catalogs, "shapes/")
 #   
 # 
 # st_write(deanSub, paste0(path_managementShapes, "dean_subcompartment_merged.gpkg"))
-deanSub <- st_read(paste0(path_managementShapes, "dean_subcompartment_merged.gpkg"))
+#deanSub <- st_read(paste0(path_managementShapes, "dean_subcompartment_merged.gpkg"))
 
 
 

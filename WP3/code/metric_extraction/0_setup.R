@@ -59,7 +59,7 @@ path_outputs_ttops <- paste0(path_outputs, "tree_detection/")
 
 
 gapHeight <- 2 # minimum height from ground in m
-gapSize <- 5 # minimum area in m2
+gapSize <- 10 # minimum area in m2
 
 p_metrics <- c("lsm_p_area",
                "lsm_p_perim",

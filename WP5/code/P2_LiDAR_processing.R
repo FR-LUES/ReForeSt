@@ -1,5 +1,5 @@
-source("WP5/Scripts/0_setup.R")
-source("WP5/Scripts/1_functions.R")
+source("WP5/code/0_setup.R")
+source("WP5/code/1_functions.R")
 
 
 
@@ -79,12 +79,15 @@ names(clipped) <- basename(dirs_with_files)
 
 # I use a bespoke loop instead of catalog map as we do not need buffers and it keeps tiles seperate.
 map(clipped, function(x) {
-  #x <- clipped[[9]]
+  #x <- clipped[[8]]
   files <- x@data$filename
   for (i in seq_along(files)) {
     
-    
     filename <- files[[i]]
+    
+    year <- substr(basename(filename), 1, 4)
+    if (year == 2005) return(NULL) # error with this data
+    
     las <- readLAS(filename)
     
     # Clip to forest polygons

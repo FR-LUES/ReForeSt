@@ -1,8 +1,5 @@
-source("WP5/Scripts/0_setup.R")
-source("WP5/Scripts/1_functions.R")
-
-
-
+source("WP5/code/0_setup.R")
+source("WP5/code/1_functions.R")
 
 
 
@@ -105,7 +102,8 @@ for (i in seq_len(nrow(groupBlock_shapes))) {
     
   }
   names(metricsList[[obj_id]]) <- str_extract(basename(chmList), "^\\d{4}")
-    }
+}
+
   
 
 
@@ -123,3 +121,13 @@ metrics_df <- map_df(names(metricsList), function(obj_id) {
 })
 metrics_df <- na.omit(metrics_df)
 View(metrics_df)
+
+
+
+metrics_df_join <- 
+  metrics_df %>% 
+  convert(int(OBJECTID)) %>% 
+  left_join(as_tibble(groupBlock_shapes) %>%
+              select(OBJECTID, date_regis,
+                     date_appro, date_expir),
+            by = "OBJECTID")

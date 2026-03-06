@@ -47,7 +47,7 @@ st_write(fellSubset, "Shapes/fellSubset.shp")
 write.csv(st_drop_geometry(fellSubset), "Data/fellSubset.csv")
 
 
-fellSubset <- st_read("Shapes/fellSubset.shp")
-felldf <- read.csv("Data/fellSubset.csv")
+fellSubset <- st_read("WP5/Shapes/fellSubset.shp")
+felldf <- read.csv("WP5/Data/fellSubset.csv")
 
 fellSubset <- fellSubset |> filter(OBJECTID %in% felldf$OBJECTID)

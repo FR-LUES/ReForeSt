@@ -33,8 +33,9 @@ lCHMclipPath <- paste0(rastPath, "/lCHM_clip/")
 effCanPath <- paste0(rastPath, "/30m_effCanopy_sCHM/")
 gapPath <- paste0(rastPath, "/gaps_sCHM/")
 
+
 # Constants ---- !#
-gapHeight <- 2; gapSize <- 5;
+gapHeight <- 2; gapSize <- 10;
 strata <- c(0, 1, 2, 10, 20, 50)
 
 # Gap metrics
