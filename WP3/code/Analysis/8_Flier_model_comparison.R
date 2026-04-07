@@ -26,7 +26,6 @@ bestMods <- c(Hoverfly, Cranefly, total_fly)
 
 
 # View model summaries ---- !#
-# View model summaries ---- !#
 map(bestMods, ~sumFun(.x))
 
 

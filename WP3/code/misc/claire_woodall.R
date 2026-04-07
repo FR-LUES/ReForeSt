@@ -1,8 +1,8 @@
 library(terra)
 library(tidyverse)
 
-gf <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/gap_fraction/gap_fraction_30m.tif")
-fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/FHD_full_30m.tif")
+gf <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/02_data/01_processed_data/gap_fraction/gap_fraction_30m.tif")
+fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/02_data/01_processed_data/fhd_map/FHD_full_30m.tif")
 bristol <- vect("Z:/Common/Woodall_claire/Bristol_boundary/Bristol_boundary.shp")
 
 

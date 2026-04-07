@@ -1,11 +1,10 @@
-.libPaths("C:/R-Packages/")
 source("WP5/code/0_setup.R")
 source("WP5/code/1_functions.R")
 
 
 
 # Read in metrics data ---- !#
-metrics <- read.csv(paste0(pathWP5, "Data/metrics.csv"))
+metrics <- read.csv(paste0(path_Z_proc_data_WP5, "metrics.csv"))
 
 # wrangle into long form
 metrics <- metrics |>
@@ -65,7 +64,7 @@ ggplot(data = metrics, aes(x = last_thinned, y = fhdChange))+
 gg <- ggarrange(gg_height, gg_gaps, gg_fhd, ncol = 3, nrow = 1)
 
 
-ggsave(filename = paste0(pathWP5, "Figures/dean_thinned_metrics.png"),
+ggsave(filename = paste0(path_Z_proc_data_WP5, "Figures/dean_thinned_metrics.png"),
        plot = gg,
        dpi = 300,
        units = "cm",

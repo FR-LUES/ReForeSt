@@ -56,13 +56,13 @@ sumFun <- function(model) {
   #model <- q1Mod
   sum <- broom::tidy(model)
   response <- as.character(formula(model)[[2]])
-  sum <- sum |>
-    mutate(p.value = round(p.value, 3))
+  #sum <- sum |>
+  #  mutate(p.value = round(p.value, 3))
   
   if ("p.value" %in% names(sum)) {
     sum <- sum |>
       mutate(
-        p.value = round(p.value, 3),
+   #     p.value = round(p.value, 3),
         sig = case_when(
           p.value < 0.001 ~ "***",
           p.value < 0.01  ~ "**",
@@ -151,7 +151,12 @@ plot_struct_effects <- function(model, data, response_name, struct_vars, struct_
     
     pval <- broom::tidy(model) |> filter(term == var) |> pull(p.value) |> round(3)
     
-    pval_label <- paste0("p = ", signif(pval, 3))
+    if(pval < 0.001){
+      pval_label <- "p < 0.001"
+    } else {
+      pval_label <- paste0("p = ", signif(pval, 3))
+    }
+    
     
     #var <- included_terms[[1]]
     # Get predictions with confidence intervals

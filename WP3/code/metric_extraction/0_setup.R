@@ -3,9 +3,8 @@
 
 ##### packages
 
-# need a line to install?
-
 library(tidyverse)
+library(ggpubr)
 library(tidyterra)
 library(hablar) # convert() function
 library(sf)
@@ -17,13 +16,11 @@ library(GLCMTextures)
 
 ##### paths
 
-wpPath <- "WP3/"
+path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
+path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
+path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
 
-path_data <- paste0(wpPath, "data/")
-
-
-path_data_shp <- paste0(path_data, "shapefiles/")
-path_data_chm <- paste0(path_data, "chms/")
+path_data <- paste0(path_Z_raw_data, "WP3/")
 
 
 path_data_shp <- paste0(path_data, "shapefiles/")
@@ -45,7 +42,7 @@ path_DASH_lasNormalised <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/
 
 
 
-path_outputs <- paste0(wpPath, "outputs/")
+path_outputs <- paste0(path_Z_proc_data, "WP3/")
 path_outputs_gap <- paste0(path_outputs, "gap_analysis/")
 path_outputs_gap_sensitivity <- paste0(path_outputs, "gap_sensitivity_analysis/")
 path_outputs_effCan <- paste0(path_outputs, "effective_canopy_layers/")

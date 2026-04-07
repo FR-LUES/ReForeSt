@@ -4,6 +4,7 @@ library(future)
 library(furrr)
 library(common) # For file find
 library(terra)
+library(tidyterra)
 library(fs)
 library(lidR)
 library(tidyverse)
@@ -15,45 +16,25 @@ plan(multisession, workers = 2)
 
 
 
-
-
-
-
-
-
-
-
 # Paths ---- !#
-# Input paths
-wpPath <- "WP3/" # Work package path
+path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
+path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
+path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+
+wpPath <- paste0(path_Z_raw_data, "WP3/") # Work package path
 dataPath <- paste0(wpPath, "data/")# Path to data
 shapesPath <- paste0(dataPath, "shapefiles/") # Path to shapefiles
-# z drive paths
+
 sharePath <- "Z:/CESB/Land Use and Ecosystem Service/GIS_Data/EA_Data/"
 nlpPath <- paste0(sharePath, "EA_Lidar_NP1m_Point_Cloud")
 catalogPath <- paste0(sharePath, "nlp_catalog_shapefile/nlpCat_22_24_merged.shp") # Path to NLP catalog
 
 # Output paths
-fhdOutPath <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/"
-
-
-
-
-
-
-
-
-
-
+fhdOutPath <- paste0(path_Z_proc_data, "fhd_map/")
 
 
 # Constants ---- !#
 strata <- c(0, 1, 2, 5, 8, 20, 100)
-
-
-
-
-
 
 
 
@@ -103,21 +84,21 @@ strata <- c(0, 1, 2, 5, 8, 20, 100)
 
 # Read in las catalog ---- !#
 # List the per-year RDS files
-year_files <- dir_ls(sharePath, regexp = "nlp_file_list_.*\\.rds$")
+#year_files <- dir_ls(sharePath, regexp = "nlp_file_list_.*\\.rds$")
 
 # Extract LAZ lists for each year
-tileFiles <- map(year_files, function(rds){
-  read_rds(rds) |>
-  unlist() |>
-  na.omit() |> # remove NAs
-  unique()})
-names(tileFiles) <- basename(year_files) |> tools::file_path_sans_ext()
+#tileFiles <- map(year_files, function(rds){
+#  read_rds(rds) |>
+#  unlist() |>
+#  na.omit() |> # remove NAs
+#  unique()})
+#names(tileFiles) <- basename(year_files) |> tools::file_path_sans_ext()
 
 # Read in the catalogs
-ctgs <- map(tileFiles, function(laz){
-  readLAScatalog(laz, select = "xyzc")
-})
-names(ctgs) <- names(tileFiles)
+#ctgs <- map(tileFiles, function(laz){
+#  readLAScatalog(laz, select = "xyzc")
+#})
+#names(ctgs) <- names(tileFiles)
 
 
 
@@ -128,7 +109,7 @@ names(ctgs) <- names(tileFiles)
 
 # Find missing tiles ---- !#
 # When processing the map some tiles turned out to be missing and so we find them here and reprocess in he procressing script
-ctg <- readLAScatalog(tileFiles$nlp_file_list_2020_2021[
-  grepl("P_10707", tileFiles$nlp_file_list_2020_2021)
-])
+#ctg <- readLAScatalog(tileFiles$nlp_file_list_2020_2021[
+#  grepl("P_10707", tileFiles$nlp_file_list_2020_2021)
+#])
 

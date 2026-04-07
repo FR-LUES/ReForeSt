@@ -35,7 +35,7 @@ bestMods <- list(spiderMod, beetleMod, crawlerMod)
 
 
 # View model summaries ---- !#
-#map(bestMods, ~sumFun(.x))
+map(bestMods, ~sumFun(.x))
 
 
 

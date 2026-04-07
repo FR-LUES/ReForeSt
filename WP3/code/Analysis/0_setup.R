@@ -16,13 +16,22 @@ library(rvg)
 
 
 # Paths ---- !#
-wpPath <- "WP3/"
+
+path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
+path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
+path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+
+wpPath <- paste0(path_Z_raw_data, "WP3/")
+
 # Data path
-num_data_path <- paste0(wpPath, "data/numerical_data/")
-# Output paths
-path_output <- paste0(wpPath,"outputs/")
+num_data_path <- paste0(wpPath, "numerical_data/")
+
 # Shapefile path
-shapes_path <- paste0(wpPath,"data/shapefiles/ReForeSt_shapes.gpkg")
+shapes_path <- paste0(wpPath,"shapefiles/ReForeSt_shapes.gpkg")
+
+# Output paths
+path_output <- paste0(path_Z_proc_data,"WP3/")
+
 
 # Plant data
 plant_path <- paste0(num_data_path, "masterPlant.csv")

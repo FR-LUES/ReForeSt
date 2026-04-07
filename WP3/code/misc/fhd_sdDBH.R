@@ -1,4 +1,3 @@
-.libPaths("C:/R-Packages/")
 source("WP3/code/metric_extraction/0_setup.R")
 library(ggplot2); theme_set(theme_bw())
 
@@ -41,3 +40,7 @@ ggsave(filename = paste0(path_outputs, "FHD_sdDBH.png"),
        units = "cm",
        height = 12,
        width = 18)
+
+model <- lm(siteFHD_gapless ~ log(dbhSD),
+            data = df)
+glance(model)

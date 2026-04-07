@@ -219,6 +219,12 @@ get_r2 <- function(df) {
   glance(model)$r.squared
 }
 
+# Model function to extract p value ---- !#
+get_p <- function(df) {
+  model <- lm(Imagery ~ LiDAR, data = df)
+  glance(model)$p.value
+}
+
 
 # ttop detection
 count_ttops <- function(chm, shape){

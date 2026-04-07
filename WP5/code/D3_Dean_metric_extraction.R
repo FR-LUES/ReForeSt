@@ -1,5 +1,5 @@
-source("WP5/Scripts/0_setup.R")
-source("WP5/Scripts/1_functions.R")
+source("WP5/code/0_setup.R")
+source("WP5/code/1_functions.R")
 
 # Read in CHM ---- !#
 chm2017 <- rast(paste0(path_chmOut, "/2017/chm_smooth_2017.tif")) 

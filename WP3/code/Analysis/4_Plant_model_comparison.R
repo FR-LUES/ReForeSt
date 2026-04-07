@@ -24,7 +24,7 @@ bestMods <- list(sppMod, woodMod, specMod)
 
 
 # View model summaries ---- !#
-# map(bestMods, ~sumFun(.x))
+map(bestMods, ~sumFun(.x))
 
 
 

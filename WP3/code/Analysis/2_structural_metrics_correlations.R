@@ -3,11 +3,11 @@ source("WP3/code/Analysis/0_setup.R")
 
 # Plot a correlation matrix ---- !#
 flies |>
-  select(sd30mFHD_gapless, Cranefliesrichness) |>
-  ggplot(aes(x = sd30mFHD_gapless, y = Cranefliesrichness))+
+  select(mean30mFHD_gapless, Cranefliesrichness) |>
+  ggplot(aes(x = mean30mFHD_gapless, y = Cranefliesrichness))+
   geom_point()+
   geom_smooth(method = "lm")+
-  labs(x = "sd30mFHD_gapless", y = "spp")+
+  labs(x = "mean30mFHD_gapless", y = "spp")+
   theme_calc()
 
 

@@ -48,7 +48,7 @@ for (i in 1:length(tiles_eng)) {
   nfi_tile_agg <- terra::aggregate(nfi_tile)
 
   # rasterise nfi to gap map 1m extent
-  # -0.5m buffer to reduce cells that intersect, as this was causing ege effects with gap map
+  # -0.5m buffer to reduce cells that intersect, as this was causing edge effects with gap map
   nfi_rast_1m_tile <- terra::rasterize(buffer(nfi_tile_agg, -0.5), gap_ext_tile)
 
   # disaggregate nfi and gap map to 30m - using project() as allows use of SpatExtent

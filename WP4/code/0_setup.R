@@ -8,7 +8,7 @@ library(ggthemes)
 #library(ggpmisc)
 library(broom)
 library(tidyterra)
-library(rnaturalearth)
+#library(rnaturalearth)
 
 
 
@@ -16,22 +16,28 @@ library(rnaturalearth)
 
 
 # Data paths ---- !#
-dataPath <- "WP4/data/"
-metricsPath <- paste0(dataPath, "comparison_metrics.csv")
+
+path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
+path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
+path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+path_Z_proc_data_WP4 <- paste0(path_Z_proc_data, "WP4/")
+
+metricsPath <- paste0(path_Z_proc_data_WP4, "comparison_metrics.csv")
+
 # Shapefile paths
-shapePath <- "WP4/Shapes"
-NFIpath <- paste0(shapePath,"/NFI/National_Forest_Inventory_England_2023.shp")
-NFIsamplePath <- paste0(shapePath, "/NFI/nfi_sample.shp")
+shapePath <- paste0(path_Z_raw_data, "WP4/Shapes/")
+NFIpath <- paste0(shapePath,"NFI/National_Forest_Inventory_England_2023.shp")
+NFIsamplePath <- paste0(shapePath, "NFI/nfi_sample.shp")
 
 # Raster paths
-rastPath <- "WP4/Image_data"
-sCHMPath <- paste0(rastPath, "/Synthetic_CHMs/")
-CHMPath <- paste0(rastPath, "/LiDAR_CHMs/")
-sCHMclipPath <- paste0(rastPath, "/sCHM_clip/")
-lCHMclipPath <- paste0(rastPath, "/lCHM_clip/")
+rastPath <- paste0(path_Z_proc_data_WP4, "CHM/")
+sCHMPath <- paste0(rastPath, "Synthetic_CHMs/")
+CHMPath <- paste0(rastPath, "LiDAR_CHMs/")
+sCHMclipPath <- paste0(rastPath, "sCHM_clip/")
+lCHMclipPath <- paste0(rastPath, "lCHM_clip/")
 
-effCanPath <- paste0(rastPath, "/30m_effCanopy_sCHM/")
-gapPath <- paste0(rastPath, "/gaps_sCHM/")
+effCanPath <- paste0(rastPath, "30m_effCanopy_sCHM/")
+gapPath <- paste0(rastPath, "gaps_sCHM/")
 
 
 # Constants ---- !#

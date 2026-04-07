@@ -29,7 +29,7 @@ plot_data <- metricsWide |>
          Variable = factor(Variable,
                            levels = c("mean30mEffCan", "gap_prop", "np", "ta", "ttops"),
                            labels = c("Effective # top canopy layers",
-                                      "Gap proportion", "Number of gaps", "Gap area", "Tree tops")))
+                                      "Gap fraction", "Number of gaps", "Gap area", "Tree tops")))
 #glimpse(metrics)
 # Plot comparisons ---- !#
 gg <- 
@@ -58,7 +58,7 @@ gg <-
         legend.box.margin = margin(0, 0, 0, 0))
 
 
-ggsave(filename = "WP4/Figures/sCHM_lCHM_comparisons.png",
+ggsave(filename = paste0(path_Z_proc_data_WP4, "Figures/sCHM_lCHM_comparisons.png"),
        plot = gg,
        dpi = 300,
        units = "cm",

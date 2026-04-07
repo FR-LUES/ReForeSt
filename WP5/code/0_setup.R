@@ -12,19 +12,26 @@ library(furrr)
 library(ggpubr)
 library(hablar)
 
-#lidR# Folder paths ---- !#
-pathWP5 <- "WP5/"
+#Folder paths ---- !#
+
+path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
+path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
+path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+
+pathWP5 <- paste0(path_Z_raw_data, "WP5/")
 path_supportShapes <- paste0(pathWP5, "Shapes/Support_shapes/")
 path_managementShapes <- paste0(pathWP5, "Shapes/Management_shapes/")
-path_LiDAR <- paste0(pathWP5, "LiDAR/")
+
 
 
 # Output paths
-path_dean_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Dean_lidar/Forest_of_Dean/"
+path_Z_proc_data_WP5 <- paste0(path_Z_proc_data, "WP5/")
+
+path_dean_catalogs <- paste0(path_Z_proc_data, "Dean_lidar/Forest_of_Dean/")
 path_dean_dtmOut <- paste0(path_dean_catalogs, "dtms/")
 path_dean_chmOut <- paste0(path_dean_catalogs, "chms/")
-path_livinglayers <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/ForestLabs data/"
-path_private_catalogs <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/Private_sites_lidar/"
+path_livinglayers <- paste0(path_Z_raw_data, "ForestLabs data/")
+path_private_catalogs <- paste0(path_Z_proc_data, "Private_sites_lidar/")
 path_private_lidar <- paste0(path_private_catalogs, "Fell_Site_Subsets_Lidar_Point_Cloud_Data/")
 path_private_shapes <- paste0(path_private_catalogs, "shapes/")
 

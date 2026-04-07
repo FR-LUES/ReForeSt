@@ -1,5 +1,5 @@
 # Read in NFI and filter
-nfi <- vect(path_NFI, layer = "NFI2020_Interim_v1_WoodlandMap") %>%
+nfi <- vect(path_NFI, layer = "NFI2020") %>%
   filter(!IFT_IOA %in% c("Cloud \\ shadow", "Uncertain"))
 
 fyl_VOM <- rast("Z:/CESB/Land Use and Ecosystem Service/GIS_Data/EA_VOM/EA_VOM/V2_VOM_P_130241.tif")

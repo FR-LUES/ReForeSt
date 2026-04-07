@@ -1,4 +1,3 @@
-.libPaths("C:/R-Packages/")
 source("WP3/code/metric_extraction/0_setup.R")
 library(ggplot2); theme_set(theme_void())
 
@@ -10,9 +9,10 @@ theme <-
         legend.margin = margin(0, 0, 0, 0))
 
 
-fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/FHD_full_30m.tif")
+fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/02_data/01_processed_data/fhd_map/fhd_full_30m_corrected.tif")
 
 thetford_ext <- ext(572885, 587885, 278923, 298923)
+thetford_ext <- ext(572885, 590000, 278923, 298923)
 
 fhd_thetford <- terra::crop(fhd, thetford_ext)
 
