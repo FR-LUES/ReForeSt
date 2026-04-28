@@ -2,7 +2,7 @@
 library(sf)
 library(terra)
 library(tidyverse)
-library(lidaRtRee)
+#library(lidaRtRee)
 library(tidyterra)
 
 # FR paths
@@ -26,12 +26,15 @@ path_NFI <- paste0(path_Z_raw_data, "NFI/NFI2020.gpkg")
 path_eng_DASH <- "/dbfs/mnt/base/unrestricted/source_ordnance_survey_data_hub/dataset_boundary_line/format_SHP_boundary_line/SNAPSHOT_2025_10_02_boundary_line/GB/english_region_region.shp"
 path_Vom_DASH <- "/dbfs/mnt/base/unrestricted/source_environment_agency/dataset_national_lidar_programme_vom/format_GEOTIFF_national_lidar_programme_vom/LATEST_national_lidar_programme_vom/VOM/VOM/"
 path_NFI_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/input/NFI/TimeSeriesWoodlandMaps.gdb" 
-path_fhd_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/FHD_full_30m.tif"
+
+path_fhd_map_eng <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/"
+path_fhd_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/fhd_full_30m_corrected.tif"
 
 path_gap_map_10km_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/VOM_tiles/" 
 path_gap_map_100km_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/100km_mosaic/" 
+path_gap_map_fyl_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/fylingdales_tile/" 
 path_gap_map_eng_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/england_mosaic/"
-path_gap_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/england_mosaic/england_VOM_gaps_clip.tif"
+path_gap_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/england_mosaic/gap_map_1m.tif"
 
 path_gap_frac_tiles_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_fraction/tiles/"
 path_gap_frac_eng_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_fraction/england_mosaic/"

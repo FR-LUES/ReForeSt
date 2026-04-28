@@ -5,6 +5,7 @@ nfi <- vect(path_NFI_DASH, layer = "NFI2020_Interim_v1_WoodlandMap") %>%
   
 # gap map
 gap_map <- rast(path_gap_map_DASH)
+names(gap_map) <- "gap_map_1m" # remove
 gap_ext <- rast(ext(gap_map),
                 resolution = res(gap_map),
                 crs = crs(gap_map))
@@ -72,7 +73,7 @@ for (i in 1:length(tiles_eng)) {
   writeRaster(gap_frac_tile_mask, path_local, overwrite = TRUE)
   
   # Copy to DBFS
-  file.copy(path_local, path_export)
+  file.copy(path_local, path_export, overwrite = TRUE)
   file.remove(path_local)
     
   print(i)
