@@ -132,7 +132,10 @@ mosaicFunction <- function(directory, outPath, x) {# X is an index to be used in
 mosaicFunction_DASH <- function(directory, outPath, filename) {
 
   # Remove problem tiles
-  sources <- list.files(paste0(directory), pattern = "\\.tif$", full.names = TRUE)
+  sources <- list.files(directory,
+                        pattern = "\\.tif$",
+                        full.names = TRUE,
+                        recursive = TRUE)
   
   # find bad sources
   bad <- sapply(sources, function(f) {
@@ -145,7 +148,7 @@ mosaicFunction_DASH <- function(directory, outPath, filename) {
   
   # Use a local path for writing
   localPath <- paste0("/tmp/", filename, ".tif")
-  writeRaster(vrt, localPath, overwrite = T)
+  writeRaster(vrt, localPath, overwrite = TRUE)
 
   # Copy to DBFS
   file.copy(localPath, paste0(outPath, "/", filename, ".tif"))

@@ -39,6 +39,10 @@ path_gap_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output
 path_gap_frac_tiles_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_fraction/tiles/"
 path_gap_frac_eng_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_fraction/england_mosaic/"
 
+path_rh90_tiles_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/rh90_map/VOM_tiles/" 
+path_rh90_eng_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/rh90_map/england_mosaic/"
+
+
 # Gap params
 gapHeight <- 2
 gapSize <- 10
