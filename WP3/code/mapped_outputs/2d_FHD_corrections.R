@@ -6,7 +6,7 @@ plan(sequential)
 
 
 # read in data
-fhd <- rast(paste0(fhdOutPath, "fhd_full_30m.tif"))
+fhd <- rast(paste0(fhdOutPath, "fhd_incomplete_2020_30m.tif"))
 dtm <- rast(paste0(sharePath, "DTM/LIDAR_Composite_10m_DTM_2022.tif"))
 nlp_cat <- vect(catalogPath)
 england <-
@@ -80,5 +80,5 @@ fhd_final <- mask(fhd_updated, england)
 varnames(fhd_final) <- varnames(fhd)
 
 writeRaster(fhd_final,
-            paste0(fhdOutPath, "fhd_full_30m_corrected.tif"),
+            paste0(fhdOutPath, "fhd_england_2020_30m.tif"),
             overwrite = TRUE)

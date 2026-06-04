@@ -6,7 +6,7 @@ source("WP3/code/mapped_outputs/0_setupMosaic.R")
 
 
 # First I read in the full FHD map
-fhd <- rast(paste0(fhdOutPath, "/FHD_full_30m.tif"))
+fhd <- rast(paste0(fhdOutPath, "/fhd_incomplete_2020_30m.tif"))
 # Read in the nlp catalog
 tiles <- st_read("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/check_gaps_2017_to_2022_NP1m_Survey/check_gaps_2017_to_2022_NP1m_Survey/Lidar_used_in_merging_process_2022_FZ_DSM_1m_Composiyte.shp")
 

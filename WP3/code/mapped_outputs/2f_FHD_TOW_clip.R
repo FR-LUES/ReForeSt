@@ -2,7 +2,7 @@ source("WP3/code/mapped_outputs/0_setup_gaps.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
 # load in FHD data
-fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/02_data/01_processed_data/fhd_map/fhd_full_30m_corrected.tif")
+fhd <- rast("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/02_data/01_processed_data/fhd_map/fhd_england_2020_30m.tif")
 
 
 # Loop through TOW regions
@@ -36,9 +36,9 @@ for (region in tow_regions) {
 files <- list.files(paste0(path_Z_proc_data, "fhd_map/TOW_mask/"), pattern = "\\.tif$", full.names = TRUE)
 
 fhd_tow_full_vrt <- vrt(files,
-                        paste0(path_Z_proc_data, "fhd_map/TOW_mask/fhd_tow_30m.vrt"),
+                        paste0(path_Z_proc_data, "fhd_map/TOW_mask/fhd_england_TOW_2020_30m.vrt"),
                         overwrite = TRUE)
 
 writeRaster(fhd_tow_full_vrt,
-            paste0(path_Z_proc_data, "fhd_map/fhd_tow_30m.tif"),
+            paste0(path_Z_proc_data, "fhd_map/fhd_england_TOW_2020_30m.tif"),
             overwrite = TRUE)

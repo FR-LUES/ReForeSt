@@ -33,7 +33,7 @@ ras_list <- sprc(rev(tif_files))
 # Mosaic them into a single raster
 mosaic_ras <- mosaic(ras_list, fun = "last")
 names(mosaic_ras) <- "FHD_30m"
-writeRaster(mosaic_ras, paste0(fhdOutPath, "/FHD_full_30m.tif"), overwrite = TRUE)
+writeRaster(mosaic_ras, paste0(fhdOutPath, "/fhd_incomplete_2020_30m.tif"), overwrite = TRUE)
 # plot to check
 ggplot()+
   geom_spatraster(data = mosaic_ras)+

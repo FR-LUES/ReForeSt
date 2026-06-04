@@ -1,7 +1,7 @@
 
 # Load libraries ---- !#
-library(future)
-library(furrr)
+#library(future)
+#library(furrr)
 library(common) # For file find
 library(terra)
 library(tidyterra)
@@ -12,7 +12,7 @@ library(sf)
 #library(viridis)
 
 # Set up futures session ---- !#
-plan(multisession, workers = 2)
+#plan(multisession, workers = 2)
 
 
 
@@ -20,6 +20,7 @@ plan(multisession, workers = 2)
 path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
 path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
 path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+path_rh90 <- paste0(path_Z_proc_data, "rh90_map/")
 
 wpPath <- paste0(path_Z_raw_data, "WP3/") # Work package path
 dataPath <- paste0(wpPath, "data/")# Path to data

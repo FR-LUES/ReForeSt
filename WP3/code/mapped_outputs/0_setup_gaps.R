@@ -14,10 +14,13 @@ path_gap_map <- paste0(path_Z_proc_data, "gap_map/")
 path_gap_map_100km <- paste0(path_gap_map, "100km_tiles/")
 path_gap_map_fyl <- paste0(path_gap_map, "fylingdales_tile/")
 path_gap_map_eng <- paste0(path_gap_map, "england/")
-path_Z_gap_frac_eng <- paste0(path_Z_proc_data, "gap_fraction/gap_fraction_30m.tif")
+path_Z_gap_frac_eng <- paste0(path_Z_proc_data, "gap_fraction/gap_fraction_england_NFI_2020_30m.tif")
+
+path_Z_rh90 <- paste0(path_Z_proc_data, "rh90_map/")
 
 path_lues <- "Z:/CESB/Land Use and Ecosystem Service/GIS_Data/"
 path_Vom <- paste0(path_lues, "EA_VOM/EA_VOM/")
+path_VOM_fyl <- paste0(path_Vom, "V2_VOM_P_130241.tif")
 path_VOM_catalog <- paste0(path_Vom, "VOM_TILES.gpkg")
 path_NFI <- paste0(path_Z_raw_data, "NFI/NFI2020.gpkg")
 
@@ -28,7 +31,7 @@ path_Vom_DASH <- "/dbfs/mnt/base/unrestricted/source_environment_agency/dataset_
 path_NFI_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/input/NFI/TimeSeriesWoodlandMaps.gdb" 
 
 path_fhd_map_eng <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/"
-path_fhd_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/fhd_full_30m_corrected.tif"
+path_fhd_map_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/fhd_map/fhd_england_2020_30m.tif"
 
 path_gap_map_10km_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/VOM_tiles/" 
 path_gap_map_100km_DASH <- "/dbfs/mnt/lab/unrestricted/joebeesley/ReForeSt_data/output/WP3/gap_map/100km_mosaic/" 

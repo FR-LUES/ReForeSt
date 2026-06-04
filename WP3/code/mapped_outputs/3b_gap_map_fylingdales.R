@@ -2,7 +2,7 @@
 nfi <- vect(path_NFI, layer = "NFI2020") %>%
   filter(!IFT_IOA %in% c("Cloud \\ shadow", "Uncertain"))
 
-fyl_VOM <- rast("Z:/CESB/Land Use and Ecosystem Service/GIS_Data/EA_VOM/EA_VOM/V2_VOM_P_130241.tif")
+fyl_VOM <- rast(path_VOM_fyl)
 
 
 # Mask fyl VOM by NFI (woodland only)

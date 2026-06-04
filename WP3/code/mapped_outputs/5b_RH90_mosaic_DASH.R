@@ -12,7 +12,7 @@ RH90_tiles_rc <- sprc(RH90_tiles)
 RH90_mosaic <- mosaic(RH90_tiles_rc, fun = "mean", resample = TRUE)
 
 # Export rh90 raster 
-exportFilename <- "rh90_30m_VOM_partial.tif"
+exportFilename <- "rh90_incomplete_2020_30m.tif"
 exportFolder <- path_rh90_eng_DASH
 exportPath <- paste0(exportFolder, exportFilename) # DASH path
 dir.create(exportFolder, recursive = T, showWarnings = F)
