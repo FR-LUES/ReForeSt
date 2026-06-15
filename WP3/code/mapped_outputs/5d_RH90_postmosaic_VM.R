@@ -16,30 +16,38 @@ england <-
   filter(CTRY21NM == "England")
 
 
+# resample to geometry of gap fraction and fhd maps
+rh90_incomplete <- terra::resample(rh90_incomplete, gap_fraction)
+
+
 #===============================================================================
 # Fylindales
 #===============================================================================
+
+fyl_ext <- ext(fyl_VOM) %>% as.polygons()
+crs(fyl_ext) <- crs(fyl_VOM)
+
 
 # create RH90 map for Fylingdales
 fyl_VOM_30m_rh90 <-
   terra::aggregate(
     fyl_VOM,
     fact = 30,
-    fun = function(x) {
-      quantile(x, 0.9, na.rm = TRUE)}
+    fun = function(x) {quantile(x, 0.9, na.rm = TRUE)}
   )
 
 
-# remove fylingdales area from RH90 map
-fyl_ext <- ext(fyl_VOM_30m_rh90) %>% as.polygons()
-crs(fyl_ext) <- crs(fyl_VOM_30m_rh90)
-
-rh90_incomplete_mask <- mask(rh90_incomplete, fyl_ext, inverse = TRUE)
+# resample to geometry of gap fraction and fhd maps
+fyl_VOM_30m_rh90 <- 
+  terra::resample(
+    fyl_VOM_30m_rh90,
+    terra::crop(gap_fraction, fyl_ext, mask = TRUE)
+  )
 
 
 # mosaic fylingdales into RH90 map
-rh90_sprc <- sprc(list(rh90_incomplete_mask, fyl_VOM_30m_rh90))
-rh90_1 <- terra::mosaic(rh90_sprc)
+rh90_1 <- terra::mosaic(rh90_incomplete, fyl_VOM_30m_rh90,
+                        fun = "last")
 
 
 #===============================================================================
@@ -55,12 +63,12 @@ vom_files <-
     ignore.case = TRUE)
 
 
-# create vect of erroneous regions buffered by 30m
+# create vect of erroneous regions
 sp_ext <- ext(480000, 485000, 200000, 201500)
 su_ext <- ext(490000, 495000, 130000, 132500)
 
 
-# function to calculate rh90 for ext
+# function to calculate rh90 from VOM for ext
 rh90_from_ext <- function(ext){
   
   vect <- vect(ext, crs = "epsg:27700")
@@ -89,8 +97,14 @@ rh90_from_ext <- function(ext){
     terra::aggregate(
       vom_tile_clip,
       fact = 30,
-      fun = function(x) {
-        quantile(x, 0.9, na.rm = TRUE)}
+      fun = function(x) {quantile(x, 0.9, na.rm = TRUE)}
+    )
+  
+  # resample to geometry of gap fraction and fhd maps
+  vom_tile_rh90 <- 
+    terra::resample(
+      vom_tile_rh90,
+      terra::crop(gap_fraction, vect, mask = TRUE)
     )
   
   return(vom_tile_rh90)
@@ -100,26 +114,17 @@ sp_rh90 <- rh90_from_ext(sp_ext)
 su_rh90 <- rh90_from_ext(su_ext)
 
 
-# remove tile areas from RH90 map
-rh90_1_mask <- mask(rh90_1, ext(sp_rh90), inverse = TRUE)
-rh90_1_mask <- mask(rh90_1, ext(su_rh90), inverse = TRUE)
-
-
 # mosaic tile into RH90 map
-rh90_sprc <- sprc(list(rh90_1_mask, sp_rh90, su_rh90))
-rh90_2 <- terra::mosaic(rh90_sprc)
+rh90_2 <- terra::mosaic(rh90_1, sp_rh90, su_rh90,
+                        fun = "last")
 
 
 #===============================================================================
 # Final clean and tidy
 #===============================================================================
 
-# resample to geometry of gap fraction and fhd maps
-rh90 <- terra::resample(rh90_2, gap_fraction)
-
-
 # clip to England
-rh90_final <- terra::crop(rh90, england, mask = TRUE)
+rh90_final <- terra::crop(rh90_2, england, mask = TRUE)
 
 
 # tidy

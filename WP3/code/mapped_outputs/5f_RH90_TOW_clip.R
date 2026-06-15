@@ -18,6 +18,7 @@ tow_regions <- c(
   "Yorkshire_and_the_Humber"
 )
 
+
 for (region in tow_regions) {
   
   path_in <- paste0("Z:/Common/TOW/TOW_v2/", region, "_TOW_V5.gpkg")
@@ -26,6 +27,7 @@ for (region in tow_regions) {
   rh90_tow <- terra::crop(rh90, tow, mask = TRUE)
   
   path_out <- paste0(path_Z_rh90, "TOW_mask/rh90_TOW_", region, ".tif")
+  
   writeRaster(rh90_tow,
               path_out,
               overwrite = TRUE)
