@@ -21,7 +21,7 @@ rh90_incomplete <- terra::resample(rh90_incomplete, gap_fraction)
 
 
 #===============================================================================
-# Fylindales
+# Fylingdales
 #===============================================================================
 
 fyl_ext <- ext(fyl_VOM) %>% as.polygons()
@@ -64,8 +64,8 @@ vom_files <-
 
 
 # create vect of erroneous regions
-sp_ext <- ext(480000, 485000, 200000, 201500)
-su_ext <- ext(490000, 495000, 130000, 132500)
+sp_ext <- ext(480000, 485070, 199940, 201560)
+su_ext <- ext(490000, 495070, 129940, 132880)
 
 
 # function to calculate rh90 from VOM for ext
@@ -89,9 +89,19 @@ rh90_from_ext <- function(ext){
   
   vom_tile_path <- unlist(intersections)
   
-  # load VOM tile, crop and calculate RH90
-  vom_tile <- rast(vom_tile_path)
-  vom_tile_clip <- terra::crop(vom_tile, vect, mask = TRUE)
+  # load VOM tile(s), crop and calculate RH90
+  if (length(vom_tile_path) > 1) {
+    
+    vom_tiles_list <- lapply(vom_tile_path, rast)
+    vom_tiles_list_clip <- terra::crop(sprc(vom_tiles_list), vect)
+    vom_tile_clip <- mosaic(vom_tiles_list_clip)
+    
+  } else{
+    
+    vom_tile <- rast(vom_tile_path)
+    vom_tile_clip <- terra::crop(vom_tile, vect, mask = TRUE)
+    
+  }
   
   vom_tile_rh90 <- 
     terra::aggregate(
