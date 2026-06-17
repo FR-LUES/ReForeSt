@@ -1,12 +1,11 @@
-library(sf)
-library(tidyverse)
-library(terra)
-source("WP3/code/mapped_outputs/0_setupMosaic.R")
+source("WP3/code/mapped_outputs/0_setup.R")
+source("WP3/code/mapped_outputs/1_functions.R")
+
 # In this script I identify areas of the NLP that the FHD maps missed
 
 
 # First I read in the full FHD map
-fhd <- rast(paste0(fhdOutPath, "/fhd_incomplete_2020_30m.tif"))
+fhd <- rast(dir_fhd_map_incomplete)
 # Read in the nlp catalog
 tiles <- st_read("Z:/Projects/FRD_Programme/FRD_20 ReForeSt/fhd_map/check_gaps_2017_to_2022_NP1m_Survey/check_gaps_2017_to_2022_NP1m_Survey/Lidar_used_in_merging_process_2022_FZ_DSM_1m_Composiyte.shp")
 

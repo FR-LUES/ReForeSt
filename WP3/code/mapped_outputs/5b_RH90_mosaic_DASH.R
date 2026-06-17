@@ -1,5 +1,5 @@
 # Locate RH90 tiles
-RH90_tiles_paths <- list.files(path_rh90_tiles_DASH,
+RH90_tiles_paths <- list.files(dir_rh90_tiles_DASH,
                       pattern = "\\.tif$",
                       full.names = TRUE,
                       recursive = TRUE)
@@ -13,7 +13,7 @@ RH90_mosaic <- mosaic(RH90_tiles_rc, fun = "mean", resample = TRUE)
 
 # Export rh90 raster 
 exportFilename <- "rh90_incomplete_2020_30m.tif"
-exportFolder <- path_rh90_eng_DASH
+exportFolder <- dir_rh90_eng_DASH
 exportPath <- paste0(exportFolder, exportFilename) # DASH path
 dir.create(exportFolder, recursive = T, showWarnings = F)
 

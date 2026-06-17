@@ -6,11 +6,11 @@ plan(sequential)
 
 
 # read in data
-fhd <- rast(paste0(fhdOutPath, "fhd_incomplete_2020_30m.tif"))
-dtm <- rast(paste0(sharePath, "DTM/LIDAR_Composite_10m_DTM_2022.tif"))
-nlp_cat <- vect(catalogPath)
+fhd <- rast(dir_fhd_map_incomplete)
+dtm <- rast(path_DTM)
+nlp_cat <- vect(path_NLP_catalog)
 england <-
-  vect("Z:/CESB/Land Use and Ecosystem Service/LUES_Sware/PersonalFolders/Joe/Data/ONS_Open_Geography/Countries_Dec_2021_GB_BFC_2022_6264036014383714060.gpkg") %>% 
+  vect(path_england) %>% 
   filter(CTRY21NM == "England")
   
   
@@ -28,7 +28,7 @@ tiles <- append(nlp_ny$PNT_FN, nlp_wb$PNT_FN)
 for (i in tiles) {
   las_path <-
     list.files(
-      path = nlpPath,
+      path = dir_NLP,
       pattern = i,
       recursive = TRUE,
       full.names = TRUE)
@@ -40,7 +40,7 @@ for (i in tiles) {
     next}
 
   ctg <- readLAScatalog(las_path)
-  opt_output_files(ctg) <- paste0(fhdOutPath, "corrections/{XCENTER}_{YCENTER}_FHD_30m")
+  opt_output_files(ctg) <- paste0(dir_fhd, "corrections/{XCENTER}_{YCENTER}_FHD_30m")
   
   # check within England
   ctg_vect <- vect(ext(ctg))
@@ -59,7 +59,7 @@ for (i in tiles) {
 
 # merge into FHD
 # identify new tiles
-new_tiles <- list.files(paste0(fhdOutPath, "corrections"), pattern = "\\.tif$", full.names = TRUE)
+new_tiles <- list.files(paste0(dir_fhd, "corrections"), pattern = "\\.tif$", full.names = TRUE)
 rast_list <- lapply(new_tiles, rast)
 ext_list <- lapply(rast_list, ext)
 
@@ -80,5 +80,5 @@ fhd_final <- mask(fhd_updated, england)
 varnames(fhd_final) <- varnames(fhd)
 
 writeRaster(fhd_final,
-            paste0(fhdOutPath, "fhd_england_2020_30m.tif"),
+            dir_fhd_map,
             overwrite = TRUE)
