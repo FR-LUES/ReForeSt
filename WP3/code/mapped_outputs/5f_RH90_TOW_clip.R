@@ -2,7 +2,7 @@ source("WP3/code/mapped_outputs/0_setup_gaps.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
 # load in rh90 data
-rh90 <- rast(paste0(path_Z_rh90, "rh90_england_2020_30m.tif"))
+rh90 <- rast(paste0(path_rh90, "rh90_england_2020_30m.tif"))
 
 
 # Loop through TOW regions
@@ -26,7 +26,7 @@ for (region in tow_regions) {
   
   rh90_tow <- terra::crop(rh90, tow, mask = TRUE)
   
-  path_out <- paste0(path_Z_rh90, "TOW_mask/rh90_TOW_", region, ".tif")
+  path_out <- paste0(path_rh90, "TOW_mask/rh90_TOW_", region, ".tif")
   
   writeRaster(rh90_tow,
               path_out,
@@ -39,15 +39,28 @@ for (region in tow_regions) {
 # mosaic
 files <-
   list.files(
-    paste0(path_Z_rh90, "TOW_mask/"),
+    paste0(path_rh90, "TOW_mask/"),
     pattern = "\\.tif$",
     full.names = TRUE)
 
 rh90_tow_full_vrt <- 
   vrt(files,
-      paste0(path_Z_rh90, "TOW_mask/rh90_england_TOW_2020_30m.vrt"),
+      paste0(path_rh90, "TOW_mask/rh90_england_TOW_2020_30m.vrt"),
       overwrite = TRUE)
 
 writeRaster(rh90_tow_full_vrt,
-            paste0(path_Z_rh90, "rh90_england_TOW_2020_30m.tif"),
+            paste0(path_rh90, "rh90_england_TOW_2020_30m.tif"),
+            overwrite = TRUE)
+
+
+# merge NFI and TOW maps
+
+rh90_nfi <- rast(paste0(path_rh90, "rh90_england_NFI_2020_30m.tif"))
+rh90_tow <- rast(paste0(path_rh90, "rh90_england_TOW_2020_30m.tif"))
+
+rh90_nfi_tow <- terra::merge(rh90_nfi, rh90_tow)
+
+
+writeRaster(rh90_nfi_tow,
+            paste0(path_rh90, "rh90_england_NFI_TOW_2020_30m.tif"),
             overwrite = TRUE)

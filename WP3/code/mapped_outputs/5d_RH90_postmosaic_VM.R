@@ -8,7 +8,7 @@ source("WP3/code/mapped_outputs/0_setup_gaps.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
 # read in data
-rh90_incomplete <- rast(paste0(path_Z_rh90, "drafts/rh90_incomplete_2020_30m.tif"))
+rh90_incomplete <- rast(paste0(path_rh90, "drafts/rh90_incomplete_2020_30m.tif"))
 gap_fraction <- rast(path_Z_gap_frac_eng)
 fyl_VOM <- rast(path_VOM_fyl)
 england <-
@@ -144,6 +144,6 @@ names(rh90_final) <- "rh90_30m"
 
 # write
 writeRaster(rh90_final,
-            paste0(path_Z_rh90, "rh90_england_2020_30m.tif"),
+            paste0(path_rh90, "rh90_england_2020_30m.tif"),
             overwrite = TRUE)
 

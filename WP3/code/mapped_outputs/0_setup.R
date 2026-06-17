@@ -20,6 +20,7 @@ library(sf)
 path_Z <- "Z:/Projects/FRD_Programme/FRD_20 ReForeSt/"
 path_Z_raw_data <- paste0(path_Z, "02_data/00_raw_data/")
 path_Z_proc_data <- paste0(path_Z, "02_data/01_processed_data/")
+path_fhd <- paste0(path_Z_proc_data, "fhd_map/")
 path_rh90 <- paste0(path_Z_proc_data, "rh90_map/")
 
 wpPath <- paste0(path_Z_raw_data, "WP3/") # Work package path

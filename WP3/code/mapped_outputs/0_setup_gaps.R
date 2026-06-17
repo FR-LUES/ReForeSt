@@ -16,7 +16,7 @@ path_gap_map_fyl <- paste0(path_gap_map, "fylingdales_tile/")
 path_gap_map_eng <- paste0(path_gap_map, "england/")
 path_Z_gap_frac_eng <- paste0(path_Z_proc_data, "gap_fraction/gap_fraction_england_NFI_2020_30m.tif")
 
-path_Z_rh90 <- paste0(path_Z_proc_data, "rh90_map/")
+path_rh90 <- paste0(path_Z_proc_data, "rh90_map/")
 
 path_lues <- "Z:/CESB/Land Use and Ecosystem Service/GIS_Data/"
 path_Vom <- paste0(path_lues, "EA_VOM/EA_VOM/")
