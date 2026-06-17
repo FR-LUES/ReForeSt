@@ -1,8 +1,8 @@
-source("WP3/code/mapped_outputs/0_setup_gaps.R")
+source("WP3/code/mapped_outputs/0_setup.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
 # load in FHD data
-fhd <- rast(paste0(path_fhd, "fhd_england_2020_30m.tif"))
+fhd <- rast(dir_fhd_map)
 
 
 # Loop through TOW regions
@@ -25,7 +25,7 @@ for (region in tow_regions) {
   
   fhd_tow <- terra::mask(fhd, tow)
   
-  path_out <- paste0(path_fhd, "TOW_mask/fhd_TOW_", region, ".tif")
+  path_out <- paste0(dir_fhd, "TOW_mask/fhd_TOW_", region, ".tif")
   writeRaster(fhd_tow, path_out)
   
   rm(tow); gc()
@@ -33,26 +33,27 @@ for (region in tow_regions) {
 
 
 # mosaic
-files <- list.files(paste0(path_fhd, "TOW_mask/"), pattern = "\\.tif$", full.names = TRUE)
+files <- list.files(paste0(dir_fhd, "TOW_mask/"), pattern = "\\.tif$", full.names = TRUE)
 
-fhd_tow_full_vrt <- vrt(files,
-                        paste0(path_fhd, "TOW_mask/fhd_england_TOW_2020_30m.vrt"),
-                        overwrite = TRUE)
+fhd_tow_full_vrt <- 
+  vrt(files,
+      paste0(dir_fhd, "TOW_mask/fhd_england_TOW_2020_30m.vrt"),
+      overwrite = TRUE)
 
 writeRaster(fhd_tow_full_vrt,
-            paste0(path_fhd, "fhd_england_TOW_2020_30m.tif"),
+            dir_fhd_map_TOW,
             overwrite = TRUE)
 
 
 
 # merge NFI and TOW maps
 
-fhd_nfi <- rast(paste0(path_fhd, "fhd_england_NFI_2020_30m.tif"))
-fhd_tow <- rast(paste0(path_fhd, "fhd_england_TOW_2020_30m.tif"))
+fhd_nfi <- rast(paste0(dir_fhd, "fhd_england_NFI_2020_30m.tif"))
+fhd_tow <- rast(paste0(dir_fhd, "fhd_england_TOW_2020_30m.tif"))
 
 fhd_nfi_tow <- terra::merge(fhd_nfi, fhd_tow)
 
 
 writeRaster(fhd_nfi_tow,
-            paste0(path_fhd, "fhd_england_NFI_TOW_2020_30m.tif"),
+            paste0(dir_fhd, "fhd_england_NFI_TOW_2020_30m.tif"),
             overwrite = TRUE)

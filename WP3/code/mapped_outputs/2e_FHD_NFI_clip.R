@@ -1,8 +1,8 @@
-source("WP3/code/mapped_outputs/0_setup_gaps.R")
+source("WP3/code/mapped_outputs/0_setup.R")
 source("WP3/code/mapped_outputs/1_functions.R")
 
 # Load in FHD data
-fhd <- rast(paste0(path_fhd, "fhd_england_2020_30m.tif"))
+fhd <- rast(dir_fhd_map)
 
 
 # Read in NFI and filter
@@ -14,5 +14,5 @@ fhd_nfi <- terra::mask(fhd, nfi)
   
 # Write
 writeRaster(fhd_nfi,
-            paste0(path_fhd, "fhd_england_NFI_2020_30m.tif"),
+            dir_fhd_map_NFI,
             overwrite = TRUE)

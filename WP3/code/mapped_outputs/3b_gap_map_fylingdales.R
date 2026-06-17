@@ -35,7 +35,7 @@ gaps_fyl <- do.call(mosaic, gap_list)
 
 # Export gap raster for mosaic tile
 exportFilename <- "fylingdales_VOM_gaps.tif"
-exportPath <- paste0(path_Z, "gap_map/fylingdales_tile/", exportFilename)
+exportPath <- paste0(dir_Z, "gap_map/fylingdales_tile/", exportFilename)
 
 writeRaster(gaps_fyl, exportPath, overwrite = T)
 

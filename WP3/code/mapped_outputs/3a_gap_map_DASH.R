@@ -3,14 +3,14 @@ nfi <- vect(path_NFI_DASH, layer = "NFI2020_Interim_v1_WoodlandMap") %>%
   filter(!IFT_IOA %in% c("Cloud \\ shadow", "Uncertain"))
 
 
-OS_folders_100km <- list.dirs(path_Vom_DASH, recursive = F, full.names = F)
+OS_folders_100km <- list.dirs(dir_VOM_DASH, recursive = F, full.names = F)
 
 
 # Loop over 100km tiles
 for (i in 1:length(OS_folders_100km)) {
   
 OS_grid_100km <- OS_folders_100km[[i]]
-OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F, full.names = F)
+OS_folders_10km <- list.dirs(paste0(dir_VOM_DASH, OS_grid_100km), recursive = F, full.names = F)
 
   # Loop over 10km sub-tiles
   for (j in 1:length(OS_folders_10km)) {
@@ -18,7 +18,7 @@ OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F
     OS_grid_10km <- OS_folders_10km[[j]]
   
     # Build VOM for OS 10km grid square 
-    tiles_paths <- list.files(path = paste0(path_Vom_DASH, OS_grid_100km, "/" ,OS_grid_10km),
+    tiles_paths <- list.files(path = paste0(dir_VOM_DASH, OS_grid_100km, "/" ,OS_grid_10km),
                               pattern = ".tif$",
                               recursive = T,
                               full.names = T)
@@ -65,7 +65,7 @@ OS_folders_10km <- list.dirs(paste0(path_Vom_DASH, OS_grid_100km), recursive = F
   
     # Export gap raster for 10km tile
     exportFilename <- paste0(OS_grid_10km, "_VOM_gaps.tif")
-    exportFolder <- paste0(path_gap_map_10km_DASH, OS_grid_100km, "/")
+    exportFolder <- paste0(dir_gap_map_10km_DASH, OS_grid_100km, "/")
     exportPath <- paste0(exportFolder, exportFilename) # DASH path
     dir.create(exportFolder, recursive = T, showWarnings = F)
 

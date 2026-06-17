@@ -104,7 +104,7 @@ fhdMap_function <- function(chunk) {
 
 mosaicFunction <- function(directory, outPath, x) {# X is an index to be used inside a loop for referencing years.
   # directory <- paste0(years[[x]], "/")
-  # outPath <- paste0(fhdOutPath, yearNames[[x]])
+  # outPath <- paste0(dir_fhd, yearNames[[x]])
   
   # Remove problem tiles
   sources <- list.files(paste0(directory), pattern = "\\.tif$", full.names = TRUE)
